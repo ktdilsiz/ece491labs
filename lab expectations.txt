@@ -1,0 +1,11 @@
+test
+testing proof
+
+our design
+delivarables
+files --> constraints file, verilog code
+
+enough testing
+positive negative assertions / evaluating test
+
+softcode because of reuse

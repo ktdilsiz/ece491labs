@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Sep 02 18:19:21 2016
+# Process ID: 5192
+# Current directory: C:/Users/husseinz/Senior_Design_Lab_1/Senior_Design_Lab_1.runs/impl_1
+# Command line: vivado.exe -log nexys4DDR.vdi -applog -messageDb vivado.pb -mode batch -source nexys4DDR.tcl -notrace
+# Log file: C:/Users/husseinz/Senior_Design_Lab_1/Senior_Design_Lab_1.runs/impl_1/nexys4DDR.vdi
+# Journal file: C:/Users/husseinz/Senior_Design_Lab_1/Senior_Design_Lab_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source nexys4DDR.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/harim/Desktop/Senior Design/Lab 1/Lab 1 Reference Code + Requirements Checklist-20160830/nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/harim/Desktop/Senior Design/Lab 1/Lab 1 Reference Code + Requirements Checklist-20160830/nexys4DDR.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net PARM_8/Q[0] has multiple drivers: PARM_6/k_reg[0]/Q, PARM_2/k_reg[0]/Q, PARM_3/k_reg[0]/Q, PARM_4/k_reg[0]/Q, PARM_1/k_reg[0]/Q, PARM_5/k_reg[0]/Q, PARM_7/k_reg[0]/Q, PARM_8/k_reg[0]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net PARM_8/Q[1] has multiple drivers: PARM_4/k_reg[1]/Q, PARM_6/k_reg[1]/Q, PARM_2/k_reg[1]/Q, PARM_3/k_reg[1]/Q, PARM_1/k_reg[1]/Q, PARM_5/k_reg[1]/Q, PARM_7/k_reg[1]/Q, PARM_8/k_reg[1]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net PARM_8/Q[2] has multiple drivers: PARM_6/k_reg[2]/Q, PARM_1/k_reg[2]/Q, PARM_2/k_reg[2]/Q, PARM_3/k_reg[2]/Q, PARM_4/k_reg[2]/Q, PARM_5/k_reg[2]/Q, PARM_7/k_reg[2]/Q, PARM_8/k_reg[2]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net PARM_8/Q[3] has multiple drivers: PARM_2/k_reg[3]/Q, PARM_4/k_reg[3]/Q, PARM_1/k_reg[3]/Q, PARM_3/k_reg[3]/Q, PARM_5/k_reg[3]/Q, PARM_6/k_reg[3]/Q, PARM_7/k_reg[3]/Q, PARM_8/k_reg[3]/Q.
+ERROR: [DRC 23-20] Rule violation (MDRV-1) Multiple Driver Nets - Net PARM_8/Q[4] has multiple drivers: PARM_6/k_reg[4]/Q, PARM_1/k_reg[4]/Q, PARM_2/k_reg[4]/Q, PARM_3/k_reg[4]/Q, PARM_4/k_reg[4]/Q, PARM_5/k_reg[4]/Q, PARM_7/k_reg[4]/Q, PARM_8/k_reg[4]/Q.
+INFO: [Project 1-461] DRC finished with 5 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 507.281 ; gain = 5.949
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 0 Warnings, 0 Critical Warnings and 6 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 02 18:19:28 2016...
