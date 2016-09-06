@@ -31,6 +31,13 @@ module seven_seg(
    parameter SEVEN = 7'b111_1000;
    parameter EIGHT = 7'b000_0000;
    parameter NINE  = 7'b001_0000;
+   parameter A     = 7'b000_1000;
+   parameter B     = 7'b000_0011;
+   parameter C     = 7'b100_0110;
+   parameter D     = 7'b010_0001;
+   parameter E     = 7'b000_0110;
+   parameter F     = 7'b000_1110;
+   
    
    always_comb
      case (data)
@@ -44,6 +51,12 @@ module seven_seg(
        4'd7: segments = SEVEN;
        4'd8: segments = EIGHT;
        4'd9: segments = NINE;
+       4'd10: segments= A;
+       4'd11: segments= B;
+       4'd12: segments= C;
+       4'd13: segments= D;
+       4'd14: segments= E;
+       4'd15: segments= F;
        default: segments = BLANK;
      endcase
 endmodule

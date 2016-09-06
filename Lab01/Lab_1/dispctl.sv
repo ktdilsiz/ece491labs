@@ -33,11 +33,29 @@ module dispctl (
    // generate clock enable to drive time-multiplexing counter
    // (you may need to adjust the frequency!)
 
-   logic 			   enb;
-
-   clkenb #(.DIVFREQ(1000)) U_CLKENB(clk, enb);
-
-
+   logic 			enb; 
+   logic            [7:0] y;
+   logic            [3:0] charles;
+   logic            [2:0] q;
+   logic            [7:0] an_n;
+   
+   clkenb #(.DIVFREQ(1000)) U_CLKENB(clk,reset, enb);
+   
+   counter_parm #(.W(3)) COUNTER(.clk(clk),.reset(reset),.enb(enb),.q(q),.carry());
+   
+   decoder_3_8_en DECODE(.a(q),.enb(1),.y(an_n));
+   
+   mux8_parm #(.W(4)) MUX1(.d0(d0),.d1(d1),.d2(d2),.d3(d3),.d4(d4),.d5(d5),.d6(d6),.d7(d7),.sel(q),.y(charles));
+   
+   mux8_parm #(.W(1)) MUX2(.d0(dp0),.d1(dp1),.d2(dp2),.d3(dp3),.d4(dp4),.d5(dp5),.d6(dp6),.d7(dp7),.sel(q),.y(dp));
+   
+   seven_seg SEG(.data(charles),.segments(seg));
+   
+   //d is 5 bits, same as switch 
+   //reg_parm  REGPARAMS(.clk(clk), .reset(reset), .Iden(), .d(), .q());
+   
+   assign an[7:0] = ~an_n; 
+  // assign enb = 1;
 
 endmodule // dispctl
 
