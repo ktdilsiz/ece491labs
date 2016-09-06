@@ -2,7 +2,7 @@
 // Title         : bcdcounter
 // Project       : ECE 491 - Senior Design 1
 //-----------------------------------------------------------------------------
-// File          : bcdcounter.v
+// File          : bcdcounter.sv
 // Author        : John Nestor
 // Created       : 03.09.2009
 // Last modified : 03.09.2009
@@ -12,18 +12,18 @@
 //-----------------------------------------------------------------------------
 // Modification history :
 // 03.09.2009 : created
+// 09.06.2016 : ported to SystemVerilog
 //-----------------------------------------------------------------------------
 
-module bcdcounter(clk, reset, enb, Q, carry);
-   input        clk, reset, enb;
-   output [3:0] Q;
-   output 	carry;
-   
-   reg [3:0] 	Q; // a signal that is assigned a value
+module bcdcounter(
+		  input logic        clk, reset, enb,
+		  output logic [3:0] Q,
+		  output logic       carry
+		  );
 
    assign 	carry = (Q == 9) & enb;
    
-   always @( posedge clk )
+   always_ff @( posedge clk )
      begin
 	if (reset) Q <= 0;
 	else if (enb) 

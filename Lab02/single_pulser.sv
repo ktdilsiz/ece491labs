@@ -16,10 +16,10 @@
 // 02.09.2009 : created
 //-----------------------------------------------------------------------------
 
-module single_pulser(input clk, input din, output d_pulse);
-   reg dq1, dq2;
+module single_pulser(input logic clk, din, output logic d_pulse);
+   logic dq1, dq2;
 
-   always @(posedge clk)
+   always_ff @(posedge clk)
      begin
 	dq1 <= din;
 	dq2 <= dq1;

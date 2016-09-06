@@ -2,10 +2,10 @@
 // Title         : bcdcounter_bench - stimulus-only testbench for BCD Counter
 // Project       : ECE 491 - Senior Design I
 //-----------------------------------------------------------------------------
-// File          : bcdcounter_bench.v
+// File          : bcdcounter_bench.sv
 // Author        : John Nestor
 // Created       : 03.09.2009
-// Last modified : 03.09.2009
+// 09.06.2016    : ported to SystemVerilog
 //-----------------------------------------------------------------------------
 // Description :
 // This file provides stimulus input to verify the operation of the BCD counter.
@@ -17,21 +17,15 @@
 // This testbench only generates stimulus - it is up to the user to verify that
 // the resulting simulation waveform is correct.
 //-----------------------------------------------------------------------------
-// Modification history :
-// 03.09.2009 : created
-//-----------------------------------------------------------------------------
 
 module bcdcounter_bench;
 
   // signals for connecting the counter
-   reg        clk;
-   reg        reset;
-   reg        enb;
-   wire [3:0] Q;
-   wire       carry;
-   
-   // testbench variables;
-   integer    i;
+   logic        clk;
+   logic        reset;
+   logic        enb;
+   logic  [3:0] Q;
+   logic       carry;
    
    // instantiate device under verification (counter)
    bcdcounter DUV(.clk(clk),.reset(reset),.enb(enb),

@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Tue Sep 06 14:07:47 2016
+| Date         : Tue Sep 06 16:30:01 2016
 | Host         : ECE400-F6M7KB2 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file nexys4DDR_control_sets_placed.rpt
 | Design       : nexys4DDR
@@ -38,7 +38,7 @@ Table of Contents
 | No           | Yes                   | No                     |              21 |            6 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              40 |           15 |
+| Yes          | Yes                   | No                     |              40 |           16 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -49,13 +49,13 @@ Table of Contents
 |     Clock Signal     | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------------+---------------+------------------+------------------+----------------+
 |  CLK100MHZ_IBUF_BUFG | SW_IBUF[0]    | BTNC_IBUF        |                2 |              5 |
-|  CLK100MHZ_IBUF_BUFG | SW_IBUF[1]    | BTNC_IBUF        |                2 |              5 |
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[1]    | BTNC_IBUF        |                1 |              5 |
 |  CLK100MHZ_IBUF_BUFG | SW_IBUF[2]    | BTNC_IBUF        |                1 |              5 |
-|  CLK100MHZ_IBUF_BUFG | SW_IBUF[3]    | BTNC_IBUF        |                1 |              5 |
-|  CLK100MHZ_IBUF_BUFG | SW_IBUF[4]    | BTNC_IBUF        |                1 |              5 |
-|  CLK100MHZ_IBUF_BUFG | SW_IBUF[5]    | BTNC_IBUF        |                2 |              5 |
-|  CLK100MHZ_IBUF_BUFG | SW_IBUF[6]    | BTNC_IBUF        |                2 |              5 |
-|  CLK100MHZ_IBUF_BUFG | SW_IBUF[7]    | BTNC_IBUF        |                4 |              5 |
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[3]    | BTNC_IBUF        |                3 |              5 |
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[4]    | BTNC_IBUF        |                3 |              5 |
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[5]    | BTNC_IBUF        |                1 |              5 |
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[6]    | BTNC_IBUF        |                3 |              5 |
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[7]    | BTNC_IBUF        |                2 |              5 |
 |  CLK100MHZ_IBUF_BUFG |               | BTNC_IBUF        |                6 |             21 |
 +----------------------+---------------+------------------+------------------+----------------+
 

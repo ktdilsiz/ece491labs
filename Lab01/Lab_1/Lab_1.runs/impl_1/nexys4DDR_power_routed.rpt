@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Tue Sep 06 14:08:11 2016
+| Date             : Tue Sep 06 16:30:26 2016
 | Host             : ECE400-F6M7KB2 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file nexys4DDR_power_routed.rpt -pb nexys4DDR_power_summary_routed.pb -rpx nexys4DDR_power_routed.rpx
 | Design           : nexys4DDR
@@ -56,7 +56,7 @@ Table of Contents
 |   CARRY4       |    <0.001 |        4 |     15850 |            0.03 |
 |   F7/F8 Muxes  |    <0.001 |        5 |     63400 |           <0.01 |
 |   Others       |     0.000 |        3 |       --- |             --- |
-| Signals        |    <0.001 |      119 |       --- |             --- |
+| Signals        |    <0.001 |      118 |       --- |             --- |
 | I/O            |     0.008 |       31 |       210 |           14.76 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.107 |          |           |                 |
@@ -135,21 +135,21 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------+-----------+
-| Name         | Power (W) |
-+--------------+-----------+
-| nexys4DDR    |     0.010 |
-|   DISP       |    <0.001 |
-|     COUNTER  |    <0.001 |
-|     U_CLKENB |    <0.001 |
-|   PARM_1     |    <0.001 |
-|   PARM_2     |    <0.001 |
-|   PARM_3     |    <0.001 |
-|   PARM_4     |    <0.001 |
-|   PARM_5     |    <0.001 |
-|   PARM_6     |    <0.001 |
-|   PARM_7     |    <0.001 |
-|   PARM_8     |    <0.001 |
-+--------------+-----------+
++------------------+-----------+
+| Name             | Power (W) |
++------------------+-----------+
+| nexys4DDR        |     0.010 |
+|   DISPCTL        |    <0.001 |
+|     CLKENB       |    <0.001 |
+|     COUNTER_PARM |    <0.001 |
+|   REGPARM_1      |    <0.001 |
+|   REGPARM_2      |    <0.001 |
+|   REGPARM_3      |    <0.001 |
+|   REGPARM_4      |    <0.001 |
+|   REGPARM_5      |    <0.001 |
+|   REGPARM_6      |    <0.001 |
+|   REGPARM_7      |    <0.001 |
+|   REGPARM_8      |    <0.001 |
++------------------+-----------+
 
 

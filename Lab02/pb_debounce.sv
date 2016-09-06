@@ -45,10 +45,8 @@ module pb_debounce(
        PB_cnt <= 0;  // nothing's going on
      else
        begin
-	  PB_cnt <= PB_cnt + 16'd1;  // something's going on, increment the
-	  counter
-	    if(PB_cnt_max) PB_state <= ~PB_state;  // if the counter is maxed
-	  out, PB changed!
+	  PB_cnt <= PB_cnt + 16'd1;  // something's going on, increment thecounter
+	    if(PB_cnt_max) PB_state <= ~PB_state;  // if the counter is maxedout, PB changed!
 	    end
    
    assign PB_down = ~PB_idle & PB_cnt_max & ~PB_state;

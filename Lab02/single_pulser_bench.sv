@@ -1,6 +1,6 @@
 module single_pulser_bench();
-   reg clk, din;
-   wire d_pulse;
+
+   logic clk, din, d_pulse;
 
    // Device Under Verification (DUV)
 
@@ -13,7 +13,6 @@ module single_pulser_bench();
       clk = 1;
       #10;
    end
-
 
    // test stimulus
    initial begin

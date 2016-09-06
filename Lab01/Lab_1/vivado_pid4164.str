@@ -1,0 +1,823 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 4164
+
+Current time: 	9/6/16 3:57:52 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	husseinz
+User home directory: C:/Users/husseinz
+User working directory: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/husseinz/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/husseinz/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	211 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 538 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\husseinz\Desktop\ece 491\ece491labs\Lab01\Lab_1\Lab_1.xpr. Version: Vivado v2016.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 41 MB (+40054kb) [00:00:03]
+// [Engine Memory]: 461 MB (+332360kb) [00:00:03]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 524 MB (+41739kb) [00:00:03]
+// [GUI Memory]: 53 MB (+11060kb) [00:00:04]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 555 MB (+4584kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: Lab_1; location: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 560 MB. GUI used memory: 33 MB. Current time: 9/6/16 3:57:54 PM EDT
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_1 - reg_parm (reg_param.sv)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_1 - reg_parm (reg_param.sv)]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_2 - reg_parm (reg_param.sv)]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_2 - reg_parm (reg_param.sv)]", 3, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_3 - reg_parm (reg_param.sv)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_3 - reg_parm (reg_param.sv)]", 4, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_4 - reg_parm (reg_param.sv)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_4 - reg_parm (reg_param.sv)]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_5 - reg_parm (reg_param.sv)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_5 - reg_parm (reg_param.sv)]", 6, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 59 MB (+2833kb) [00:00:15]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_6 - reg_parm (reg_param.sv)]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_6 - reg_parm (reg_param.sv)]", 7, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_7 - reg_parm (reg_param.sv)]", 8, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_7 - reg_parm (reg_param.sv)]", 8, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_8 - reg_parm (reg_param.sv)]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), PARM_8 - reg_parm (reg_param.sv)]", 9, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 62 MB (+530kb) [00:00:18]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("nexys4DDR.sv", 246, 132); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 238, 131); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 234, 150); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 237, 144); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 212, 127); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 210, 143); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 211, 159); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 212, 182); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 212, 197, true, false, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Shift Key
+selectCodeEditor("nexys4DDR.sv", 217, 198); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 211, 205); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 207, 195); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 208, 208); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 211, 233); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 211, 245); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("nexys4DDR.sv", 209, 268); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("nexys4DDR.sv", 167, 193); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_1 - reg_parm (reg_param.sv)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_1 - reg_parm (reg_param.sv)]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 65 MB (+296kb) [00:01:01]
+// [GUI Memory]: 71 MB (+2629kb) [00:01:01]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// [GUI Memory]: 77 MB (+2629kb) [00:01:06]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), U_CLKENB - clkenb (clkenb.sv)]", 11, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), U_CLKENB - clkenb (clkenb.sv)]", 11, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), COUNTER - counter_parm (counter_parm.sv)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), COUNTER - counter_parm (counter_parm.sv)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), COUNTER - counter_parm (counter_parm.sv)]", 12, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), DECODE - decoder_3_8_en (decoder_3_8_en.sv)]", 13, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), DECODE - decoder_3_8_en (decoder_3_8_en.sv)]", 13, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), DECODE - decoder_3_8_en (decoder_3_8_en.sv)]", 13, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), DECODE - decoder_3_8_en (decoder_3_8_en.sv)]", 13, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 83 MB (+1535kb) [00:01:35]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX2 - mux8_parm (mux8_parm.sv)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX2 - mux8_parm (mux8_parm.sv)]", 15, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), SEG - seven_seg (seven_seg.sv)]", 16, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), SEG - seven_seg (seven_seg.sv)]", 16, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("seven_seg.sv", 97, 143); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("seven_seg.sv", 87, 38); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("seven_seg.sv", 90, 38, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("seven_seg.sv", 92, 62); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("seven_seg.sv", 92, 72); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("seven_seg.sv", 93, 64); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("seven_seg.sv", 94, 42); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("seven_seg.sv", 231, 153); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), COUNTER - counter_parm (counter_parm.sv)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), COUNTER - counter_parm (counter_parm.sv)]", 12, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 115 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), U_CLKENB - clkenb (clkenb.sv)]", 11, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), U_CLKENB - clkenb (clkenb.sv)]", 11, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), COUNTER - counter_parm (counter_parm.sv)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), COUNTER - counter_parm (counter_parm.sv)]", 12, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), DECODE - decoder_3_8_en (decoder_3_8_en.sv)]", 13, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), DECODE - decoder_3_8_en (decoder_3_8_en.sv)]", 13, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX2 - mux8_parm (mux8_parm.sv)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX2 - mux8_parm (mux8_parm.sv)]", 15, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX2 - mux8_parm (mux8_parm.sv)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX2 - mux8_parm (mux8_parm.sv)]", 15, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), SEG - seven_seg (seven_seg.sv)]", 16, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), SEG - seven_seg (seven_seg.sv)]", 16, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_1 - reg_parm (reg_param.sv)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_1 - reg_parm (reg_param.sv)]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+// [GUI Memory]: 89 MB (+2492kb) [00:05:24]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_3 - reg_parm (reg_param.sv)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_3 - reg_parm (reg_param.sv)]", 4, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), U_CLKENB - clkenb (clkenb.sv)]", 11, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), U_CLKENB - clkenb (clkenb.sv)]", 11, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_8 - reg_parm (reg_param.sv)]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("clkenb.sv", 283, 167); // bH:N (JPanel:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:be (cv:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // G:be (cv:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 583 MB (+509kb) [00:05:49]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Sep 06 16:03:36 2016] Launched synth_1... Run output will be captured here: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.runs/synth_1/runme.log [Tue Sep 06 16:03:36 2016] Launched impl_1... Run output will be captured here: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.runs/impl_1/runme.log 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 603 MB. GUI used memory: 39 MB. Current time: 9/6/16 4:03:39 PM EDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("dispctl.sv", 41, 250); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 51, 212); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("dispctl.sv", 64, 220); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 48, 182); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 56, 143); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 44, 110); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISP - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("dispctl.sv", 55, 168); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+selectCodeEditor("dispctl.sv", 176, 111); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 195, 95); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 228, 91); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 206, 93); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 377, 125); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "dispctl.sv", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 357, 180); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+typeControlKey((HResource) null, "dispctl.sv", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 40, 197); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 359, 122); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 110, 126); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 396, 198); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 208, 147); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 224, 162); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 257, 191); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 164, 180); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 164, 174); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 169, 183); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 411, 123); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 362, 180); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "dispctl.sv", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 821, 112); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "dispctl.sv", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 39, 125); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 176, 203); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 146, 221); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 109, 210); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("dispctl.sv", 225, 258); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 221, 255); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 214, 248); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clkenb.sv", 4); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("nexys4DDR.sv", 124, 322); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 145, 321); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 113, 335); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 295, 228); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 294, 247); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 297, 261); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 295, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 293, 315); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 289, 318); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 285, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 285, 351); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 287, 367); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 289, 400); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 289, 420); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 221, 346); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 398, 166); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 297, 182); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 293, 195); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 295, 243); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("nexys4DDR.sv", 343, 190); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 172, 122); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 170, 127); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_1 - reg_parm (reg_param.sv)]", 2, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_1 - reg_parm (reg_param.sv)]", 2, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 11, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 11, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), MUX2 - mux8_parm (mux8_parm.sv)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), MUX2 - mux8_parm (mux8_parm.sv)]", 12, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), COUNTER_PARM - counter_parm (counter_parm.sv)]", 13, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), COUNTER_PARM - counter_parm (counter_parm.sv)]", 13, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), DECODER - decoder_3_8_en (decoder_3_8_en.sv)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), DECODER - decoder_3_8_en (decoder_3_8_en.sv)]", 14, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), SEVEN_SEG - seven_seg (seven_seg.sv)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), SEVEN_SEG - seven_seg (seven_seg.sv)]", 15, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), CLKENB - clkenb (clkenb.sv)]", 16, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), CLKENB - clkenb (clkenb.sv)]", 16, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26); // x:Y (w:G, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 27, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 623 MB (+11537kb) [00:09:17]
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bL:g (cv:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 44 MB. Current time: 9/6/16 4:07:05 PM EDT
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.2   **** Build date : Jun  2 2016-16:57:03     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744872A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 682 MB (+28759kb) [00:09:21]
+dismissDialog("Auto Connect"); // bL:g (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 717 MB. GUI used memory: 45 MB. Current time: 9/6/16 4:07:30 PM EDT
+// [Engine Memory]: 717 MB (+692kb) [00:09:43]
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'A' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// Elapsed time: 94 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("nexys4DDR.sv", 159, 382); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 157, 231); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("nexys4DDR.sv", 162, 26); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 188, 26); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 217, 26); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 246, 27); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 271, 27); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 300, 26); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 329, 24); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 354, 25); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 725, 129); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 728, 146); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 726, 159); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 731, 181); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 726, 202); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 726, 216); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 728, 232); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 725, 244); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 229, 245); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 231, 259); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 233, 279); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 231, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 231, 314); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 232, 331); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 230, 344); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 230, 360); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 237, 347); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 239, 362); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 236, 375); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 237, 400); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 237, 419); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 236, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 238, 349); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 238, 366); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 95 MB (+1045kb) [00:14:05]
+// Elapsed time: 213 seconds
+selectCodeEditor("nexys4DDR.sv", 488, 113); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("nexys4DDR.sv", 200, 113); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 15 seconds
+selectCodeEditor("nexys4DDR.sv", 178, 207); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("nexys4DDR.sv", 214, 310); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 208, 302); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 122, 238); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 169, 217); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 121, 244); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 174, 151); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("nexys4DDR.sv", 400, 161); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 183, 113); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 95, 146); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 73, 162); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 41, 143); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 24 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 470, 137); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 470, 141, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+selectCodeEditor("nexys4DDR.sv", 91, 245); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("nexys4DDR.sv", 821, 228); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 829, 227); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 85, 198); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 82, 213); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 771, 319); // bH:N (JPanel:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 342, 307); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 801, 321); // bH:N (JPanel:JComponent, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_RESET_LAYOUT
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reg_param.sv", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "nexys4DDR.sv", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// [GUI Memory]: 100 MB (+855kb) [00:18:54]
+selectCodeEditor("nexys4DDR.sv", 81, 244); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 83, 229); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 88, 251); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 86, 251); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 87, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 84, 282); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 84, 297); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 84, 315); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 83, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 259, 120); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 172, 122); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_2 - reg_parm (reg_param.sv)]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), REGPARM_2 - reg_parm (reg_param.sv)]", 3, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("nexys4DDR.sv", 185, 237); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("nexys4DDR.sv", 0, 196); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 364, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 79 seconds
+selectCodeEditor("nexys4DDR.sv", 82, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 384, 251); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 344, 284, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectCodeEditor("nexys4DDR.sv", 315, 249); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("nexys4DDR.sv", 283, 402); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 17 seconds
+selectCodeEditor("nexys4DDR.sv", 30, 394); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 106, 403); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("nexys4DDR.sv", 61, 405); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dispctl.sv", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("dispctl.sv", 166, 269); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 568, 123); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("dispctl.sv", 415, 293); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 334, 127); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 55, 132); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 245, 96); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 454, 93); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 492, 97); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 454, 97); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 253, 193); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 246, 186); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("dispctl.sv", 74, 185); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 74, 191); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("dispctl.sv", 715, 212); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 24 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "charles"); // o:ao (az:f, cv:JFrame)
+selectCodeEditor("dispctl.sv", 249, 302); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 182, 145); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 712, 234); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 592, 340); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 234, 138); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 739, 232); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 223, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 263, 335); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 416, 327); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 404, 316); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 199, 91); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 18 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "y"); // o:ao (az:f, cv:JFrame)
+selectCodeEditor("dispctl.sv", 200, 126); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 465, 280); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 289, 150); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 15 seconds
+selectCodeEditor("dispctl.sv", 734, 229); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 11, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), MUX1 - mux8_parm (mux8_parm.sv)]", 11, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("dispctl.sv", 531, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 186, 177); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 527, 275); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 726, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 725, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 673, 241); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 699, 329); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 205, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 216, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "q"); // o:ao (az:f, cv:JFrame)
+selectCodeEditor("dispctl.sv", 451, 357); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("dispctl.sv", 518, 280); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 145, 297); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 106 MB (+387kb) [00:27:13]
+// Elapsed time: 93 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("dispctl.sv", 164, 341); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 374, 280); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 660, 289); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("dispctl.sv", 322, 224); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 210, 109); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 170, 321); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 160, 319); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 328, 248); // bH:N (JPanel:JComponent, cv:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "an_n"); // o:ao (az:f, cv:JFrame)
+selectCodeEditor("dispctl.sv", 343, 370); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 462, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("dispctl.sv", 355, 221); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("dispctl.sv", 364, 259); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 837, 176); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 41 seconds
+selectCodeEditor("dispctl.sv", 665, 381); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("dispctl.sv", 145, 368); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("dispctl.sv", 203, 381); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 157, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("dispctl.sv", 193, 343); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "dispctl.sv", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 390, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "dispctl.sv", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 212, 291); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 207, 291); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 201, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 259, 300); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 25, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// G:be (cv:JFrame): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // G:be (cv:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'ck' command handler elapsed time: 4 seconds
+dismissDialog("Resetting Runs"); // bL:g (cv:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Tue Sep 06 16:29:15 2016] Launched synth_1... Run output will be captured here: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.runs/synth_1/runme.log [Tue Sep 06 16:29:15 2016] Launched impl_1... Run output will be captured here: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 88 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a:JRadioButton (JPanel:JComponent, ap:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Hardware Manager, Program Device]", 28, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab01/Lab_1/Lab_1.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'A' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectCodeEditor("dispctl.sv", 499, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 589, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 54 seconds
+selectCodeEditor("dispctl.sv", 297, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 101, 218); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("nexys4DDR.sv", 271, 297); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("dispctl.sv", 566, 351); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("dispctl.sv", 530, 214); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 735 MB. GUI used memory: 52 MB. Current time: 9/6/16 4:37:33 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 735 MB. GUI used memory: 51 MB. Current time: 9/6/16 5:07:36 PM EDT
+// Elapsed time: 2180 seconds
+selectCodeEditor("dispctl.sv", 473, 381); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 483 seconds
+selectCodeEditor("dispctl.sv", 559, 289); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), CLKENB - clkenb (clkenb.sv)]", 16, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv), CLKENB - clkenb (clkenb.sv)]", 16, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 136 seconds
+selectCodeEditor("clkenb.sv", 158, 111); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("clkenb.sv", 263, 114); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 224 seconds
+selectCodeEditor("clkenb.sv", 272, 110); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("clkenb.sv", 259, 212); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("clkenb.sv", 270, 110); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("clkenb.sv", 3, 82, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectCodeEditor("clkenb.sv", 493, 131); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("clkenb.sv", 251, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "clkenb.sv", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("dispctl.sv", 365, 369); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "dispctl.sv", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 754 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // z:k (G:JPanel, cv:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, nexys4DDR (nexys4DDR.sv), DISPCTL - dispctl (dispctl.sv)]", 10); // z:k (G:JPanel, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 735 MB. GUI used memory: 45 MB. Current time: 9/6/16 5:37:37 PM EDT
+// Elapsed time: 121 seconds
+selectCodeEditor("dispctl.sv", 365, 343); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("dispctl.sv", 289, 314); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 54 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Vivado Synthesis Report ; Tue Sep 06 16:29:38 EDT 2016 ; 23861 ; ", 1, "Vivado Synthesis Report", 0, false); // z:as (JViewport:JComponent, cv:JFrame)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Vivado Synthesis Report ; Tue Sep 06 16:29:38 EDT 2016 ; 23861 ; ", 1, "Vivado Synthesis Report", 0, false); // z:as (JViewport:JComponent, cv:JFrame)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Vivado Synthesis Report ; Tue Sep 06 16:29:38 EDT 2016 ; 23861 ; ", 1); // z:as (JViewport:JComponent, cv:JFrame)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Vivado Synthesis Report ; Tue Sep 06 16:29:38 EDT 2016 ; 23861 ; ", 1, "Vivado Synthesis Report", 0, false, false, false, false, false, true); // z:as (JViewport:JComponent, cv:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 750 MB. GUI used memory: 43 MB. Current time: 9/6/16 5:39:52 PM EDT
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Vivado Synthesis Report ; Tue Sep 06 16:29:38 EDT 2016 ; 23861 ; ", 1, "Vivado Synthesis Report", 0, false, false, false, false, true, false); // z:as (JViewport:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceEtoH.ExpReportTreePanel_OPEN_REPORT, "Open Vivado Synthesis Report"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("Vivado Synthesis Report - synth_1", 534, 55); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 49 seconds
+selectCodeEditor("Vivado Synthesis Report - synth_1", 504, 425); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Vivado Synthesis Report - synth_1", 358, 104); // F:bH (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("Vivado Synthesis Report - synth_1", 584, 358); // F:bH (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("Vivado Synthesis Report - synth_1", 404, 82, false, false, false, true, false); // F:bH (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceOtoP.PACodeView_SAVE_AS, "Save File As..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+dismissFileChooser();
