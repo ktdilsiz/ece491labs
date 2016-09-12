@@ -44,7 +44,7 @@ module TransmitterTest();
     
        // initial block generates stimulus
        initial begin
-          data = 8'b00101110;
+          data = 8'b10101110;
           send = 0;
           rst = 0;
           #5
@@ -53,12 +53,12 @@ module TransmitterTest();
           rst = 0;
           #5
           if(rdy) send = 1;
-          #10 send = 0;
-          #1200
+          #20 send = 0;
+          #100
           if(rdy) send = 1;
           data = 8'b10101010;
           #10 send = 0;
-          #1000
+          #120
 
           $stop();  // all done - suspend simulation
        end // initial

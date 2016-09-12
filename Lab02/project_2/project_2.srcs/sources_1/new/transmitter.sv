@@ -33,14 +33,12 @@ module transmitter(
     if(rst) state <= S0;
     else    state <= next;
     
-    logic [3:0] count;
+    logic [3:0] count = 0;
     
    always_comb
     begin
-    next = S0;
     rdy = 1;
     txd = 1;
-    count = 0;
     case(state)
         S0:
             begin

@@ -1,1 +1,2 @@
 Breakpoint File Version 1.0
+70 true C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv
