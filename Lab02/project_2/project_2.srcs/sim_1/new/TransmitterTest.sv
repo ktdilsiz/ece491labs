@@ -51,15 +51,22 @@ module TransmitterTest();
           rst = 1;
           #5
           rst = 0;
-          #5
+          #15
+          //regular
           if(rdy) send = 1;
-          #20 send = 0;
-          #100
-          if(rdy) send = 1;
-          data = 8'b10101010;
           #10 send = 0;
-          #120
-
+          #100
+          //SEND ON STOP BIT
+          if(rdy) send = 1;
+          data = 8'b00101010;
+          #10 send = 0;
+          #90
+          //regular
+          if(rdy) send = 1;
+          data = 8'b10101110;
+          #10 send = 0;
+          #100
+          
           $stop();  // all done - suspend simulation
        end // initial
        
