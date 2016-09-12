@@ -2,10 +2,10 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Sep 06 14:39:06 2016
-# Process ID: 5212
+# Start of session at: Mon Sep 12 11:53:31 2016
+# Process ID: 10508
 # Current directory: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5820 C:\Users\husseinz\Desktop\ece 491\ece491labs\Lab02\project_2\project_2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3868 C:\Users\husseinz\Desktop\ece 491\ece491labs\Lab02\project_2\project_2.xpr
 # Log file: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/vivado.log
 # Journal file: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2\vivado.jou
 #-----------------------------------------------------------
@@ -17,5 +17,3 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 06 15:57:36 2016...

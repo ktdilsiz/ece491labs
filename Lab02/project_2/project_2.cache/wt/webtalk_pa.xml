@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Sep 06 15:57:33 2016">
+<application name="pa" timeStamp="Sun Sep 11 17:44:03 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="e8e94868d3b94d48b1ad8f029c02fbb5" type="ProjectID"/>
-<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+<property name="ProjectIteration" value="8" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -16,215 +16,321 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="1" type="JavaHandler"/>
+<property name="EditUndo" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="7" type="JavaHandler"/>
+<property name="RunSynthesis" value="3" type="JavaHandler"/>
+<property name="SetTopNode" value="2" type="JavaHandler"/>
+<property name="ShowView" value="6" type="JavaHandler"/>
+<property name="SimulationClose" value="19" type="JavaHandler"/>
+<property name="SimulationRestart" value="24" type="JavaHandler"/>
+<property name="SimulationRun" value="24" type="JavaHandler"/>
+<property name="SimulationRunAll" value="23" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="174" type="JavaHandler"/>
+<property name="SimulationStep" value="5" type="JavaHandler"/>
+<property name="ViewTaskImplementation" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="5" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="1" type="JavaHandler"/>
+</item>
 <item name="Gui Resources Info">
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Syntax Error Files], 1, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, transmitter (transmitter.sv" value="2" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="2" type="GuiResourceData"/>
-<property name="transmitter.sv, 0, 298" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 100, 156" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 100, 231" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 100, 417" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 102, 164" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 102, 303" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 104, 231" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 105, 143" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 105, 335" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 107, 193" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 107, 331" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 108, 400" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 109, 141" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 109, 146" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 110, 127" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 110, 145" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 111, 251" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 114, 261" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 114, 262" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 114, 384" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 115, 329" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 116, 280" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 116, 422" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 119, 146" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 119, 321" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 129, 315" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 13, 331" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 130, 301" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 132, 352" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 134, 303" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 136, 245" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 136, 246" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 136, 318" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 136, 320" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 142, 298" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 143, 422" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 147, 308" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 150, 228" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 150, 286" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 150, 325" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 151, 163" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 151, 393" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 152, 298" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 153, 146" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 153, 44" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 154, 298" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 155, 126" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 157, 339" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 159, 249" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 159, 313" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 159, 320" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 160, 371" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 162, 251" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 162, 291" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 165, 202" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 165, 203" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 174, 381" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 174, 424" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 176, 145" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 179, 312" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 181, 163" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 181, 321" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 182, 283" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 182, 40" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 186, 338" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 187, 230" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 189, 323" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 194, 261" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 195, 139" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 195, 412" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 196, 336" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 197, 231" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 197, 296" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 20, 390" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 200, 171" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 203, 144" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 204, 390" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 205, 337" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 206, 121" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 210, 222" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 211, 265" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 214, 407" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 219, 247" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 221, 158" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 233, 129" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 234, 295" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 235, 286" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 236, 336" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 238, 350" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 24, 360" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 24, 388" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 242, 281, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 243, 228" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 246, 144" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 246, 160" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 249, 358" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 25, 312" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 253, 228" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 257, 248" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 26, 260" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 26, 280" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 27, 278, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 27, 296" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 27, 312" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 27, 317" value="2" type="GuiResourceData"/>
-<property name="transmitter.sv, 272, 297" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 274, 164" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 28, 330, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 282, 146" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 290, 302, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 30, 300" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 30, 315" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 317, 282" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 33, 278" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 337, 162" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 338, 145" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 35, 312" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 375, 145" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 376, 161" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 38, 119" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 392, 166" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 399, 346" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 40, 115" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 415, 304" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 415, 309" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 424, 303" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 427, 160" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 428, 307" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 429, 166" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 429, 309" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 43, 120" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 436, 212" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 444, 209" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 453, 311" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 51, 273" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 53, 284" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 54, 178" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 55, 278" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 55, 380" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 56, 300" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 59, 145" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 60, 247" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 61, 141" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 61, 316" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 611, 288" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 618, 282" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 62, 142" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 62, 346" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 63, 146" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 63, 241" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 63, 248" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 63, 295" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 64, 295" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 64, 298" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 64, 352" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 65, 167" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 65, 209" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 65, 296" value="2" type="GuiResourceData"/>
-<property name="transmitter.sv, 67, 387" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 68, 319" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 70, 289" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 73, 172" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 73, 395" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 73, 417" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 74, 145" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 74, 369" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 74, 377" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 75, 141" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 76, 400" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 77, 246" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 79, 159" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 80, 395" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 80, 402" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 81, 330" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 82, 250" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 82, 314" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 83, 176" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 83, 220" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 84, 400" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 85, 420" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 86, 81" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 87, 157" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 87, 337" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 88, 420" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 89, 336" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 89, 403" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 89, 86" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 91, 160" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 92, 332" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 92, 352" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 93, 388" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 94, 298" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 95, 297" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 95, 318" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 95, 67" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 96, 304, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 96, 352" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 97, 300" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 98, 358" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 99, 254" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_MESSAGES, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation., 1" value="2" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, simulation_live_restart" value="24" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, simulation_live_run_for_time" value="225" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, simulation_live_run_all" value="27" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_STEP, simulation_live_step" value="5" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="23" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL, Run Post-Synthesis Functional Simulation" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, TransmitterTest (TransmitterTest.sv" value="15" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, bcdcounter_bench (bcdcounter_bench.sv" value="5" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, single_pulser_bench (single_pulser_bench.sv" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager], 0, true" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="28" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Simulation Settings], 10, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation], 9, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Synth 8-3331] design transmitter has unconnected port data[7]. ], 1" value="6" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Synth 8-3331] design transmitter has unconnected port data[7]. ], 1, true" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Synth 8-3332] Sequential element (state_reg[3]" value="3" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, Messages_cleanUpMessages" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, count[3:0] ; 0 ; Array, 8, count[3:0], 0, true" value="9" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, data[7:0] ; 2e ; Array, 0, data[7:0], 0, true" value="10" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, next[2:0] ; S0 ; Enumeration, 7, next[2:0], 0, true" value="7" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, send ; 0 ; Logic, 1, send, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, state[2:0] ; S0 ; Enumeration, 6, state[2:0], 0, true" value="10" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, TRANS ; transmitter ; Verilog Module, 1, TRANS, 0, false" value="10" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, TRANS ; transmitter ; Verilog Module, 1, TRANS, 0, false, false, false, false, false, true" value="4" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, TRANS ; transmitter ; Verilog Module, 1, TRANS, 0, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, TRANS ; transmitter ; Verilog Module, 1, transmitter, 1, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, null, -1, null, -1, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationTab_DELETE_ALL_BREAKPOINTS, Delete All Breakpoints" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="22" type="GuiResourceData"/>
+<property name="RDIResource.BaseWorkspace_FLOAT, Float" value="2" type="GuiResourceData"/>
+<property name="RDIResource.HCodeEditor_BLANK_OPERATIONS, Blank Operations" value="1" type="GuiResourceData"/>
+<property name="RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, Toggle Line Comments" value="5" type="GuiResourceData"/>
+<property name="RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, Don't show this dialog again, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.ProgressDialog_CANCEL, Cancel" value="2" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1044, 340" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 122, 324" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 126, 19" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 128, 107" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 129, 52" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 130, 64" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 130, 79" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 133, -12" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 142, -10" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 143, 285" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 144, -58" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 153, 163" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 157, 12" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 160, 67" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 162, 141" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 169, 163" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 203, 98" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 221, 591" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 234, 300" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 296, 93" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 312, -66" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 326, -35" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 392, 301" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 394, 32" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 42, 96" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 42, 96, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 421, 181" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 443, 63" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 508, 225" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 514, 237" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 543, 25" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 580, 58" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 638, 106" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 772, 123" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 779, 123" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 794, 350" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 851, 616" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 954, 777" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, count[3:0]], 6" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, count[3:0]], 9" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, data[7:0]], 0" value="12" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, data[7:0]], 1" value="2" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, next[2:0]], 6" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, rdy], 5, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, rst], 3, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state[2:0], [0]], 9, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state[2:0], [1]], 8, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state[2:0], [2]], 7, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state[2:0]], 6" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 102, 640" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 105, 635" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 111, 695" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 112, 487" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 113, 690" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 117, 702" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 121, 700" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 122, 758" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 127, 636" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 129, 461" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 130, 520" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 136, 633" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 137, 521" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 138, 523" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 143, 619" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 144, 570" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 170, 364" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 170, 640" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 173, 567" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 176, 741" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 202, 624" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 202, 634" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 203, 639" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 208, 617" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 212, 609" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 212, 621" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 213, 522" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 213, 647" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 214, 581" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 217, 620" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 217, 629" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 217, 736" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 218, 640" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 223, 627" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 223, 642" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 227, 570" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 230, 676" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 232, 524" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 235, 469" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 251, 640" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 252, 565" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 270, 534" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 277, 626" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 278, 632" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 285, 650" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 293, 459" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 317, 660" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 327, 697" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 380, 673" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 430, 587" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 450, 447" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 491, 683" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 513, 361" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 531, 749" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 644, 388" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 68, 692" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 74, 565" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 79, 741" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 79, 741, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 80, 670" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 81, 620" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 81, 668" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 84, 634" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 84, 679" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 84, 741" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 89, 743" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 91, 639" value="1" type="GuiResourceData"/>
+<property name="TransmitterTest.sv, 92, 609" value="1" type="GuiResourceData"/>
+<property name="bcdcounter_bench.sv, 207, 237" value="1" type="GuiResourceData"/>
+<property name="debounce.sv, 295, 296" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 103, 229" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 107, 176" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 107, 335" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 109, 265" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 112, 396" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 113, 380" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 118, 388" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 120, 313" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 128, 297" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 132, 350" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 134, 300" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 134, 523" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 136, 169" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 145, 133" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 158, 226" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 162, 453" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 167, 66" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 168, 367" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 172, 111" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 173, 637" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 175, 416, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 176, 428" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 178, 337" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 179, 415" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 180, 434" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 183, 487" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 185, 487" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 188, 492" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 190, 480" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 192, 674" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 194, 348" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 195, 567" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 199, 475" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 200, 235" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 205, 300" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 205, 638" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 206, 288" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 207, 244" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 207, 373" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 214, 229" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 214, 352" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 219, 257" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 219, 463" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 220, 478" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 221, 489" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 224, 296" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 224, 366" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 227, 347, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 230, 243" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 231, 758" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 232, 351" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 236, 275" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 238, 239" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 238, 351" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 239, 468" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 243, 310" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 247, 135" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 248, 366" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 248, 747" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 251, 605" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 251, 631" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 252, 369" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 252, 432" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 255, 390" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 257, 557" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 259, 333" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 26, 416, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 262, 215" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 263, 359" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 269, 389" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 271, 250" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 272, 475" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 272, 742" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 273, 502" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 278, 455" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 28, 105" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 286, 393" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 288, 197" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 288, 395" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 289, 571" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 291, 453" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 294, 461" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 298, 302" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 299, 313" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 306, 487" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 307, 490" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 311, 530" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 318, 541" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 321, 500" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 322, 100" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 323, 326" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 323, 447" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 329, 274" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 334, 231" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 338, 432" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 343, 661" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 346, 279" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 347, 251" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 355, 585" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 358, 254" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 364, 457" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 368, 408" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 378, 692" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 385, 41" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 388, 348" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 389, 215" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 415, 308" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 420, 315" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 421, 725" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 432, 347" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 469, 553" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 47, 356, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 514, 593" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 53, 350, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 533, 590" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 564, 598" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 576, 382" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 62, 250" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 625, 509" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 64, 577, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 646, 290" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 65, 249" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 67, 622" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 68, 415, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 69, 246" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 69, 315" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 71, 488" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 75, 487, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 77, 316" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 79, 489" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 81, 315" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 86, 204" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 89, 432" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 96, 160" value="1" type="GuiResourceData"/>
+<property name="transmitter.sv, 99, 162" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="2" type="GuiMode"/>
+<property name="GuiMode" value="4" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="0" type="TclMode"/>
+<property name="TclMode" value="2" type="TclMode"/>
 </item>
 </section>
 </application>
