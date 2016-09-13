@@ -1,6 +1,9 @@
 # compile verilog/system verilog design source files
-sv xil_defaultlib  "../../../project_2.srcs/sources_1/new/transmitter.sv"
-sv xil_defaultlib  "../../../project_2.srcs/sim_1/new/TransmitterTest.sv"
+sv xil_defaultlib  "../../../../clkenb.sv"
+sv xil_defaultlib  "../../../../nexys4DDR.sv"
+sv xil_defaultlib  "../../../../debounce.sv"
+sv xil_defaultlib  "../../../../transmitter.sv"
+sv xil_defaultlib  "../../../../TransmitterTest.sv"
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

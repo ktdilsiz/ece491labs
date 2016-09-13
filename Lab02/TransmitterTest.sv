@@ -29,16 +29,16 @@ module TransmitterTest();
        logic clk, rst;
        logic txd;
        logic rdy;
+       logic switch;
        
-       // instantiate device under verification (counter)
-       transmitter #(.BAUD(25_000_000)) TRANS(.data(data), .send(send), .clk(clk), .rst(rst), .txd(txd), .rdy(rdy));
-    
+       // instantiate device under verification (counter)        
+       nexys4DDR #(.BAUD(25_000_000)) NEXYS(.CLK100MHZ(clk), .SW(data), .BTNC(rst), .BTND(send), .BTNL(switch), .LED(rdy), .UART_RXD_OUT(txd));
       // clock generator with period=20 time units
       always
          begin
         clk = 0;
-        #1 clk = 1;
-        #1 ;
+        #5 clk = 1;
+        #5 ;
          end
     
     
@@ -47,6 +47,7 @@ module TransmitterTest();
           data = 8'b10101110;
           send = 0;
           rst = 0;
+          switch = 0;
           #5
           rst = 1;
           #5
@@ -54,18 +55,17 @@ module TransmitterTest();
           #15
           //regular
           if(rdy) send = 1;
-          #10 send = 0;
-          #70
+          #420
           //SEND ON STOP BIT
           if(rdy) send = 1;
           data = 8'b00101010;
-          #10 send = 0;
-          #90
+          #50 send = 0;
+          #400
           //regular
           if(rdy) send = 1;
           data = 8'b10101110;
-          #10 send = 0;
-          #100
+          #50 send = 0;
+          #400
           
           $stop();  // all done - suspend simulation
        end // initial

@@ -5,9 +5,15 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/nexys4DDR.sv" Line 22. Module nexys4DDR(BAUD=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/nexys4DDR.sv" Line 22. Module nexys4DDR(BAUD=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.transmitter
+Compiling module xil_defaultlib.clkenb(DIVFREQ=25000000)
+Compiling module xil_defaultlib.transmitter(BAUD=25000000)
+Compiling module xil_defaultlib.nexys4DDR(BAUD=25000000)
 Compiling module xil_defaultlib.TransmitterTest
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot TransmitterTest_behav

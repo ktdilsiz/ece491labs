@@ -25,23 +25,29 @@ module nexys4DDR (
 		  input logic [7:0]  SW,
 		  input logic 	      BTNC,
 //		  input logic 	      BTNU, 
-//		  input logic 	      BTNL, 
+		  input logic 	      BTNL, 
 //		  input logic 	      BTNR,
 		  input logic 	      BTND,
 //		  output logic [6:0]  SEGS,
 //		  output logic [7:0]  AN,
 //		  output logic 	      DP,
-		  output logic [15:0] LED,
-		  input logic         UART_TXD_IN,
+		  output logic        LED,
+//		  input logic         UART_TXD_IN,
 //		  input logic         UART_RTS,		  
-		  output logic        UART_RXD_OUT
+		  output logic        UART_RXD_OUT,
+		  output UART_RXD_OUT_copy,
+		  output logic        JArdy
 //		  output logic        UART_CTS		  
             );
+            
+        assign UART_RXD_OUT_copy = UART_RXD_OUT;
+            
+        parameter BAUD = 9600;
   // add SystemVerilog code & module instantiations here
    
-        debounce DEBOUNDER(.clk(CLK100MHZ), .button_in(BTND), .button_out(send), .pulse());
-        transmitter TRANS(.data(SW), .send(send), .clk(CLK100MHZ), .rst(BTNC), .txd(UART_RXD_OUT), .rdy(LED[0]));
-
-
+        //debounce DEBOUNDER(.clk(CLK100MHZ), .button_in(BTND), .button_out(send), .pulse());
+        transmitter #(.BAUD(BAUD)) TRANS(.data(SW), .send(BTND), .clk(CLK100MHZ), .rst(BTNC), .switch(BTNL), .txd(UART_RXD_OUT), .rdy(LED));
+        
+        assign JArdy = LED;
 
 endmodule // nexys4DDR

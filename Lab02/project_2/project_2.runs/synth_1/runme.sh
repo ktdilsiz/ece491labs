@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.runs/synth_1'
+HD_PWD='C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/project_2/project_2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log transmitter.vds -m64 -mode batch -messageDb vivado.pb -notrace -source transmitter.tcl
+EAStep vivado -log nexys4DDR.vds -m64 -mode batch -messageDb vivado.pb -notrace -source nexys4DDR.tcl

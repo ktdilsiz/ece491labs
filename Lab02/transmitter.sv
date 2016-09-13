@@ -17,13 +17,15 @@
 module transmitter (
     input logic [7:0] data,
     input logic send,
-    input logic clk, rst,
+    input logic clk, rst, switch,
     output logic txd,
     output logic rdy
     );
     
     parameter BAUD = 9600;
     logic BaudRate;
+    
+    //logic clkEnb;
    // logic [7:0] k;
 
     clkenb #(.DIVFREQ(BAUD)) CLKENB(.clk(clk), .reset(rst), .enb(BaudRate));
@@ -40,12 +42,14 @@ module transmitter (
         TR5 = 4'b0110, 
         TR6 = 4'b0111, 
         TR7 = 4'b1000, 
-        STOP = 4'b1001
+        STOP = 4'b1001,
+        WAIT = 4'b1111
     } state_t;
 
     state_t state, next;
     
    always_ff@(posedge clk)
+   begin
     if(rst) 
         begin
             state <= IDLE;
@@ -58,6 +62,8 @@ module transmitter (
         begin
             state <= state;
         end
+        
+    end
     
     always_comb
     begin    
@@ -66,7 +72,7 @@ module transmitter (
             begin
                 if(send)
                     begin
-                    txd = 0;
+                    txd = 1;
                     next = START;
                     rdy = 0;
                     end
@@ -82,7 +88,7 @@ module transmitter (
                 begin
                 txd = 0;
                 next = TR0;
-                rdy = 1;
+                rdy = 0;
                 end
         TR0:
                begin
@@ -134,10 +140,16 @@ module transmitter (
                 end
         STOP:
             begin
-                if(send)
+                if(send && ~switch)
                     begin
-                    txd = 0;
+                    txd = 1;
                     next = START;
+                    rdy = 0;
+                    end
+                else if (switch)
+                    begin
+                    txd = 1;
+                    next = WAIT;
                     rdy = 0;
                     end
                 else
@@ -147,6 +159,20 @@ module transmitter (
                     rdy = 1;
                     end
             end
+            
+         WAIT:
+            if(switch)
+                begin
+                   txd = 1;
+                   rdy = 0;
+                   next = WAIT; 
+                end
+            else
+                begin
+                    txd = 1;
+                    rdy = 0;
+                    next = IDLE;
+                end
             
         default: 
             begin
