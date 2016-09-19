@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Sat Sep 17 13:05:44 2016
+| Date             : Mon Sep 19 13:54:55 2016
 | Host             : ECE400-F6M7KB2 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file nexys4DDR_power_routed.rpt -pb nexys4DDR_power_summary_routed.pb -rpx nexys4DDR_power_routed.rpx
 | Design           : nexys4DDR
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.100 |
-| Dynamic (W)              | 0.003 |
+| Total On-Chip Power (W)  | 0.102 |
+| Dynamic (W)              | 0.005 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.5  |
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      238 |       --- |             --- |
+| Slice Logic    |    <0.001 |      252 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       93 |     63400 |            0.15 |
-|   CARRY4       |    <0.001 |       17 |     15850 |            0.11 |
-|   Register     |    <0.001 |       84 |    126800 |            0.07 |
+|   CARRY4       |    <0.001 |       21 |     15850 |            0.13 |
+|   Register     |    <0.001 |       91 |    126800 |            0.07 |
 |   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |    <0.001 |      198 |       --- |             --- |
-| I/O            |    <0.001 |       25 |       210 |           11.90 |
+| Signals        |    <0.001 |      218 |       --- |             --- |
+| I/O            |     0.003 |       25 |       210 |           11.90 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.100 |          |           |                 |
+| Total          |     0.102 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
+| Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -137,7 +137,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| nexys4DDR   |     0.003 |
+| nexys4DDR   |     0.005 |
 |   DEBOUNDER |    <0.001 |
 |   TRANS     |    <0.001 |
 |     CLKENB  |    <0.001 |

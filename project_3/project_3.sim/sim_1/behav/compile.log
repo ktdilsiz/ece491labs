@@ -1,10 +1,10 @@
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mxtest_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/transmitter.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module transmitter
 INFO: [VRFC 10-2458] undeclared symbol TwiceBaudRate, assumed default net type wire [C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/transmitter.sv:35]
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mxtest_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mxtest_bench
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.sim/sim_1/behav/glbl.v" into library xil_defaultlib

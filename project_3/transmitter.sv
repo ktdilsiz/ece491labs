@@ -47,7 +47,9 @@ module transmitter (
         TR6 = 4'b0111, 
         TR7 = 4'b1000, 
         STOP = 4'b1001,
-        WAIT = 4'b1111
+        WAIT = 4'b1111,
+        EOF1 = 4'b1101,
+        EOF2 = 4'b1100
     } state_t;
 
     state_t state, next;
@@ -179,7 +181,7 @@ module transmitter (
                         next = TR0;
                         rdy = 1;
                         txen = 1;
-                    end
+                    end                    
                 else if (switch)
                     begin
                         txd = tempdata[7];
@@ -194,7 +196,21 @@ module transmitter (
                         rdy = 1;
                         txen = 1;
                     end
-                end           
+                end    
+         EOF1:
+            begin
+                txen = 1;
+                rdy = 1;
+                txd = 1;
+                next = EOF2;
+            end
+         EOF2:
+               begin
+                   txen = 1;
+                   rdy = 1;
+                   txd = 1;
+                   next = IDLE;
+               end
          WAIT:
             if(switch)
                 begin
