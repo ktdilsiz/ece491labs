@@ -1,0 +1,23 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto c51c0bdf49d24eab9bc91a915b2500cf --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mxtest_bench_behav xil_defaultlib.mxtest_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port switch [C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv:55]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" Line 32. Module mxtest_2(WAIT_TIME=50) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" Line 32. Module mxtest_2(WAIT_TIME=50) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mxtest_2(WAIT_TIME=50)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=25000000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=50000000)
+Compiling module xil_defaultlib.transmitter(BAUD=25000000)
+Compiling module xil_defaultlib.mxtest_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mxtest_bench_behav

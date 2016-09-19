@@ -23,12 +23,14 @@ module transmitter (
     );
     
     parameter BAUD = 9600;
+    parameter TWICEBAUD = BAUD * 2;
     logic BaudRate;
     
     //logic clkEnb;
    // logic [7:0] k;
 
     clkenb #(.DIVFREQ(BAUD)) CLKENB(.clk(clk), .reset(rst), .enb(BaudRate));
+    clkenb #(.DIVFREQ(TWICEBAUD)) CLKENB2(.clk(clk), .reset(rst), .enb(TwiceBaudRate));
     //reg_parm #(.W(8)) REG1(.clk(clk), .reset(rst), .lden(Iden), .d(data), .k(k));
 
     typedef enum logic [3:0] {
@@ -58,6 +60,10 @@ module transmitter (
         begin
             state <= next;
         end
+     else if(TwiceBaudRate)
+            begin
+                txd <= ~txd;
+            end   
     else
         begin
             state <= state;

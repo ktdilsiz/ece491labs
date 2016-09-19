@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../clkenb.sv"
+sv xil_defaultlib  "../../../transmitter.sv"
+sv xil_defaultlib  "../../../../../../../Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv"
+sv xil_defaultlib  "../../../../../../../Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

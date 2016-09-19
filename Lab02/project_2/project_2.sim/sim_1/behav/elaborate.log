@@ -3,17 +3,6 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 98eb6a510a9c4484b1d6c0484c56dcb0 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TransmitterTest_behav xil_defaultlib.TransmitterTest xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/nexys4DDR.sv" Line 22. Module nexys4DDR(BAUD=25000000) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/nexys4DDR.sv" Line 22. Module nexys4DDR(BAUD=25000000) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.clkenb(DIVFREQ=25000000)
-Compiling module xil_defaultlib.transmitter(BAUD=25000000)
-Compiling module xil_defaultlib.nexys4DDR(BAUD=25000000)
-Compiling module xil_defaultlib.TransmitterTest
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot TransmitterTest_behav
+ERROR: [VRFC 10-1658] variable txd is driven by invalid combination of procedural drivers [C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/transmitter.sv:21]
+WARNING: [VRFC 10-2066] txd driven by this always_ff block should not be driven by any other process [C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/transmitter.sv:53]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

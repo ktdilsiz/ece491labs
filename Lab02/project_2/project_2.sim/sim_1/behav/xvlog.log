@@ -1,12 +1,13 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/clkenb.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module clkenb
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/nexys4DDR.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module nexys4DDR
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/debounce.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module debounce
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/transmitter.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module transmitter
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/TransmitterTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-2458] undeclared symbol TwiceBaudRate, assumed default net type wire [C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/transmitter.sv:33]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/TransmitterTest.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TransmitterTest
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ECE 491 labs/Lab02/project_2/project_2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
