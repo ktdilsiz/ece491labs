@@ -181,7 +181,7 @@ module transmitter (
                         next = TR0;
                         rdy = 1;
                         txen = 1;
-                    end                    
+                    end                  
                 else if (switch)
                     begin
                         txd = tempdata[7];
@@ -189,6 +189,13 @@ module transmitter (
                         rdy = 1;
                         txen = 1;
                     end
+                else if (!send)
+                    begin
+                        txd = tempdata[7];
+                        next = EOF1;
+                        rdy = 1;
+                        txen = 1;
+                    end  
                 else
                     begin                
                         txd = tempdata[7];

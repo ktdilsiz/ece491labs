@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Mon Sep 19 13:54:33 2016
+| Date         : Mon Sep 19 16:14:08 2016
 | Host         : ECE400-F6M7KB2 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file nexys4DDR_control_sets_placed.rpt
 | Design       : nexys4DDR
@@ -33,27 +33,27 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              11 |            6 |
+| No           | No                    | No                     |              11 |            4 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              58 |           17 |
+| No           | Yes                   | No                     |              58 |           20 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              22 |            7 |
+| Yes          | Yes                   | No                     |              22 |            8 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+----------------------------+---------------------------------+------------------+----------------+
-|     Clock Signal     |        Enable Signal       |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
-+----------------------+----------------------------+---------------------------------+------------------+----------------+
-|  CLK100MHZ_IBUF_BUFG | TRANS/CLKENB/E[0]          | BTNC_IBUF                       |                1 |              4 |
-|  CLK100MHZ_IBUF_BUFG | U_MXTEST/byte_addr_enable  | U_MXTEST/byte_addr[4]_i_1_n_0   |                2 |              5 |
-|  CLK100MHZ_IBUF_BUFG |                            |                                 |                6 |             11 |
-|  CLK100MHZ_IBUF_BUFG | U_MXTEST/wait_count_enable | U_MXTEST/byte_addr[4]_i_1_n_0   |                4 |             13 |
-|  CLK100MHZ_IBUF_BUFG |                            | DEBOUNDER/count_reg[26]_i_1_n_0 |                7 |             27 |
-|  CLK100MHZ_IBUF_BUFG |                            | BTNC_IBUF                       |               10 |             31 |
-+----------------------+----------------------------+---------------------------------+------------------+----------------+
++----------------------+----------------------------+-------------------------------+------------------+----------------+
+|     Clock Signal     |        Enable Signal       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++----------------------+----------------------------+-------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG | TRANS/CLKENB/E[0]          | BTNC_IBUF                     |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | TRANS/E[0]                 | U_MXTEST/byte_addr[4]_i_1_n_0 |                2 |              5 |
+|  CLK100MHZ_IBUF_BUFG |                            |                               |                4 |             11 |
+|  CLK100MHZ_IBUF_BUFG | U_MXTEST/wait_count_enable | U_MXTEST/byte_addr[4]_i_1_n_0 |                4 |             13 |
+|  CLK100MHZ_IBUF_BUFG |                            | DEBOUNDER/button_state_next1  |                8 |             27 |
+|  CLK100MHZ_IBUF_BUFG |                            | BTNC_IBUF                     |               12 |             31 |
++----------------------+----------------------------+-------------------------------+------------------+----------------+
 
 
