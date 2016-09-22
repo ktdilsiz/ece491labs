@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Sep 19 12:39:31 2016
+# Process ID: 5556
+# Current directory: C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10280 C:\Users\husseinz\Desktop\ece 491\ece491labs\project_3\project_3.xpr
+# Log file: C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Sep 19 12:42:05 2016] Launched synth_1...
+Run output will be captured here: C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.runs/synth_1/runme.log
+[Mon Sep 19 12:42:05 2016] Launched impl_1...
+Run output will be captured here: C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744904A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'mxtest_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.sim/sim_1/behav'
+"xvlog -m64 --relax -prj mxtest_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mxtest_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2458] undeclared symbol TwiceBaudRate, assumed default net type wire [C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/transmitter.sv:35]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mxtest_bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto c51c0bdf49d24eab9bc91a915b2500cf --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mxtest_bench_behav xil_defaultlib.mxtest_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port switch [C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv:55]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" Line 32. Module mxtest_2(WAIT_TIME=50) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" Line 32. Module mxtest_2(WAIT_TIME=50) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mxtest_2(WAIT_TIME=50)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=25000000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=50000000)
+Compiling module xil_defaultlib.transmitter(BAUD=25000000)
+Compiling module xil_defaultlib.mxtest_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mxtest_bench_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/husseinz/Desktop/ece -notrace
+invalid command name "%"
+    while executing
+"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
+    (file "C:/Users/husseinz/Desktop/ece" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep 19 12:55:20 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mxtest_bench_behav -key {Behavioral:sim_1:Functional:mxtest_bench} -tclbatch {mxtest_bench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source mxtest_bench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mxtest_bench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'mxtest_bench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.sim/sim_1/behav'
+"xvlog -m64 --relax -prj mxtest_bench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mxtest_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2458] undeclared symbol TwiceBaudRate, assumed default net type wire [C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/transmitter.sv:35]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mxtest_bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto c51c0bdf49d24eab9bc91a915b2500cf --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mxtest_bench_behav xil_defaultlib.mxtest_bench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port switch [C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv:55]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" Line 32. Module mxtest_2(WAIT_TIME=50) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv" Line 32. Module mxtest_2(WAIT_TIME=50) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=25000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mxtest_2(WAIT_TIME=50)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=25000000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=50000000)
+Compiling module xil_defaultlib.transmitter(BAUD=25000000)
+Compiling module xil_defaultlib.mxtest_bench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mxtest_bench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 19 13:11:56 2016...

@@ -1,0 +1,343 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 4076
+
+Current time: 	9/11/16 2:41:59 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	dilsizk
+User home directory: C:/Users/dilsizk
+User working directory: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/dilsizk/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/dilsizk/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	217 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 545 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 36 MB (+35008kb) [00:00:02]
+// [Engine Memory]: 406 MB (+274176kb) [00:00:02]
+// Opening Vivado Project: C:\Users\husseinz\Desktop\ece 491\ece491labs\Lab02\project_2\project_2.xpr. Version: Vivado v2016.2 
+// bL:g (cv:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 69 MB (+32822kb) [00:00:04]
+// [Engine Memory]: 490 MB (+67156kb) [00:00:04]
+// [Engine Memory]: 536 MB (+21941kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_2; location: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 554 MB. GUI used memory: 33 MB. Current time: 9/11/16 2:42:01 PM EDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bcdcounter_bench (bcdcounter_bench.sv)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, single_pulser_bench (single_pulser_bench.sv)]", 2, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, single_pulser_bench (single_pulser_bench.sv)]", 2, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [Engine Memory]: 565 MB (+2219kb) [00:00:19]
+// Elapsed time: 13 seconds
+selectCodeEditor("transmitter.sv", 356, 452); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, single_pulser_bench (single_pulser_bench.sv), U_SP - single_pulser (single_pulser.sv)]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, single_pulser_bench (single_pulser_bench.sv), U_SP - single_pulser (single_pulser.sv)]", 3, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 72 MB (+150kb) [00:01:39]
+// Elapsed time: 93 seconds
+selectCodeEditor("transmitter.sv", 246, 269); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 377, 274); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 76 MB (+26kb) [00:02:42]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 4, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectCodeEditor("transmitter.sv", 435, 261); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 80 MB (+37kb) [00:03:32]
+// Elapsed time: 63 seconds
+selectCodeEditor("transmitter.sv", 491, 235); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("transmitter.sv", 663, 214); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 86 MB (+2442kb) [00:04:19]
+// Elapsed time: 99 seconds
+selectCodeEditor("transmitter.sv", 419, 310); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("transmitter.sv", 435, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("transmitter.sv", 233, 388); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 47 seconds
+selectCodeEditor("transmitter.sv", 408, 486); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("transmitter.sv", 474, 244); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("transmitter.sv", 134, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 269, 476); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 136, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 37 seconds
+selectCodeEditor("transmitter.sv", 305, 374); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 485, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("transmitter.sv", 157, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("transmitter.sv", 247, 467); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 91 seconds
+selectCodeEditor("transmitter.sv", 186, 406); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 138, 407); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 54, 322, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("transmitter.sv", 195, 444); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 125, 441); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 181, 230); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("transmitter.sv", 138, 365); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 276, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 107, 140); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 220, 349); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 181, 430); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 152, 456); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 187, 433); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 111, 163); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 111, 177); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 93 MB (+1958kb) [00:12:30]
+selectCodeEditor("transmitter.sv", 113, 163); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 230, 364); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 122, 377); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 44 seconds
+selectCodeEditor("transmitter.sv", 268, 377); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 212, 371); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 106, 130); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 549, 275); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 298, 205); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 99, 284); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 371, 341); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 217, 259); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("transmitter.sv", 232, 289); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 245, 348); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 153, 265); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("transmitter.sv", 188, 181); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 177, 177); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 181, 174); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 163, 256); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 185, 182); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("transmitter.sv", 244, 198); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 177, 247); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("transmitter.sv", 241, 337); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 211, 303); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 156, 277); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 147, 233); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 84, 266); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 80, 281); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("transmitter.sv", 184, 328); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 151, 309); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 98, 490); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 325, 284); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 110, 283); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 64, 164, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectCodeEditor("transmitter.sv", 500, 326); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 153, 269); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 130, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 73, 302); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 131, 513); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "transmitter.sv", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 123, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 157, 237); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 111, 274); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 134, 284); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 120, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 34, 162, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("transmitter.sv", 241, 69); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 228, 88); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 68, 125); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "transmitter.sv", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("transmitter.sv", 0, 114); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "transmitter.sv", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 191, 441); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 142, 327, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_UNINDENT_SELECTION, "Unindent Selection"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("transmitter.sv", 312, 381); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 141, 540); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 208, 499); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 137, 543); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 34, 362, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+typeControlKey(null, null, 'z');
+selectCodeEditor("transmitter.sv", 325, 454); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 113, 134); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 157, 316); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 149, 329); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 57, 182, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_INDENT_SELECTION, "Indent Selection"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+selectCodeEditor("transmitter.sv", 123, 169); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 138, 336); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 329, 572); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 178, 379); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 44, 384); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 56, 385); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 327, 388); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 203, 330); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 193, 331); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 285, 448); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 313, 447); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("transmitter.sv", 198, 327); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 325, 393); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 245, 285); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 250, 267); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 253, 254); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 386, 327); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 179, 410); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 137, 404); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 119, 463); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 78, 429, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // af:JMenuItem (am:JPopupMenu, Popup:JWindow)
+selectCodeEditor("transmitter.sv", 213, 424); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 163, 262); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 155, 305); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("transmitter.sv", 225, 147); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 231, 263); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 208, 307); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 199, 347); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("transmitter.sv", 276, 471); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 75, 226); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 118, 252); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 268, 380); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 290, 432); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 281, 462); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 274, 447); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 269, 366); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 190, 475); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 39 seconds
+selectCodeEditor("transmitter.sv", 405, 353); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 456, 290); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("transmitter.sv", 163, 227); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 374, 365); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 338, 476); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("transmitter.sv", 514, 210); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 247, 362); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 267, 309); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("transmitter.sv", 337, 340); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("transmitter.sv", 247, 485); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 292, 468); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("transmitter.sv", 242, 246); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 287, 332); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 139 seconds
+selectCodeEditor("transmitter.sv", 524, 281); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 129, 271); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 100, 255); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("transmitter.sv", 103, 251, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+typeControlKey(null, null, 'z');
+selectCodeEditor("transmitter.sv", 144, 255); // bH:N (JPanel:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 608 MB. GUI used memory: 43 MB. Current time: 9/11/16 3:06:11 PM EDT
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (F:JPanel, b:g)
+setFileChooser("C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/debounce.sv");
+// [Engine Memory]: 608 MB (+15935kb) [00:24:20]
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 5 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/debounce.sv}} 
+selectCodeEditor("transmitter.sv", 354, 373); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, debounce (debounce.sv)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+selectCodeEditor("transmitter.sv", 466, 422); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 21 seconds
+selectCodeEditor("transmitter.sv", 118, 333); // bH:N (JPanel:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bcdcounter_bench (bcdcounter_bench.sv)]", 1); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bcdcounter_bench (bcdcounter_bench.sv)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bcdcounter_bench (bcdcounter_bench.sv)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 5, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pb_debounce (pb_debounce.sv)]", 5, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, transmitter (transmitter.sv)]", 6, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("transmitter.sv", 450, 358); // bH:N (JPanel:JComponent, cv:JFrame)

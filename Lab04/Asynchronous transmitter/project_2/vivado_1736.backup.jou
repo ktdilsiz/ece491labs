@@ -1,0 +1,398 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Sep 11 15:42:48 2016
+# Process ID: 1736
+# Current directory: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2700 C:\Users\husseinz\Desktop\ece 491\ece491labs\Lab02\project_2\project_2.xpr
+# Log file: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/vivado.log
+# Journal file: C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.xpr}
+update_compile_order -fileset sources_1
+file mkdir C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new
+file mkdir C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new
+file mkdir C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new
+file mkdir C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new
+file mkdir C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new
+file mkdir {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new}
+close [ open {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new/TransmitterTest.sv} w ]
+add_files -fileset sim_1 {{C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sim_1/new/TransmitterTest.sv}}
+update_compile_order -fileset sim_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TransmitterTest [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top transmitter [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+launch_simulation
+source TransmitterTest.tcl
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 62
+remove_bps -file {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} -line 62
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 64
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 62
+restart
+run all
+step
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 74
+step
+step
+step
+run all
+run all
+run 10 us
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 80
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 72
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 66
+restart
+run all
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 43
+restart
+run all
+step
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 50
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 56
+restart
+run all
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 42
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 41
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 50
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 56
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 43
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 73
+restart
+run all
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 72
+run all
+restart
+run all
+run 10 us
+run 10 us
+restart
+run 10 us
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 65
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 56
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 51
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+restart
+run 10 us
+restart
+run all
+restart
+run all
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+restart
+run all
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+restart
+run all
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 49
+remove_bps -file {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} -line 49
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 51
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 57
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 65
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 72
+run all
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 44
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+restart
+run 10 us
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 73
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 65
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 50
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 56
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 44
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 34
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+launch_simulation
+source TransmitterTest.tcl
+restart
+run 10 us
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+restart
+run all
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 50
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 57
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 34
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 66
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 73
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run all
+run all
+run all
+run all
+run all
+run all
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run all
+run all
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+remove_bps -all
+run 10 us
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 65
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 72
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 50
+add_bp {C:/Users/husseinz/Desktop/ece 491/ece491labs/Lab02/project_2/project_2.srcs/sources_1/new/transmitter.sv} 56
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+source TransmitterTest.tcl
+close_sim
