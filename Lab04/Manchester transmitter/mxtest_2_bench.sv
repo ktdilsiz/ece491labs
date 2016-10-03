@@ -31,9 +31,9 @@ module mxtest_bench;
 	logic [7:0] data;
 	logic txen;
 	logic txd;
-
+    logic ferr;
     assign length = 15;
-    
+    //parameter SIXTEENBAUD = BAUD*16;
 	// Instantiate the Unit Under Test (UUT)
 	mxtest_2 #(.WAIT_TIME(50)) U_MXTEST (
 		.clk(clk), 
@@ -58,7 +58,15 @@ module mxtest_bench;
 		.txen(txen)
 	);
  
- 
+ // Instantiate receiver
+        receiver #(.BAUD(25000000*16)) U_RECEV (
+          .rxd(UART_RXD_OUT),
+          .clk(CLK100MHZ), 
+          .rst(BTNC),
+          .ferr(ferr),
+          .rdy(ready),
+          .data(tempdata)
+        );
 
   // clock oscillator
 	always begin

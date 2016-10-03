@@ -37,9 +37,10 @@ module receiver(
     parameter BAUD = 9600;
     parameter SIXTEENBAUD = BAUD * 16;
     logic BaudRate, rxd_prev;
-    logic [2:0] state_count;
+    logic [2:0] bit_count;
 
     //clkenb is used for getting a enable signal that follows the desired baudrate
+    clkenb #(.DIVFREQ(BAUD)) CLKENB2(.clk(clk), .reset(rst), .enb(BaudRate2));
     clkenb #(.DIVFREQ(SIXTEENBAUD)) CLKENB(.clk(clk), .reset(rst), .enb(BaudRate));
     
     typedef enum logic [3:0] {
@@ -75,26 +76,30 @@ module receiver(
             end
         end
        
+    logic reset_time_count = 0;
+    logic reset_bit_count = 0;
     logic trigger; 
+    
     always_ff@(posedge clk)
         begin
             if(rst)
                 begin 
-                    state_count <= 3'b0;
+                    bit_count <= 3'b000;
                 end
              else if(trigger)
                 begin
-                    state_count <= state_count;
+                    bit_count <= bit_count + 1;
                 end
           end
         
-       logic time_count, increase;  
+   logic [3:0]time_count;
+   logic increase;  
    
    always_ff@(posedge clk)
          begin
-             if(rst)
+             if(reset_time_count || rst)
                  begin 
-                     time_count <= 4'b0;
+                     time_count <= 4'b0000;
                  end
               else if(increase)
                  begin
@@ -111,62 +116,87 @@ module receiver(
         case(state)
             IDLE:
                 begin
-                    rdy = 0;
+                    rdy = 1;
                     ferr = 0;
-                    if((time_count == 0) && rxd ) 
-                        begin
+                    increase = 0;
+                    trigger = 0;
+                    //why time count has to be zero?
+//                    if((time_count == 0) && rxd ) 
+//                        begin
                             next = IDLE;
-                        end
-                     else if(~rxd)
+//                        end
+                     //simulation confusion here between the time_count = 0
+                     //that transitions into the receive state and the one
+                     //going into the start state. 
+                     if((time_count == 0) && ~rxd)
                         begin
                             increase = 1;
                             next = START;
                         end
-                            
-//                    if((time_count == 7) && (~rxd))
-//                        begin
-                            
-//                        end
-//                    else if(time_count > 0)
-//                        begin
-//                            increase = 1;
-//                        end
-//                    else if(~rxd)
-//                        begin
-//                            time_count = time_count + 1;
-//                        end
                     
                 end
             
             START:
                 begin
+                    rdy =0;
                     increase = 1;
                     next = START;
+                    trigger = 0;
+                    reset_time_count = 0;
+                    
                     if((time_count == 7) && rxd)
                         begin
                             next = IDLE;
                             ferr = 1;
+                        end
+                    if((time_count == 8) && rxd)
+                        begin
+                            next = IDLE;
+                            ferr = 1;
+                            reset_time_count = 1;
                         end
                     if((time_count == 14) && rxd)
                         begin
                             next = IDLE;
                             ferr = 1;
                         end
+                    if((time_count == 15) && rxd)
+                        begin
+                            next = IDLE;
+                            ferr = 1;
+                        end
+                    if((time_count == 0)&& ~rxd)        
+                        begin
+                            next = RECEIVE;
+                            ferr = 0;
+                          
+                 
+                        end
                 end
             
             RECEIVE:
                 begin
+                    rdy = 0;        
                     increase = 1;
                     next = RECEIVE;
+                    trigger = 0;
                     if(time_count == 8)
                         begin
                             trigger = 1;
-                            data[state_count] = rxd;
+                            data[bit_count] = rxd;
                             rdy = 0;
                             ferr = 0;
                         end 
-                    if(state_count == 7)
+//                    if(time_count == 9 || time_count == 10 || time_count == 11)
+//                        begin
+//                            trigger = 1;
+//                            data[bit_count] = rxd;
+//                            rdy = 0;
+//                            ferr = 0;
+//                        end 
+                    if(bit_count == 0 && time_count == 0)
                         begin
+                            trigger = 0;
                             next = STOP;
                         end
                 end
@@ -175,18 +205,28 @@ module receiver(
                    rdy = 1;
                    increase = 1;
                    next = STOP;
+                   trigger = 0;
+                   ferr = 0;
                    if(time_count == 8 && ~rxd)
                        begin
                             ferr = 1;
                             next = IDLE;
                        end
-                   else if(time_count == 8 && rxd)
-                       begin
-                            ferr = 0;
-                       end 
+//                   else if(time_count == 8 && rxd)
+//                       begin
+//                            ferr = 0;
+//                       end 
                    else if(time_count == 0)
                        begin
+                            increase = 0;
                             next = IDLE;
+                            
+                             if((time_count == 0) && ~rxd)
+                               begin
+                                   increase = 1;
+                                   next = START;
+                               end
+                               
                        end
                end
             
@@ -195,6 +235,9 @@ module receiver(
                 next = IDLE;
                 rdy = 1;
                 ferr = 0;
+                trigger = 0;
+                increase = 0;
+                reset_time_count = 0;
                 end
         endcase
        

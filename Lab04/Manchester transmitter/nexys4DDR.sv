@@ -24,76 +24,95 @@ module nexys4DDR (
                 input logic         CLK100MHZ,
 		  input logic [12:0]  SW,
 		  input logic 	      BTNC,
-		  input logic 	      BTNU, 
-		  input logic 	      BTNL, 
-		  input logic 	      BTNR,
-		  input logic 	      BTND,
-//		  output logic [6:0]  SEGS,
-//		  output logic [7:0]  AN,
+//		  input logic 	      BTNU, 
+//		  input logic 	      BTNL, 
+//		  input logic 	      BTNR,
+//		  input logic 	      BTND,
+		  output logic [6:0]  SEGS,
+		  output logic [7:0]  AN,
 //		  output logic 	      DP,
-		  output logic [1:0]  LED,
-//		  input logic         UART_TXD_IN,
+		  output logic [1:0]  LED,		  
+		  //input logic         UART_TXD_IN,
 //		  input logic         UART_RTS,		  
 		  output logic        UART_RXD_OUT,
 		  output UART_RXD_OUT_copy,
 		  output logic        JArdy,
-		  output logic        JAtxen
+		  output logic        JAferr
 //		  output logic        UART_CTS		  
             );
             
         assign UART_RXD_OUT_copy = UART_RXD_OUT;
             
         parameter BAUD = 9600;
+        parameter SIXTEENBAUD = 16*BAUD;
         
         logic [5:0]length;
         
         assign length = {1'b0,1'b0,SW[11:8]};
         
         logic [7:0] tempdata;
-        logic tempsend;
+//        logic tempsend;
         
         logic [7:0] data;
+        logic [6:0] segments;
+        logic [2:0] sev_data;
+        logic rxd;
         
         always_ff@(posedge CLK100MHZ)
         begin
             if(SW[12]) 
             begin
                 tempdata <= data;
-                tempsend <= send;
+ //               tempsend <= send;
             end
             else 
             begin
                 tempdata <= SW[7:0];
-                tempsend <= BTND;
+//                tempsend <= BTND;
             end
         end
         
   // add SystemVerilog code & module instantiations here
    
-        debounce #(.DEBOUNCE_TIME_MS(30)) DEBOUNDER(.clk(CLK100MHZ), .button_in(BTNU), .button_out(sendDebounced), .pulse());
+      //  debounce #(.DEBOUNCE_TIME_MS(30)) DEBOUNDER(.clk(CLK100MHZ), .button_in(BTNU), .button_out(sendDebounced), .pulse());
         
-        transmitter #(.BAUD(BAUD)) TRANS(
-            .data(tempdata), 
-            .send(tempsend | sendDebounced), 
-            .clk(CLK100MHZ), 
-            .rst(BTNC), 
-            .switch(BTNL), 
-            .txd(UART_RXD_OUT), 
-            .rdy(LED[0]), 
-            .txen(LED[1])
-        );
+//        transmitter #(.BAUD(BAUD)) TRANS(
+//            .data(tempdata), 
+//            .send(tempsend | sendDebounced), 
+//            .clk(CLK100MHZ), 
+//            .rst(BTNC), 
+//            .switch(BTNL), 
+//            .txd(UART_RXD_OUT), 
+//            .rdy(LED[0]), 
+//            .txen(LED[1])
+//        );
+        
+        receiver #(.BAUD(SIXTEENBAUD)) RECEV(
+              .rxd(rxd),
+              .clk(CLK100MHZ), 
+              .rst(BTNC),
+              .ferr(LED[1]),
+              .rdy(LED[0]),
+              .data(AN)
+            );
 
-        mxtest_2 #(.WAIT_TIME(5000)) U_MXTEST (
-            .clk(CLK100MHZ), 
-            .reset(BTNC), 
-            .run(BTNR | sendDebounced), 
-            .send(send),
-            .length(length), 
-            .data(data), 
-            .ready(JArdy)
-	    );
+//        mxtest_2 #(.WAIT_TIME(5000)) U_MXTEST (
+//            .clk(CLK100MHZ), 
+//            .reset(BTNC), 
+//            .run(BTNR | sendDebounced), 
+//            .send(send),
+//            .length(length), 
+//            .data(data), 
+//            .ready(JArdy)
+//	    );
+
+        //instantiate seven seg display
+       seven_seg SEV(
+               .data(sev_data),
+               .segments(SEGS)  // ordered g(6) - a(0)
+                 ); 
 
         assign JArdy = LED[0];
-        assign JAtxen = LED[1];
+        assign JAferr = LED[1];
 
 endmodule // nexys4DDR

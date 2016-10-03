@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Sep 20 15:57:45 2016">
+<application name="pa" timeStamp="Mon Oct 03 01:41:07 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="947222c705164f6ab490d72ba7096391" type="ProjectID"/>
-<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+<property name="ProjectIteration" value="9" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,627 +17,105 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="AddSources" value="9" type="JavaHandler"/>
 <property name="EditUndo" value="6" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="4" type="JavaHandler"/>
+<property name="RunImplementation" value="5" type="JavaHandler"/>
+<property name="RunSynthesis" value="1" type="JavaHandler"/>
+<property name="SetTopNode" value="5" type="JavaHandler"/>
+<property name="ShowView" value="8" type="JavaHandler"/>
+<property name="SimulationClose" value="1" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="58" type="JavaHandler"/>
+<property name="SimulationRestart" value="5" type="JavaHandler"/>
+<property name="SimulationRun" value="5" type="JavaHandler"/>
+<property name="SimulationRunAll" value="6" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="37" type="JavaHandler"/>
 <property name="UnselectAllCmdHandler" value="1" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="2" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="1" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="2" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="FINISH, Finish" value="3" type="GuiResourceData"/>
-<property name="NEXT, Next " value="9" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, receiver" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, SystemVerilog, 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 0, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 1, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 2, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 3, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS,  ; input ; false ; 0 ; 0, 4, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, clk, 1, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, data ; input ; false ; 0 ; 0, 4, input, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, data, 4, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, ferr ; input ; false ; 0 ; 0, 2, input, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, ferr ; output ; false ; 0 ; 0, 2, 0, 4" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, ferr, 2, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, input, 1, Direction, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, input, 2, Direction, 1" value="3" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, input, 4, Direction, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 2, Direction, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 3, Direction, 1" value="3" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, output, 4, Direction, 1" value="3" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, rdy ; input ; false ; 0 ; 0, 3, input, 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, rdy ; output ; false ; 0 ; 0, 3, 0, 3" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, rdy, 3, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, rxd, 0, Port Name, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, TransmitterTest (TransmitterTest.sv" value="11" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, receiver (receiver.sv" value="6" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, receiver (receiver.sv" value="3" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 8" value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MainMenuMgr_EDIT, Edit" value="2" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PartChooser_BOARDS, Boards" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PartChooser_BOARDS, Nexys4 DDR ; digilentinc.com ; C.1 ; xc7a100tcsg324-1 ; 324 ; 1.1 ; 135 ; 240 ; 126800 ; 0 ; 0 ; 210 ; 63400 ; 6 ; 1 ; 85 ; 0 ; 85 ; C ; 1.05 ; 0.95 ; 0.95 ; 0 ; 0 ; 0 ; 0 ; 0, 7, Nexys4 DDR, 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, project_4" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="3" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SrcChooserPanel_CREATE_FILE, Create File" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
-<property name="RDIResource.HInputHandler_INDENT_SELECTION, Indent Selection" value="1" type="GuiResourceData"/>
-<property name="RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, Toggle Line Comments" value="2" type="GuiResourceData"/>
-<property name="RDIResource.HInputHandler_UNINDENT_SELECTION, Unindent Selection" value="3" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, simulation_live_run_for_time" value="3" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="5" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.LogMonitor_MONITOR, 122, 232, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.LogMonitor_MONITOR, 232, 159, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.LogMonitor_MONITOR, 415, 330" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.LogMonitor_MONITOR, 861, 198" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.LogMonitor_MONITOR, 902, 266" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, Message Severity" value="5" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. , [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:86]. ], 4, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. , [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:86]. ], 4, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. , [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:97]. ], 7, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 3, true" value="4" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 3, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 3, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 4" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization], 2" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Place Design, [Place 30-58] IO placement is infeasible. Number of unplaced terminals (16" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Place Design], 4, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Place Design], 5" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 1, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis], 0" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, Messages_cleanUpMessages" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_ERROR_MESSAGES, (String" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_WARNING_MESSAGES, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PACodeView_SAVE_AS, Save File As..." value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_CODE, Code" value="2" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, BaudRate ; 0 ; Logic, 6, BaudRate, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, bit_count[2:0] ; 0 ; Array, 8, bit_count[2:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, increase ; 0 ; Logic, 15, increase, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, next[3:0] ; IDLE ; Enumeration, 10, next[3:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, reset_bit_count ; 0 ; Logic, 12, reset_bit_count, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, reset_time_count ; 0 ; Logic, 11, reset_time_count, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, rxd_prev ; X ; Logic, 7, rxd_prev, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, state[3:0] ; IDLE ; Enumeration, 9, state[3:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, time_count[3:0] ; 1 ; Array, 14, time_count[3:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, trigger ; 0 ; Logic, 13, trigger, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, RECEV ; receiver ; Verilog Module, 1, RECEV, 0, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="5" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_YES, Yes" value="1" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="1" type="GuiResourceData"/>
+<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1093, 742" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 182, 49" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 183, 31" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 258, 281" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 277, 243" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 279, 226" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 49, 62" value="1" type="GuiResourceData"/>
 <property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="1" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_UNDO, undo" value="5" type="GuiResourceData"/>
-<property name="receiver.sv, 102, 421, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 102, 517" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 103, 469" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 104, 408" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 104, 408, false, false, false, false, true" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 104, 414" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 104, 761" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 105, 408" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 106, 484" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 106, 549" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 107, 471" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 108, 524" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 109, 182" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 109, 623, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 110, 249" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 110, 42" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 112, 579" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 113, 533" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 114, 176" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 114, 477" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 115, 316" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 117, 466" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 117, 676" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 118, 721" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 119, 212" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 119, 482" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 120, 526" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 120, 558" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 120, 741" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 121, 45" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 122, 450" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 123, 217" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 124, 185" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 125, 163" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 125, 170" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 125, 535" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 126, 221" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 128, 307" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 128, 528" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 129, 310" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 129, 416" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 129, 45" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 129, 587" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 130, 195" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 130, 447" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 130, 557" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 131, 470" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 131, 536" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 131, 609" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 131, 609, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 131, 747" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 132, 397" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 132, 41" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 132, 417" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 132, 489" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 133, 517" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 133, 572" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 134, 435" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 135, 585" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 136, 497" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 137, 525" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 137, 534" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 137, 579" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 138, 373, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 138, 395" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 138, 461" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 138, 472" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 138, 586" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 138, 787" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 139, 326" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 139, 542" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 14, 531" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 140, 418" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 140, 558" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 140, 626" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 141, 401" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 141, 405" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 141, 505" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 141, 714" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 141, 95" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 142, 214" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 142, 570" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 142, 709" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 142, 744" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 143, 116" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 143, 132" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 143, 630" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 143, 726" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 144, 442" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 145, 545" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 145, 553" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 145, 601" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 146, 553, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 148, 733" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 149, 250" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 149, 417" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 149, 622" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 149, 98" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 15, 485" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 150, 401" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 150, 451" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 150, 521" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 151, 116" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 151, 131" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 151, 551" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 152, 210" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 152, 654" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 152, 654, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 154, 178" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 154, 414" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 154, 423" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 154, 434" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 155, 433" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 155, 450" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 156, 703" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 156, 740" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 157, 606, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 158, 348" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 158, 539" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 159, 224" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 159, 281" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 159, 400" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 159, 584" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 160, 573" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 160, 605, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 161, 198" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 161, 336" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 161, 465" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 161, 59" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 162, 398" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 162, 531" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 163, 329" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 163, 416" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 164, 465" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 164, 505" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 164, 724" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 164, 728" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 165, 157" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 165, 349" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 165, 520" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 166, 263" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 166, 397" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 166, 505" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 167, 318" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 167, 322" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 167, 527" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 167, 582" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 167, 584" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 167, 745" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 168, 315" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 168, 315, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 168, 383" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 168, 412" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 168, 447" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 168, 473" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 168, 505" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 169, 589" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 169, 742" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 170, 432" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 170, 489" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 170, 623" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 170, 650" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 171, 558" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 173, 583" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 174, 148" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 174, 506" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 175, 499" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 176, 148" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 176, 319" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 177, 458" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 177, 567" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 178, 26" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 178, 297" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 179, 101" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 179, 101, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 179, 409" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 179, 583" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 18, 264" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 180, 449" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 180, 594" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 181, 405" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 181, 405, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 181, 408" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 183, 465" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 183, 465, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 183, 540" value="3" type="GuiResourceData"/>
-<property name="receiver.sv, 183, 540, false, false, false, false, true" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 183, 588" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 185, 196" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 185, 476" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 185, 97" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 186, 332" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 186, 668" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 187, 517" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 188, 616" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 188, 770" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 189, 422" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 189, 530" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 189, 530, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 19, 487" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 190, 474" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 193, 181" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 194, 300" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 194, 333" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 194, 676" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 194, 721" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 195, 509" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 195, 542" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 195, 542, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 195, 675" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 196, 613" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 196, 755" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 197, 430" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 197, 499" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 199, 212" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 199, 328" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 199, 606" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 199, 70" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 200, 213" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 200, 293" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 201, 177" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 201, 457" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 201, 457, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 201, 758" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 202, 371" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 202, 619" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 203, 416" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 204, 514" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 205, 443" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 205, 453" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 206, 359" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 206, 419" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 206, 419, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 206, 461" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 206, 521" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 206, 536" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 207, 380" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 207, 473" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 208, 432" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 211, 504" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 211, 504, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 213, 539" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 213, 539, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 214, 357" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 214, 378" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 214, 508" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 214, 508, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 215, 263" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 215, 608" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 215, 608, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 216, 368" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 216, 469" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 217, 338" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 218, 162" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 218, 379" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 218, 580" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 219, 433" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 219, 619" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 220, 254" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 220, 329" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 221, 416" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 222, 453, false, false, true, false, false" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 222, 475" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 222, 673" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 222, 673, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 223, 372" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 224, 465" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 224, 521" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 224, 521, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 224, 528" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 225, 539" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 226, 509" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 227, 410" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 227, 515" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 228, 329" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 228, 380" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 228, 440" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 228, 729" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 229, 397" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 229, 549" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 23, 198" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 23, 706" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 230, 313" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 230, 451" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 230, 451, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 230, 624" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 230, 696" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 231, 475" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 231, 611" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 232, 621" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 232, 756" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 234, 197" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 234, 431" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 235, 424" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 235, 466" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 236, 336" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 236, 583" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 237, 420" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 237, 486" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 239, 523" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 239, 648" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 240, 403" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 240, 619" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 241, 621" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 241, 621, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 242, 328" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 242, 426" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 242, 475" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 242, 584" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 242, 634" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 243, 329" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 243, 429" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 243, 497" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 244, 522" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 244, 640" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 245, 544" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 246, 330" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 246, 484" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 246, 629" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 247, 351" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 248, 517" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 249, 521" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 249, 536" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 249, 710" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 252, 451" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 252, 520" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 252, 520, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 254, 445" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 254, 471" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 255, 568" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 256, 355" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 256, 572" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 257, 389" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 259, 369" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 259, 369, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 259, 594" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 262, 574" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 262, 583" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 263, 416" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 264, 337" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 264, 430" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 264, 519" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 265, 476" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 265, 504" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 265, 570" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 266, 516" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 267, 453" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 267, 501" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 268, 447" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 268, 59" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 268, 632" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 268, 639" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 269, 405" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 270, 297" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 270, 434" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 270, 455" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 271, 449" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 272, 192" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 272, 451" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 274, 269" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 274, 347" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 274, 397" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 274, 585" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 275, 301" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 275, 444" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 277, 553" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 278, 368" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 278, 369" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 278, 447" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 278, 637" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 279, 390" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 280, 433" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 281, 398" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 281, 451" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 282, 106" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 282, 421" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 283, 467" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 283, 479" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 284, 268" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 284, 550" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 284, 550, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 284, 674" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 285, 345" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 285, 478" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 286, 281" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 286, 396" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 286, 448" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 286, 458" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 286, 469" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 286, 482" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 287, 450" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 287, 493" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 287, 517" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 287, 634" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 288, 625" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 289, 422" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 289, 433" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 289, 610" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 290, 571" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 290, 577" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 290, 60" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 291, 193" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 291, 350" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 293, 653" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 294, 334" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 294, 638" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 296, 54" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 296, 573" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 296, 70" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 296, 81" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 297, 415" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 297, 521" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 297, 654" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 30, 496" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 300, 399" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 302, 282" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 302, 334" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 302, 600" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 302, 600, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 304, 521" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 305, 648" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 307, 337" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 307, 455" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 307, 465" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 307, 670" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 307, 670, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 308, 112" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 308, 187" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 308, 570" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 308, 571" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 311, 332" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 312, 219" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 312, 398" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 313, 210" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 317, 205" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 320, 463" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 320, 634" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 321, 614" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 322, 567" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 323, 533" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 324, 633" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 326, 619" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 326, 619, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 327, 667" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 328, 514" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 328, 624" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 329, 433" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 332, 418" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 332, 654" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 333, 197" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 334, 615" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 335, 580" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 335, 724" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 337, 544" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 338, 608" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 338, 697" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 34, 299, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 341, 436" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 341, 519" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 343, 257" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 344, 443" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 344, 563" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 346, 585" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 347, 687" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 349, 400" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 351, 650" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 353, 348" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 353, 595" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 353, 637" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 358, 481" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 358, 588" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 359, 432" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 361, 416" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 368, 619" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 370, 351" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 374, 333" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 382, 443" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 382, 601" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 391, 705" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 393, 348" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 397, 601" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 401, 547" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 401, 595" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 404, 696" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 41, 507" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 411, 684" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 412, 536" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 416, 545" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 42, 470" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 421, 329" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 424, 539" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 427, 325" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 427, 368" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 431, 613" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 433, 331" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 445, 295" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 45, 365" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 45, 367" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 452, 473" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 452, 671" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 471, 507" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 472, 553" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 473, 426" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 48, 486" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 486, 439" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 488, 182" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 491, 716" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 50, 608" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 50, 608, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 50, 689" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 51, 381" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 52, 513" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 523, 236" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 523, 84" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 54, 179" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 54, 778" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 55, 352" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 56, 542" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 563, 466" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 568, 574" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 570, 542" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 58, 364" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 58, 364, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 58, 455" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 58, 465" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 58, 591" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 581, 582" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 59, 524" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 6, 478" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 60, 674" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 605, 314" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 61, 467" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 62, 403" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 620, 473" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 650, 521" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 67, 366" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 67, 366, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 67, 536" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 67, 756" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 71, 398" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 73, 448" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 78, 621" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 81, 558" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 81, 759" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 82, 202" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 85, 404" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 85, 404, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 86, 96" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 86, 96, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 87, 721" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 87, 721, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 90, 531, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 92, 314" value="2" type="GuiResourceData"/>
-<property name="receiver.sv, 938, 475" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 95, 473" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 97, 481" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 99, 502" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 121, 263" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 187, 296" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 19, 175" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 22, 286" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 233, 180" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 25, 157" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 370, 739" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 555, 485" value="1" type="GuiResourceData"/>
-<property name="transmitter.sv, 559, 497" value="1" type="GuiResourceData"/>
+<property name="RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION, Waveform Viewer_waveform_save_configuration" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 100, 504" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 104, 572" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 110, 537" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 116, 363" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 341, 601" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 409, 673" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 457, 602" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 634, 536" value="1" type="GuiResourceData"/>
+<property name="ReceiverTest.sv, 705, 357" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 364, 375" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 476, 428" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.xdc, 1328, 591" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.xdc, 549, 622" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.xdc, 7, 621" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.xdc, 741, 313" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.xdc, 955, 695" value="1" type="GuiResourceData"/>
+<property name="receiver.sv, 253, 557" value="1" type="GuiResourceData"/>
+<property name="receiver.sv, 257, 552" value="1" type="GuiResourceData"/>
+<property name="receiver.sv, 299, 557" value="1" type="GuiResourceData"/>
+<property name="receiver.sv, 478, 578" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="11" type="GuiMode"/>
+<property name="GuiMode" value="12" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="7" type="TclMode"/>
+<property name="TclMode" value="8" type="TclMode"/>
 </item>
 </section>
 </application>

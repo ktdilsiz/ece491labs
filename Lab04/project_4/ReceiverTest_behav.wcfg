@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ReceiverTest_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ReceiverTest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1005000001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/ReceiverTest/rxd" type="logic">
+      <obj_property name="ElementShortName">rxd</obj_property>
+      <obj_property name="ObjectShortName">rxd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/rxd_prev" type="logic">
+      <obj_property name="ElementShortName">rxd_prev</obj_property>
+      <obj_property name="ObjectShortName">rxd_prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/ferr" type="logic">
+      <obj_property name="ElementShortName">ferr</obj_property>
+      <obj_property name="ObjectShortName">ferr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/rdy" type="logic">
+      <obj_property name="ElementShortName">rdy</obj_property>
+      <obj_property name="ObjectShortName">rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/data" type="array">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/time_count" type="array">
+      <obj_property name="ElementShortName">time_count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">time_count[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/increase" type="logic">
+      <obj_property name="ElementShortName">increase</obj_property>
+      <obj_property name="ObjectShortName">increase</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/reset_time_count" type="logic">
+      <obj_property name="ElementShortName">reset_time_count</obj_property>
+      <obj_property name="ObjectShortName">reset_time_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/BaudRate" type="logic">
+      <obj_property name="ElementShortName">BaudRate</obj_property>
+      <obj_property name="ObjectShortName">BaudRate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/bit_count" type="array">
+      <obj_property name="ElementShortName">bit_count[2:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/trigger" type="logic">
+      <obj_property name="ElementShortName">trigger</obj_property>
+      <obj_property name="ObjectShortName">trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/reset_bit_count" type="logic">
+      <obj_property name="ElementShortName">reset_bit_count</obj_property>
+      <obj_property name="ObjectShortName">reset_bit_count</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/state" type="array">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/next" type="array">
+      <obj_property name="ElementShortName">next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next[3:0]</obj_property>
+   </wvobject>
+</wave_config>
