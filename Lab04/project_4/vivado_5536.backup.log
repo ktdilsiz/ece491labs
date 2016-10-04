@@ -1,0 +1,1444 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Oct 03 20:15:22 2016
+# Process ID: 5536
+# Current directory: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent728 C:\Users\dilsizk\Desktop\ece491\ece491labs\Lab04\project_4\project_4.xpr
+# Log file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/vivado.log
+# Journal file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 802.516 ; gain = 137.531
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xsim.dir/ReceiverTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 03 20:16:37 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ReceiverTest_behav -key {Behavioral:sim_1:Functional:ReceiverTest} -tclbatch {ReceiverTest.tcl} -view {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/ReceiverTest_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+open_wave_config C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/ReceiverTest_behav.wcfg
+source ReceiverTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ReceiverTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 853.672 ; gain = 0.000
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 883.984 ; gain = 0.000
+run 10 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 10 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 10 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 20 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 20 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 20 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 10 us
+add_files -norecurse {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reorder_files -fileset constrs_1 -after {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.xdc} {{C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.xdc}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 20:56:41 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 20:56:41 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+remove_files {{C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/transmitter.sv}}
+add_files -norecurse C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:00:49 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:00:49 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+close [ open C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/decoder_rxd_data.sv w ]
+add_files C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/decoder_rxd_data.sv
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:16:55 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:16:55 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:28:22 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:28:22 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:30:36 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:30:36 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:33:04 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:33:04 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:35:34 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:57:03
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292744861A
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:39:50 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:39:50 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+reset_run impl_1 -noclean_dir 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:40:29 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:40:29 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:43:43 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:43:43 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 21:53:14 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+[Mon Oct 03 21:53:14 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 22:03:21 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library work [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library work [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:1]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'nexys4DDR' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/nexys4DDR.sv
+	Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv
+[Mon Oct 03 22:05:02 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library work [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:1]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'nexys4DDR' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/nexys4DDR.sv
+	Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv
+[Mon Oct 03 22:07:50 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library work [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library work [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:1]
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library work [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv:1]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'nexys4DDR' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/nexys4DDR.sv
+	Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv
+[Mon Oct 03 22:09:40 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library work [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:1]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'nexys4DDR' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/nexys4DDR.sv
+	Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv
+[Mon Oct 03 22:10:14 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library work [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:1]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'nexys4DDR' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/nexys4DDR.sv
+	Duplicate found at line 22 of file C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv
+[Mon Oct 03 22:11:20 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 22:13:56 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+remove_files {{C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/nexys4DDR.sv}}
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+remove_files {{C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/TransmitterTest.sv}}
+reset_run synth_1
+launch_runs synth_1
+[Mon Oct 03 22:16:11 2016] Launched synth_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/synth_1/runme.log
+launch_runs impl_1
+[Mon Oct 03 22:16:54 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Mon Oct 03 22:18:03 2016] Launched impl_1...
+Run output will be captured here: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'ReceiverTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ReceiverTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/ReceiverTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceiverTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ReceiverTest_behav xil_defaultlib.ReceiverTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=2500000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=40000000) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=2500000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=40000000)
+Compiling module xil_defaultlib.receiver(BAUD=2500000)
+Compiling module xil_defaultlib.ReceiverTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ReceiverTest_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xsim.dir/ReceiverTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 03 22:20:13 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ReceiverTest_behav -key {Behavioral:sim_1:Functional:ReceiverTest} -tclbatch {ReceiverTest.tcl} -view {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/ReceiverTest_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+open_wave_config C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/ReceiverTest_behav.wcfg
+source ReceiverTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ReceiverTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1075.426 ; gain = 0.000
+run 10 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run 10 us
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv w ]
+add_files -fileset sim_1 C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv
+update_compile_order -fileset sim_1
+set_property top NexysTest [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1047] module instantiation should have an instance name [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:34]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1047] module instantiation should have an instance name [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:33]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-537] constant is not allowed here [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:41]
+ERROR: [VRFC 10-537] constant is not allowed here [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:42]
+ERROR: [VRFC 10-1546] variable rxd might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:57]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port DP [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:41]
+ERROR: [VRFC 10-851] illegal output port connection to DP [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:41]
+ERROR: [VRFC 10-851] illegal output port connection to LED [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:42]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp7 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp6 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp5 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:124]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp4 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp3 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp2 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp1 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp0 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:129]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-537] constant is not allowed here [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:41]
+ERROR: [VRFC 10-537] constant is not allowed here [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:42]
+ERROR: [VRFC 10-1546] variable rxd might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:57]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port DP [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:41]
+ERROR: [VRFC 10-851] illegal output port connection to DP [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:41]
+ERROR: [VRFC 10-851] illegal output port connection to LED [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:42]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp7 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp6 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp5 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:124]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp4 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp3 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp2 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp1 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp0 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:129]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1546] variable rxd might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:57]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp7 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp6 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp5 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:124]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp4 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp3 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp2 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp1 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp0 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:129]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1546] variable rxd might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:57]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp7 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp6 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp5 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:124]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp4 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp3 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp2 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp1 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp0 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:129]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1546] variable rxd might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:57]
+ERROR: [VRFC 10-851] illegal output port connection to UART_RXD_OUT [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:43]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp7 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp6 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp5 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:124]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp4 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp3 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp2 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp1 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp0 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:129]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1546] variable rxd might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:57]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp7 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp6 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp5 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:124]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp4 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp3 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp2 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp1 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp0 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:129]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2458] undeclared symbol seg, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:44]
+INFO: [VRFC 10-2458] undeclared symbol AN, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:45]
+INFO: [VRFC 10-2458] undeclared symbol dp, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1546] variable rdy might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:50]
+ERROR: [VRFC 10-1546] variable rxd might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:65]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 7 for port SEGS [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:44]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port AN [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:45]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port LED [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:47]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp7 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp6 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp5 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:124]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp4 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp3 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp2 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp1 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp0 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:129]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/ReceiverTest_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'NexysTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj NexysTest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux8_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_3_8_en
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_parm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkenb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_seg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dispctl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module receiver
+INFO: [VRFC 10-2458] undeclared symbol BaudRate2, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:43]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module transmitter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nexys4DDR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NexysTest
+INFO: [VRFC 10-2458] undeclared symbol seg, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:44]
+INFO: [VRFC 10-2458] undeclared symbol AN, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:45]
+INFO: [VRFC 10-2458] undeclared symbol dp, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto b8c1bf82a9b544e98b02b5111cccf547 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot NexysTest_behav xil_defaultlib.NexysTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1546] variable rxd might have multiple concurrent drivers [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:65]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 7 for port SEGS [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:44]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 8 for port AN [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:45]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 3 for port LED [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:47]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp7 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:122]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp6 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:123]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp5 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:124]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp4 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp3 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:126]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp2 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:127]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp1 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:128]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port dp0 [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:129]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port enb [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:48]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+save_wave_config {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/ReceiverTest_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 04 00:36:22 2016...

@@ -28,7 +28,7 @@ module ReceiverTest();
        
        
      // instantiate device under verification (        
-         receiver #(.BAUD(2_500_000)) RECEV(
+         receiver #(.BAUD(2_500_0000 / 16)) RECEV(
                  .rxd(rxd),
                  .clk(clk), 
                  .rst(rst),
@@ -54,6 +54,10 @@ module ReceiverTest();
        #30;       
        
        
+       @(posedge clk) data = 8'b00001111;
+       @(posedge clk) send = 1;
+       @(posedge clk); repeat(20*16)
+       
        repeat (2) @(posedge clk)
         begin
           rxd = 1'b0;
@@ -78,7 +82,7 @@ module ReceiverTest();
           #320;
         end
         
-        repeat (2) @(posedge clk)
+        repeat (1) @(posedge clk)
         begin
             //16/5 = 3.2 times clk enable from 16*baudrate in receiver
             //therefore, 2 nano seconds mean 6.4 clk enables
@@ -90,7 +94,9 @@ module ReceiverTest();
             rxd = 1'b1;
             #96;                    //96
             rxd = 1'b0;
-            #192;                   //192
+            #128;              
+            rxd = 1'b1;
+            #168;         //192
         end
         
         #320;
@@ -116,7 +122,7 @@ module ReceiverTest();
              rxd = 1'b0;
            #160;
              rxd = 1'b1;
-           #1600;
+           #320;
          end
         
        

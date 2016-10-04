@@ -47,7 +47,7 @@ module receiver(
         IDLE = 4'b0000, 
         START = 4'b1010, 
         RECEIVE = 4'b0001, 
-//        TR1 = 4'b0010, 
+        IDLE2 = 4'b0010, 
 //        TR2 = 4'b0011,
 //        TR3 = 4'b0100, 
 //        TR4 = 4'b0101, 
@@ -82,26 +82,26 @@ module receiver(
     
     always_ff@(posedge clk)
         begin
-            if(rst)
+            if((rst || reset_bit_count))
                 begin 
                     bit_count <= 3'b000;
                 end
-             else if(trigger)
+             else if(trigger && BaudRate)
                 begin
                     bit_count <= bit_count + 1;
                 end
           end
-        
+                  
    logic [3:0]time_count;
    logic increase;  
    
    always_ff@(posedge clk)
          begin
-             if(reset_time_count || rst)
+             if((reset_time_count || rst))
                  begin 
                      time_count <= 4'b0000;
                  end
-              else if(increase)
+              else if(increase && BaudRate)
                  begin
                      time_count <= time_count + 1;
                  end
@@ -110,6 +110,28 @@ module receiver(
                      time_count <= time_count;
                  end
            end
+    
+logic enable_data;  
+logic d0,d1,d2,d3,d4,d5,d6,d7;  
+
+assign data = {d7,d6,d5,d4,d3,d2,d1,d0};
+    
+       always_ff@(posedge clk) 
+       begin
+           if(enable_data)
+           begin
+             case (bit_count)
+                   3'd0 : d0 = rxd;
+                   3'd1 : d1 = rxd;
+                   3'd2 : d2 = rxd;
+                   3'd3 : d3 = rxd;
+                   3'd4 : d4 = rxd;
+                   3'd5 : d5 = rxd;
+                   3'd6 : d6 = rxd;
+                   3'd7 : d7 = rxd;
+             endcase
+           end
+       end // always_ff    
     
     always_comb
        begin
@@ -120,70 +142,104 @@ module receiver(
                     ferr = 0;
                     increase = 0;
                     trigger = 0;
+                    reset_time_count = 0;
+                    enable_data = 0;
+                    
+                    if(time_count != 0) reset_time_count = 1;
+                                        
                     //why time count has to be zero?
 //                    if((time_count == 0) && rxd ) 
 //                        begin
                             next = IDLE;
 //                        end
+
                      //simulation confusion here between the time_count = 0
                      //that transitions into the receive state and the one
                      //going into the start state. 
                      if((time_count == 0) && ~rxd)
                         begin
-                            increase = 1;
+                            //increase = 1;
                             next = START;
                         end
                     
                 end
+                
+               IDLE2:
+                    begin
+                        rdy = 1;
+                        ferr = 1;
+                        increase = 0;
+                        trigger = 0;
+                        reset_time_count = 0;
+                        enable_data = 0;
+                        
+                        if(time_count != 0) reset_time_count = 1;
+
+                        next = IDLE2;
+
+                         if((time_count == 0) && ~rxd)
+                            begin
+                                //increase = 1;
+                                next = START;
+                            end
+                        
+                    end
             
             START:
                 begin
-                    rdy =0;
+                    ferr = 0;
+                    rdy = 0;
                     increase = 1;
                     next = START;
                     trigger = 0;
                     reset_time_count = 0;
+                    enable_data = 0;
                     
+                    if((time_count == 6) && rxd)
+                        begin
+                            next = IDLE2;
+                            ferr = 1;
+                            reset_time_count = 1;
+                        end
                     if((time_count == 7) && rxd)
                         begin
-                            next = IDLE;
-                            ferr = 1;
-                        end
-                    if((time_count == 8) && rxd)
-                        begin
-                            next = IDLE;
+                            next = IDLE2;
                             ferr = 1;
                             reset_time_count = 1;
                         end
                     if((time_count == 14) && rxd)
                         begin
-                            next = IDLE;
+                            next = IDLE2;
                             ferr = 1;
+                            reset_time_count = 1;
                         end
-                    if((time_count == 15) && rxd)
-                        begin
-                            next = IDLE;
-                            ferr = 1;
-                        end
-                    if((time_count == 0)&& ~rxd)        
+//                    if((time_count == 15) && rxd)
+//                        begin
+//                            next = IDLE;
+//                            ferr = 1;
+//                        end
+                    if((time_count == 15))        
                         begin
                             next = RECEIVE;
                             ferr = 0;
-                          
-                 
                         end
                 end
             
             RECEIVE:
                 begin
+                    ferr = 0;
                     rdy = 0;        
                     increase = 1;
                     next = RECEIVE;
                     trigger = 0;
-                    if(time_count == 8)
+                    enable_data = 0;
+                    reset_time_count = 0;
+                    
+                    if(time_count == 7)
                         begin
+                            //data = {rxd, data[7:1]};
                             trigger = 1;
-                            data[bit_count] = rxd;
+                            enable_data = 1;
                             rdy = 0;
                             ferr = 0;
                         end 
@@ -194,7 +250,7 @@ module receiver(
 //                            rdy = 0;
 //                            ferr = 0;
 //                        end 
-                    if(bit_count == 0 && time_count == 0)
+                    if(bit_count == 0 && time_count == 15)
                         begin
                             trigger = 0;
                             next = STOP;
@@ -207,7 +263,10 @@ module receiver(
                    next = STOP;
                    trigger = 0;
                    ferr = 0;
-                   if(time_count == 8 && ~rxd)
+                   reset_time_count = 0;
+                   enable_data = 0;
+                   
+                   if(time_count == 7 && ~rxd)
                        begin
                             ferr = 1;
                             next = IDLE;
@@ -216,12 +275,12 @@ module receiver(
 //                       begin
 //                            ferr = 0;
 //                       end 
-                   else if(time_count == 0)
+                   else if(time_count == 15)
                        begin
-                            increase = 0;
+                            increase = 1;
                             next = IDLE;
                             
-                             if((time_count == 0) && ~rxd)
+                             if((time_count == 15) && ~rxd)
                                begin
                                    increase = 1;
                                    next = START;
@@ -232,12 +291,14 @@ module receiver(
             
             default:
                 begin
-                next = IDLE;
+                next = IDLE2;
                 rdy = 1;
-                ferr = 0;
+                ferr = 1;
                 trigger = 0;
                 increase = 0;
                 reset_time_count = 0;
+                enable_data = 0;
+
                 end
         endcase
        

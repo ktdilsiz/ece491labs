@@ -12,10 +12,10 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1005000001fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomEndTime time="4460000001fs"></ZoomEndTime>
+      <Cursor1Time time="3725000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="25" />
    <wvobject fp_name="/ReceiverTest/rxd" type="logic">
       <obj_property name="ElementShortName">rxd</obj_property>
       <obj_property name="ObjectShortName">rxd</obj_property>
@@ -79,5 +79,41 @@
    <wvobject fp_name="/ReceiverTest/RECEV/next" type="array">
       <obj_property name="ElementShortName">next[3:0]</obj_property>
       <obj_property name="ObjectShortName">next[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/enable_data" type="logic">
+      <obj_property name="ElementShortName">enable_data</obj_property>
+      <obj_property name="ObjectShortName">enable_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/d0" type="logic">
+      <obj_property name="ElementShortName">d0</obj_property>
+      <obj_property name="ObjectShortName">d0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/d1" type="logic">
+      <obj_property name="ElementShortName">d1</obj_property>
+      <obj_property name="ObjectShortName">d1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/d2" type="logic">
+      <obj_property name="ElementShortName">d2</obj_property>
+      <obj_property name="ObjectShortName">d2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/d3" type="logic">
+      <obj_property name="ElementShortName">d3</obj_property>
+      <obj_property name="ObjectShortName">d3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/d4" type="logic">
+      <obj_property name="ElementShortName">d4</obj_property>
+      <obj_property name="ObjectShortName">d4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/d5" type="logic">
+      <obj_property name="ElementShortName">d5</obj_property>
+      <obj_property name="ObjectShortName">d5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/d6" type="logic">
+      <obj_property name="ElementShortName">d6</obj_property>
+      <obj_property name="ObjectShortName">d6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ReceiverTest/RECEV/d7" type="logic">
+      <obj_property name="ElementShortName">d7</obj_property>
+      <obj_property name="ObjectShortName">d7</obj_property>
    </wvobject>
 </wave_config>

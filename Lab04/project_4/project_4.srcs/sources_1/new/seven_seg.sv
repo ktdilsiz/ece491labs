@@ -15,7 +15,7 @@
 //-----------------------------------------------------------------------------
 
 module seven_seg(
-		 input logic [3:0]  data,
+		 input logic data,
 		 output logic [6:0] segments  // ordered g(6) - a(0)
 		 );
    
@@ -36,14 +36,14 @@ module seven_seg(
      case (data)
        4'd0: segments = ZERO;
        4'd1: segments = ONE;
-       4'd2: segments = TWO;
-       4'd3: segments = THREE;
-       4'd4: segments = FOUR;
-       4'd5: segments = FIVE;
-       4'd6: segments = SIX;
-       4'd7: segments = SEVEN;
-       4'd8: segments = EIGHT;
-       4'd9: segments = NINE;
+//       4'd2: segments = TWO;
+//       4'd3: segments = THREE;
+//       4'd4: segments = FOUR;
+//       4'd5: segments = FIVE;
+//       4'd6: segments = SIX;
+//       4'd7: segments = SEVEN;
+//       4'd8: segments = EIGHT;
+//       4'd9: segments = NINE;
        default: segments = BLANK;
      endcase
 endmodule

@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Sep 06 16:29:15 2016">
+<application name="pa" timeStamp="Tue Oct 04 00:49:22 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="d7511814022d4dc082104c1f97e172fb" type="ProjectID"/>
 <property name="ProjectIteration" value="5" type="ProjectIteration"/>
@@ -31,6 +31,44 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="RunImplementation" value="1" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="1" type="JavaHandler"/>
 <property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, nexys4DDR (nexys4DDR.sv" value="42" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, nexys4DDR (nexys4DDR.sv" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources], 18" value="1" type="GuiResourceData"/>
+<property name="dispctl.sv, 133, 283" value="1" type="GuiResourceData"/>
+<property name="dispctl.sv, 344, 454" value="1" type="GuiResourceData"/>
+<property name="dispctl.sv, 428, 129" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 131, 507" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 222, 213" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 265, 470" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 382, 299" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 462, 438" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 474, 409" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 480, 288" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 481, 127" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 560, 127" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 563, 129" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 597, 282" value="1" type="GuiResourceData"/>
+<property name="nexys4DDR.sv, 612, 356" value="1" type="GuiResourceData"/>
+<property name="reg_param.sv, 180, 180" value="2" type="GuiResourceData"/>
+<property name="reg_param.sv, 190, 177" value="1" type="GuiResourceData"/>
+<property name="reg_param.sv, 197, 185" value="1" type="GuiResourceData"/>
+<property name="reg_param.sv, 199, 161" value="1" type="GuiResourceData"/>
+<property name="reg_param.sv, 232, 120" value="1" type="GuiResourceData"/>
+<property name="reg_param.sv, 516, 312" value="1" type="GuiResourceData"/>
+<property name="reg_param.sv, 89, 177" value="1" type="GuiResourceData"/>
+<property name="seven_seg.sv, 216, 246" value="1" type="GuiResourceData"/>
+<property name="seven_seg.sv, 226, 202" value="1" type="GuiResourceData"/>
+<property name="seven_seg.sv, 270, 273" value="1" type="GuiResourceData"/>
+<property name="seven_seg.sv, 301, 279" value="1" type="GuiResourceData"/>
+<property name="seven_seg.sv, 351, 244" value="1" type="GuiResourceData"/>
+<property name="seven_seg.sv, 402, 337" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="2" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
 </item>
 </section>
 </application>

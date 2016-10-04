@@ -14,33 +14,42 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4164 
+INFO: Helper process launched with PID 14356 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 315.883 ; gain = 108.152
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 316.508 ; gain = 108.539
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'nexys4DDR' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:22]
+INFO: [Synth 8-638] synthesizing module 'nexys4DDR' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:22]
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'transmitter' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv:17]
+	Parameter BAUD bound to: 9600 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clkenb' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
+	Parameter DIVFREQ bound to: 9600 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 10416 - type: integer 
+	Parameter DIVBITS bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb' (1#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'transmitter' (2#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv:17]
+INFO: [Synth 8-638] synthesizing module 'receiver' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:29]
 	Parameter BAUD bound to: 9600 - type: integer 
 	Parameter SIXTEENBAUD bound to: 153600 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'receiver' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:29]
-	Parameter BAUD bound to: 153600 - type: integer 
-	Parameter SIXTEENBAUD bound to: 2457600 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'clkenb' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized0' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
 	Parameter DIVFREQ bound to: 153600 - type: integer 
 	Parameter CLKFREQ bound to: 100000000 - type: integer 
 	Parameter DIVAMT bound to: 651 - type: integer 
 	Parameter DIVBITS bound to: 10 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clkenb' (1#1) [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
-INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized0' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
-	Parameter DIVFREQ bound to: 2457600 - type: integer 
-	Parameter CLKFREQ bound to: 100000000 - type: integer 
-	Parameter DIVAMT bound to: 40 - type: integer 
-	Parameter DIVBITS bound to: 6 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized0' (1#1) [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
-WARNING: [Synth 8-87] always_comb on 'ferr_reg' did not result in combinational logic [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:120]
-WARNING: [Synth 8-87] always_comb on 'reset_time_count_reg' did not result in combinational logic [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:145]
-WARNING: [Synth 8-87] always_comb on 'data_reg' did not result in combinational logic [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:186]
-INFO: [Synth 8-256] done synthesizing module 'receiver' (2#1) [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:29]
-INFO: [Synth 8-638] synthesizing module 'seven_seg' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv:17]
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized0' (2#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'receiver' (3#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:29]
+INFO: [Synth 8-638] synthesizing module 'dispctl' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:24]
+INFO: [Synth 8-638] synthesizing module 'mux8_parm' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv:1]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv:8]
+INFO: [Synth 8-256] done synthesizing module 'mux8_parm' (4#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv:1]
+INFO: [Synth 8-638] synthesizing module 'counter_parm' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv:1]
+	Parameter W bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_parm' (5#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv:1]
+INFO: [Synth 8-638] synthesizing module 'decoder_3_8_en' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv:1]
+INFO: [Synth 8-256] done synthesizing module 'decoder_3_8_en' (6#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv:1]
+INFO: [Synth 8-638] synthesizing module 'seven_seg' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv:17]
 	Parameter BLANK bound to: 7'b1111111 
 	Parameter ZERO bound to: 7'b1000000 
 	Parameter ONE bound to: 7'b1111001 
@@ -52,27 +61,19 @@ INFO: [Synth 8-638] synthesizing module 'seven_seg' [C:/Users/dilsizk/Desktop/EC
 	Parameter SEVEN bound to: 7'b1111000 
 	Parameter EIGHT bound to: 7'b0000000 
 	Parameter NINE bound to: 7'b0010000 
-INFO: [Synth 8-256] done synthesizing module 'seven_seg' (3#1) [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv:17]
-WARNING: [Synth 8-689] width (3) of port connection 'data' does not match port width (4) of module 'seven_seg' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:111]
-WARNING: [Synth 8-3848] Net UART_RXD_OUT in module/entity nexys4DDR does not have driver. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:37]
-WARNING: [Synth 8-3848] Net sev_data in module/entity nexys4DDR does not have driver. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:58]
-WARNING: [Synth 8-3848] Net rxd in module/entity nexys4DDR does not have driver. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:59]
-INFO: [Synth 8-256] done synthesizing module 'nexys4DDR' (4#1) [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:22]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[12]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[11]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[10]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[9]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[8]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[7]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[6]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[5]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[4]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[3]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[2]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[1]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[0]
+INFO: [Synth 8-226] default block is never used [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv:36]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg' (7#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/seven_seg.sv:17]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized1' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
+	Parameter DIVFREQ bound to: 1000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 100000 - type: integer 
+	Parameter DIVBITS bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized1' (7#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/clkenb.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'dispctl' (8#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'nexys4DDR' (9#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.sv:22]
+WARNING: [Synth 8-3331] design nexys4DDR has unconnected port LED[1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 353.148 ; gain = 145.418
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 352.871 ; gain = 144.902
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -81,90 +82,64 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin RECEV:rxd to constant 0 [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:90]
-WARNING: [Synth 8-3295] tying undriven pin SEV:data[2] to constant 0 [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:110]
-WARNING: [Synth 8-3295] tying undriven pin SEV:data[1] to constant 0 [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:110]
-WARNING: [Synth 8-3295] tying undriven pin SEV:data[0] to constant 0 [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.sv:110]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 353.148 ; gain = 145.418
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 352.871 ; gain = 144.902
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc]
-WARNING: [Vivado 12-584] No ports matched 'BTNU'. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BTNL'. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:86]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:86]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BTNR'. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:87]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:87]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'BTND'. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:88]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'JAtxen'. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:97]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:97]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nexys4DDR_propImpl.xdc].
+Parsing XDC File [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nexys4DDR_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/nexys4DDR_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 655.289 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 656.699 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'receiver'
 INFO: [Synth 8-5544] ROM "trigger" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "reset_time_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "increase" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "rdy" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "trigger" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "reset_time_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "rdy" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-                    IDLE |                               00 |                             0000
-                   START |                               01 |                             1010
-                 RECEIVE |                               10 |                             0001
-                    STOP |                               11 |                             1001
+                    IDLE |                            00001 |                             0000
+                   START |                            00010 |                             1010
+                 RECEIVE |                            00100 |                             0001
+                    STOP |                            01000 |                             1001
+                   IDLE2 |                            10000 |                             0010
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'receiver'
-WARNING: [Synth 8-327] inferring latch for variable 'ferr_reg' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:120]
-WARNING: [Synth 8-327] inferring latch for variable 'reset_time_count_reg' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:145]
-WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/project_4/project_4.srcs/sources_1/new/receiver.sv:186]
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'receiver'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -177,24 +152,29 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
 +---Registers : 
+	               17 Bit    Registers := 1     
+	               14 Bit    Registers := 2     
 	               10 Bit    Registers := 1     
-	                6 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
 +---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
-	  11 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 1     
-	  15 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 8     
-	   4 Input      1 Bit        Muxes := 7     
+	   8 Input      8 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -202,7 +182,30 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module nexys4DDR 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 Module clkenb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module transmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized0 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     10 Bit       Adders := 1     
@@ -210,16 +213,6 @@ Detailed RTL Component Info :
 	               10 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
-Module clkenb__parameterized0 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      6 Bit       Adders := 1     
-+---Registers : 
-	                6 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 Module receiver 
 Detailed RTL Component Info : 
@@ -229,16 +222,33 @@ Detailed RTL Component Info :
 +---Registers : 
 	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
-	  15 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 6     
-	   4 Input      1 Bit        Muxes := 7     
-Module seven_seg 
+	  16 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 8     
+Module counter_parm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module decoder_3_8_en 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+Module clkenb__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -251,29 +261,24 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "trigger" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[12]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[11]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[10]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[9]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[8]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[7]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[6]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[5]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[4]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[3]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[2]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[1]
-WARNING: [Synth 8-3331] design nexys4DDR has unconnected port SW[0]
+INFO: [Synth 8-5544] ROM "DISPCTL/DECODER/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "TRANS/CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RECEV/CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "DISPCTL/MUX2/y" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "DISPCTL/CLKENB/enb" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design nexys4DDR has port SEGS[6] driven by constant 1
+WARNING: [Synth 8-3917] design nexys4DDR has port SEGS[2] driven by constant 0
+WARNING: [Synth 8-3917] design nexys4DDR has port SEGS[1] driven by constant 0
+WARNING: [Synth 8-3917] design nexys4DDR has port DP driven by constant 0
+WARNING: [Synth 8-3331] design nexys4DDR has unconnected port LED[1]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 656.699 ; gain = 448.730
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -283,28 +288,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/reset_time_count_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/data_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/data_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/data_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/data_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/data_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/data_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/data_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RECEV/data_reg[7] )
-WARNING: [Synth 8-3332] Sequential element (RECEV/reset_time_count_reg) is unused and will be removed from module nexys4DDR.
-WARNING: [Synth 8-3332] Sequential element (RECEV/data_reg[7]) is unused and will be removed from module nexys4DDR.
-WARNING: [Synth 8-3332] Sequential element (RECEV/data_reg[6]) is unused and will be removed from module nexys4DDR.
-WARNING: [Synth 8-3332] Sequential element (RECEV/data_reg[5]) is unused and will be removed from module nexys4DDR.
-WARNING: [Synth 8-3332] Sequential element (RECEV/data_reg[4]) is unused and will be removed from module nexys4DDR.
-WARNING: [Synth 8-3332] Sequential element (RECEV/data_reg[3]) is unused and will be removed from module nexys4DDR.
-WARNING: [Synth 8-3332] Sequential element (RECEV/data_reg[2]) is unused and will be removed from module nexys4DDR.
-WARNING: [Synth 8-3332] Sequential element (RECEV/data_reg[1]) is unused and will be removed from module nexys4DDR.
-WARNING: [Synth 8-3332] Sequential element (RECEV/data_reg[0]) is unused and will be removed from module nexys4DDR.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 656.699 ; gain = 448.730
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -318,10 +305,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,16 +320,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 656.699 ; gain = 448.730
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -359,7 +346,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -372,7 +359,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -384,25 +371,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -415,48 +402,55 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |BUFG |     1|
-|2     |LUT1 |     2|
-|3     |LUT2 |     4|
-|4     |LUT3 |     6|
-|5     |LUT4 |     2|
-|6     |LUT5 |     1|
-|7     |LUT6 |    10|
-|8     |FDRE |    16|
-|9     |LD   |     1|
-|10    |IBUF |     2|
-|11    |OBUF |    21|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    34|
+|4     |LUT2   |    21|
+|5     |LUT3   |    14|
+|6     |LUT4   |    17|
+|7     |LUT5   |    30|
+|8     |LUT6   |    37|
+|9     |MUXF7  |     1|
+|10    |FDRE   |    71|
+|11    |FDSE   |     1|
+|12    |IBUF   |    14|
+|13    |OBUF   |    30|
+|14    |OBUFT  |     1|
++------+-------+------+
 
 Report Instance Areas: 
-+------+-----------+-----------------------+------+
-|      |Instance   |Module                 |Cells |
-+------+-----------+-----------------------+------+
-|1     |top        |                       |    66|
-|2     |  RECEV    |receiver               |    42|
-|3     |    CLKENB |clkenb__parameterized0 |    16|
-+------+-----------+-----------------------+------+
++------+-----------------+-----------------------+------+
+|      |Instance         |Module                 |Cells |
++------+-----------------+-----------------------+------+
+|1     |top              |                       |   280|
+|2     |  DISPCTL        |dispctl                |    74|
+|3     |    CLKENB       |clkenb__parameterized1 |    60|
+|4     |    COUNTER_PARM |counter_parm           |    14|
+|5     |  RECEV          |receiver               |    94|
+|6     |    CLKENB       |clkenb__parameterized0 |    29|
+|7     |  TRANS          |transmitter            |    65|
+|8     |    CLKENB       |clkenb                 |    50|
++------+-----------------+-----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 655.289 ; gain = 447.559
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 656.699 ; gain = 448.730
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 655.289 ; gain = 116.023
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 655.289 ; gain = 447.559
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 656.699 ; gain = 115.063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 656.699 ; gain = 448.730
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  LD => LDCE: 1 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 54 Warnings, 5 Critical Warnings and 0 Errors encountered.
+54 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 655.289 ; gain = 421.363
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 655.289 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Oct 03 01:13:22 2016...
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 656.699 ; gain = 422.391
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 656.699 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 04 17:04:49 2016...

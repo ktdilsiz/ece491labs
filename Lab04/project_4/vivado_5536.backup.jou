@@ -1,0 +1,182 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Oct 03 20:15:22 2016
+# Process ID: 5536
+# Current directory: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent728 C:\Users\dilsizk\Desktop\ece491\ece491labs\Lab04\project_4\project_4.xpr
+# Log file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/vivado.log
+# Journal file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/ReceiverTest_behav.wcfg
+source ReceiverTest.tcl
+run 10 us
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 20 us
+relaunch_sim
+run 10 us
+add_files -norecurse {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/dispctl.sv C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/mux8_parm.sv C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/counter_parm.sv C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/decoder_3_8_en.sv}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reorder_files -fileset constrs_1 -after {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.xdc} {{C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Manchester transmitter/nexys4DDR.xdc}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+remove_files {{C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/transmitter.sv}}
+add_files -norecurse C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/transmitter.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+close [ open C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/decoder_rxd_data.sv w ]
+add_files C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sources_1/new/decoder_rxd_data.sv
+update_compile_order -fileset sources_1
+relaunch_sim
+run 10 us
+restart
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+relaunch_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+remove_files {{C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/nexys4DDR.sv}}
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+remove_files {{C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Asynchronous transmitter/TransmitterTest.sv}}
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.runs/impl_1/nexys4DDR.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/ReceiverTest_behav.wcfg
+source ReceiverTest.tcl
+run 10 us
+restart
+run all
+run 10 us
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv w ]
+add_files -fileset sim_1 C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top NexysTest [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+save_wave_config {C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/ReceiverTest_behav.wcfg}
+close_sim

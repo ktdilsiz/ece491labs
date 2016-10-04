@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Mon Oct 03 01:41:07 2016">
+<application name="pa" timeStamp="Tue Oct 04 17:07:04 2016">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="947222c705164f6ab490d72ba7096391" type="ProjectID"/>
-<property name="ProjectIteration" value="9" type="ProjectIteration"/>
+<property name="ProjectIteration" value="53" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,105 +17,41 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="9" type="JavaHandler"/>
+<property name="AddSources" value="15" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="2" type="JavaHandler"/>
+<property name="EditDelete" value="4" type="JavaHandler"/>
 <property name="EditUndo" value="6" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="33" type="JavaHandler"/>
 <property name="NewProject" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="4" type="JavaHandler"/>
-<property name="RunImplementation" value="5" type="JavaHandler"/>
-<property name="RunSynthesis" value="1" type="JavaHandler"/>
-<property name="SetTopNode" value="5" type="JavaHandler"/>
-<property name="ShowView" value="8" type="JavaHandler"/>
-<property name="SimulationClose" value="1" type="JavaHandler"/>
-<property name="SimulationRelaunch" value="58" type="JavaHandler"/>
-<property name="SimulationRestart" value="5" type="JavaHandler"/>
-<property name="SimulationRun" value="5" type="JavaHandler"/>
-<property name="SimulationRunAll" value="6" type="JavaHandler"/>
-<property name="SimulationRunForTime" value="37" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="35" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="4" type="JavaHandler"/>
+<property name="ProgramDevice" value="36" type="JavaHandler"/>
+<property name="ProjectSettingsCmdHandler" value="4" type="JavaHandler"/>
+<property name="RefreshDevice" value="1" type="JavaHandler"/>
+<property name="RunBitgen" value="43" type="JavaHandler"/>
+<property name="RunImplementation" value="11" type="JavaHandler"/>
+<property name="RunSynthesis" value="17" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="6" type="JavaHandler"/>
+<property name="SetTopNode" value="14" type="JavaHandler"/>
+<property name="ShowView" value="22" type="JavaHandler"/>
+<property name="SimulationClose" value="4" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="91" type="JavaHandler"/>
+<property name="SimulationRestart" value="14" type="JavaHandler"/>
+<property name="SimulationRun" value="26" type="JavaHandler"/>
+<property name="SimulationRunAll" value="16" type="JavaHandler"/>
+<property name="SimulationRunForTime" value="131" type="JavaHandler"/>
 <property name="UnselectAllCmdHandler" value="1" type="JavaHandler"/>
-<property name="ViewTaskProjectManager" value="2" type="JavaHandler"/>
-<property name="ViewTaskSimulation" value="1" type="JavaHandler"/>
-<property name="WaveformSaveConfiguration" value="2" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="20" type="JavaHandler"/>
+<property name="ViewTaskSimulation" value="8" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="3" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN, simulation_live_run_for_time" value="3" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="5" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.LogMonitor_MONITOR, 122, 232, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LogMonitor_MONITOR, 232, 159, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LogMonitor_MONITOR, 415, 330" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LogMonitor_MONITOR, 861, 198" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.LogMonitor_MONITOR, 902, 266" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_SEVERITY, Message Severity" value="5" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. , [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:86]. ], 4, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. , [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:86]. ], 4, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. , [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:97]. ], 7, false, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 3, true" value="4" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 3, true, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 3, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 4" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Design Initialization], 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Place Design, [Place 30-58] IO placement is infeasible. Number of unplaced terminals (16" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Place Design], 4, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Implementation, Place Design], 5" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ECE 491 labs/Lab04/Manchester transmitter/nexys4DDR.xdc:85]. ], 1, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis], 0" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, Messages_cleanUpMessages" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgView_ERROR_MESSAGES, (String" value="2" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgView_WARNING_MESSAGES, (String" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PACodeView_SAVE_AS, Save File As..." value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.PAViews_CODE, Code" value="2" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, BaudRate ; 0 ; Logic, 6, BaudRate, 0, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, bit_count[2:0] ; 0 ; Array, 8, bit_count[2:0], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, increase ; 0 ; Logic, 15, increase, 0, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, next[3:0] ; IDLE ; Enumeration, 10, next[3:0], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, reset_bit_count ; 0 ; Logic, 12, reset_bit_count, 0, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, reset_time_count ; 0 ; Logic, 11, reset_time_count, 0, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, rxd_prev ; X ; Logic, 7, rxd_prev, 0, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, state[3:0] ; IDLE ; Enumeration, 9, state[3:0], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, time_count[3:0] ; 1 ; Array, 14, time_count[3:0], 0, true" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, trigger ; 0 ; Logic, 13, trigger, 0, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, RECEV ; receiver ; Verilog Module, 1, RECEV, 0, true" value="1" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_OK, OK" value="5" type="GuiResourceData"/>
-<property name="RDIResource.BaseDialog_YES, Yes" value="1" type="GuiResourceData"/>
-<property name="RDIResource.GraphicalView_ZOOM_FIT, Waveform Viewer_zoom_fit" value="1" type="GuiResourceData"/>
-<property name="RDIResource.GraphicalView_ZOOM_IN, Waveform Viewer_zoom_in" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 1093, 742" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 182, 49" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 183, 31" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 258, 281" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 277, 243" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 279, 226" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 49, 62" value="1" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_SAVE_FILE, (String" value="1" type="GuiResourceData"/>
-<property name="RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION, Waveform Viewer_waveform_save_configuration" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 100, 504" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 104, 572" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 110, 537" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 116, 363" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 341, 601" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 409, 673" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 457, 602" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 634, 536" value="1" type="GuiResourceData"/>
-<property name="ReceiverTest.sv, 705, 357" value="1" type="GuiResourceData"/>
-<property name="nexys4DDR.sv, 364, 375" value="1" type="GuiResourceData"/>
-<property name="nexys4DDR.sv, 476, 428" value="1" type="GuiResourceData"/>
-<property name="nexys4DDR.xdc, 1328, 591" value="1" type="GuiResourceData"/>
-<property name="nexys4DDR.xdc, 549, 622" value="1" type="GuiResourceData"/>
-<property name="nexys4DDR.xdc, 7, 621" value="1" type="GuiResourceData"/>
-<property name="nexys4DDR.xdc, 741, 313" value="1" type="GuiResourceData"/>
-<property name="nexys4DDR.xdc, 955, 695" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 253, 557" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 257, 552" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 299, 557" value="1" type="GuiResourceData"/>
-<property name="receiver.sv, 478, 578" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="12" type="GuiMode"/>
+<property name="GuiMode" value="2" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="8" type="TclMode"/>
+<property name="TclMode" value="0" type="TclMode"/>
 </item>
 </section>
 </application>
