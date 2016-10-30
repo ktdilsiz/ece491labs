@@ -1,0 +1,155 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Oct 29 10:27:46 2016
+# Process ID: 10632
+# Current directory: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8368 C:\Users\dilsizk\Desktop\ece491\ece491labs\Lab05\Lab_5.xpr
+# Log file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/vivado.log
+# Journal file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Lab_5.xpr
+update_compile_order -fileset sources_1
+save_project_as project_1 C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1 -force
+file mkdir C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sim_1/new/correlatortest.sv w ]
+add_files -fileset sim_1 C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sim_1/new/correlatortest.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top correlatortest [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top correlator [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source correlatortest.tcl
+close_sim
+launch_simulation
+source correlatortest.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source correlatortest.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+close_sim
+launch_simulation
+source correlatortest.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+restart
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

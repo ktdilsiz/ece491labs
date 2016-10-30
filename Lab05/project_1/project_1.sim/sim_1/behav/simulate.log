@@ -1,0 +1,10 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+FAIL(sfd end) Failed test 3 at time 320.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(sfd end) Failed test 4 at time 320.
+  Expected value 0x0, Inspected Value 0x1
+FAIL(bit end) Failed test 5 at time 440.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(bit end) Failed test 6 at time 440.
+  Expected value 0x0, Inspected Value 0x1
