@@ -1,10 +1,45 @@
 Vivado Simulator 2016.2
 Time resolution is 1 ps
-FAIL(sfd end) Failed test 3 at time 320.
+START: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after at time 159995.
+FAIL(cardet, pre-SFD) Failed test 1 at time 480115.
   Expected value 0x1, Inspected Value 0x0
-FAIL(sfd end) Failed test 4 at time 320.
-  Expected value 0x0, Inspected Value 0x1
-FAIL(bit end) Failed test 5 at time 440.
+FAIL(cardet, post-SFD) Failed test 2 at time 640115.
   Expected value 0x1, Inspected Value 0x0
-FAIL(bit end) Failed test 6 at time 440.
-  Expected value 0x0, Inspected Value 0x1
+FAIL(cardet, pre-byte) Failed test 3 at time 640115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after. (3/5 falures)
+START: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after at time 159995.
+FAIL(cardet, pre-SFD) Failed test 1 at time 480115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, post-SFD) Failed test 2 at time 640115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, pre-byte) Failed test 3 at time 640115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after. (3/5 falures)
+START: Requirement test 10b - 24-bit preamble/SFD, 24 (or more) bytes, rxd high before/after at time 1040215.
+FAIL(cardet, pre-SFD) Failed test 6 at time 1380235.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, post-SFD) Failed test 7 at time 1540235.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, pre-byte) Failed test 8 at time 1540235.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, pre-byte) Failed test 10 at time 1700235.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, pre-byte) Failed test 12 at time 1860235.
+  Expected value 0x1, Inspected Value 0x0
+START: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after at time 159995.
+FAIL(cardet, pre-SFD) Failed test 1 at time 480115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, post-SFD) Failed test 2 at time 640115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, pre-byte) Failed test 3 at time 640115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after. (3/5 falures)
+START: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after at time 159995.
+FAIL(cardet, pre-SFD) Failed test 1 at time 480115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, post-SFD) Failed test 2 at time 640115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, pre-byte) Failed test 3 at time 640115.
+  Expected value 0x1, Inspected Value 0x0
+FAIL: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after. (3/5 falures)

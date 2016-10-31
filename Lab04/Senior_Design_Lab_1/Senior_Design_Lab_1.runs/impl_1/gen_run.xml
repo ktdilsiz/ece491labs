@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1472854732">
-  <File Type="OPT-DCP" Name="nexys4DDR_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="nexys4DDR_route_status.pb"/>
   <File Type="PA-TCL" Name="nexys4DDR.tcl"/>
+  <File Type="OPT-DCP" Name="nexys4DDR_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="nexys4DDR_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="nexys4DDR_methodology_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="nexys4DDR.vdi"/>
   <File Type="PWROPT-DRC" Name="nexys4DDR_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="nexys4DDR_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="nexys4DDR_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="nexys4DDR_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="nexys4DDR_pwropt.dcp"/>
   <File Type="OPT-HWDEF" Name="nexys4DDR.hwdef"/>
@@ -31,8 +31,8 @@
   <File Type="ROUTE-DRC" Name="nexys4DDR_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="nexys4DDR_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="nexys4DDR_methodology_drc_routed.rpt"/>
-  <File Type="BG-BIT" Name="nexys4DDR.bit"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="nexys4DDR_methodology_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="nexys4DDR.bit"/>
   <File Type="ROUTE-PWR" Name="nexys4DDR_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="nexys4DDR_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="nexys4DDR_power_routed.rpx"/>

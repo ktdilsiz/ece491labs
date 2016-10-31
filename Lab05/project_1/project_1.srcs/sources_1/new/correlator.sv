@@ -26,6 +26,7 @@ module correlator #(parameter LEN=16, PATTERN=16'b0000000011111111, HTHRESH=13, 
 	      input logic 	   reset,
 	      input logic 	   enb,
 	      input logic 	   d_in,
+        input logic [LEN-1:0]replace,
 	      output logic [W-1:0] csum,
 	      output logic 	   h_out,  
 	      output logic 	   l_out
@@ -34,12 +35,19 @@ module correlator #(parameter LEN=16, PATTERN=16'b0000000011111111, HTHRESH=13, 
 
    logic [LEN-1:0] 		   shreg, match;
    
-   
+
    // shift register shifts from right to left so that oldest data is on
    // the left and newest data is on the right
    always_ff  @(posedge clk)
-     if (reset) shreg <= '0;
+   begin
+     if (reset) shreg <= 'x;
+     else if (replace == 8'b10101010)
+      begin
+          shreg <= replace;
+      end
      else if (enb) shreg <= { shreg[LEN-2:0], d_in };
+
+    end
    
    assign match = shreg ^ ~PATTERN;
 

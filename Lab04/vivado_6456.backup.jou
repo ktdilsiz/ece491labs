@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Oct 04 12:49:47 2016
+# Process ID: 6456
+# Current directory: C:/Users/dilsizk/Desktop/ece491/ece491labs
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1248 C:\Users\dilsizk\Desktop\ece491\ece491labs\project_4.xpr
+# Log file: C:/Users/dilsizk/Desktop/ece491/ece491labs/vivado.log
+# Journal file: C:/Users/dilsizk/Desktop/ece491/ece491labs\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/dilsizk/Desktop/ece491/ece491labs/project_4.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

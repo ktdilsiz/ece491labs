@@ -19,6 +19,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece4
 INFO: [VRFC 10-311] analyzing module nexys4DDR
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module NexysTest
-INFO: [VRFC 10-2458] undeclared symbol dp, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:48]
+INFO: [VRFC 10-2458] undeclared symbol dp, assumed default net type wire [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.srcs/sim_1/new/NexysTest.sv:49]
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/project_4/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

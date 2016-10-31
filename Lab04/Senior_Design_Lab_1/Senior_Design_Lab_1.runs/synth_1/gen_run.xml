@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1472854732">
-  <File Type="RDS-PROPCONSTRS" Name="nexys4DDR_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="nexys4DDR.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="nexys4DDR_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="nexys4DDR.vds"/>
   <File Type="RDS-UTIL" Name="nexys4DDR_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="nexys4DDR_utilization_synth.pb"/>

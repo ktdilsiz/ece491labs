@@ -1,24 +1,36 @@
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 64509da5ccbe4025bf09a7c32099ad77 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot correlatortest_behav xil_defaultlib.correlatortest xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 64509da5ccbe4025bf09a7c32099ad77 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mx_rcvr_testbench_behav xil_defaultlib.mx_rcvr_testbench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b10101010,HTHRESH=6,LTHRESH=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b01011,HTHRESH=6,LTHRESH=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b11110000,HTHRESH=6,LTHRESH=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/Lab05/project_1/project_1.srcs/sources_1/new/check_p.sv" Line 37. Module check_p1 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b10101010,HTHRESH=6,LTHRESH=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b01011,HTHRESH=6,LTHRESH=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b11110000,HTHRESH=6,LTHRESH=2) doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/husseinz/Desktop/Lab05/project_1/project_1.srcs/sources_1/new/check_p.sv" Line 37. Module check_p1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv" Line 20. Module clkenb(DIVFREQ=100000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv" Line 20. Module clkenb(DIVFREQ=800000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b10101010,HTHRESH=7,LTHRESH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b01011,HTHRESH=7,LTHRESH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b11110000,HTHRESH=7,LTHRESH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b11110000,HTHRESH=7,LTHRESH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/check_p.sv" Line 37. Module check_p1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv" Line 20. Module clkenb(DIVFREQ=100000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv" Line 20. Module clkenb(DIVFREQ=800000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b10101010,HTHRESH=7,LTHRESH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b01011,HTHRESH=7,LTHRESH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b11110000,HTHRESH=7,LTHRESH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv" Line 23. Module correlator(LEN=8,PATTERN=8'b11110000,HTHRESH=7,LTHRESH=1) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/check_p.sv" Line 37. Module check_p1 doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=50000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=100000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=800000)
 Compiling module xil_defaultlib.correlator(LEN=8,PATTERN=8'b1010...
 Compiling module xil_defaultlib.correlator(LEN=8,PATTERN=8'b0101...
 Compiling module xil_defaultlib.correlator(LEN=8,PATTERN=8'b1111...
-Compiling module xil_defaultlib.correlatortest
+Compiling module xil_defaultlib.mx_rcvr(BAUD=50000,BIT_RATE=5000...
+Compiling module xil_defaultlib.mx_rcvr_testbench
 Compiling module xil_defaultlib.glbl
 Compiling package xil_defaultlib.check_p1
-Built simulation snapshot correlatortest_behav
+Built simulation snapshot mx_rcvr_testbench_behav

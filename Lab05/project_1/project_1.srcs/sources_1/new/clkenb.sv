@@ -23,7 +23,7 @@ module clkenb(input logic clk, reset, output logic enb);
    parameter DIVAMT = (CLKFREQ / DIVFREQ);
    parameter DIVBITS = $clog2(DIVAMT);   // enough bits to represent DIVAMT
    
-   logic [DIVBITS-1:0] q;
+   logic [DIVBITS-1:0] q = 0;
    
    always @(posedge clk)
      if (reset)

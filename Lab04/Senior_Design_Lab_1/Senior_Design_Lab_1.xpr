@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="C:/Users/dilsizk/Desktop/ECE 491 labs/Senior_Design_Lab_1/Senior_Design_Lab_1.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab04/Senior_Design_Lab_1/Senior_Design_Lab_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4049ea5dd5a04e689829d48f1efaf2d2"/>

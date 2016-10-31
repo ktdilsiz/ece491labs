@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../project_1.srcs/sources_1/new/correlator.sv"
+sv xil_defaultlib  "../../../project_1.srcs/sources_1/new/clkenb.sv"
+sv xil_defaultlib  "../../../project_1.srcs/sources_1/new/check_p.sv"
+sv xil_defaultlib  "../../../project_1.srcs/sources_1/new/mx_rcvr.sv"
+sv xil_defaultlib  "../../../project_1.srcs/sim_1/new/mx_rcvr_testbench.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
