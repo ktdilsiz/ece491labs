@@ -1,3 +1,4 @@
+`timescale 1ns / 1ps
 //-----------------------------------------------------------------------------
 // Title         : Nexys4 Simple Top-Level File
 // Project       : ECE 491

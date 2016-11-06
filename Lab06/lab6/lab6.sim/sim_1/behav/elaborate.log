@@ -1,0 +1,11 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 6e77c8c392e24047b1bcd3f980aabecb --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevelTest_behav xil_defaultlib.TopLevelTest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <m_transmitter> not found while processing module instance <MTRANS> [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/topmodule.sv:92]
+ERROR: [VRFC 10-2063] Module <p_fifo4> not found while processing module instance <FIFO> [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/topmodule.sv:109]
+ERROR: [VRFC 10-2063] Module <mxtest_2> not found while processing module instance <U_MXTEST> [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/topmodule.sv:124]
+ERROR: [VRFC 10-2063] Module <mx_rcvr> not found while processing module instance <URCVR> [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/topmodule.sv:138]
+ERROR: [VRFC 10-2063] Module <dispctl> not found while processing module instance <DISPCTL> [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/topmodule.sv:149]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

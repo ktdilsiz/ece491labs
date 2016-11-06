@@ -27,6 +27,7 @@ module mx_rcvr(
    parameter BAUD = 9600;
    parameter TWICEBAUD = BAUD * 2;
    parameter SIXTEENBAUD = BAUD * 16;
+   parameter SIXTYFOURBAUD = BAUD * 64;
    parameter BIT_RATE = 50_000;
    
    logic BaudRate, TwiceBaudrate, SixteenBaudRate;
@@ -58,6 +59,10 @@ module mx_rcvr(
 
    state_t state, next;
 
+   logic [3:0] prev_csum_pre;
+   logic [3:0] prev_prev_csum_pre;
+
+   assign reset = rst;
    
   always_ff@(posedge clk)
   begin
@@ -65,11 +70,17 @@ module mx_rcvr(
        begin
            state <= IDLE;
        end
+
    else if(SixteenBaudRate)
        begin
            state <= next;
-//           dataState <= nextDataState;
+           //prev_csum_pre <= csum_pre;
        end 
+
+   // else if(BaudRate)
+   //    begin
+   //      prev_csum_pre <= csum_pre;
+   //    end
 //   else if(SixteenBaudRate)
 //       begin
 //           dataState <= nextDataState;
@@ -79,7 +90,18 @@ module mx_rcvr(
            state <= state;
        end
    end
-   
+
+   always_ff@(posedge BaudRate)
+   begin
+
+   if(BaudRate)
+      begin
+        prev_csum_pre <= csum_pre;
+        prev_prev_csum_pre <= prev_csum_pre;
+      end
+
+    end
+    
     //decoder instantiated    
 
    logic enb_pre, h_out_pre, l_out_pre;
@@ -106,7 +128,7 @@ module mx_rcvr(
    logic [3:0] csum_sfd;
    
    //correlator module for sfd
-   correlator #(.LEN(8), .PATTERN(8'b00001011), .HTHRESH(7), .LTHRESH(1))
+   correlator #(.LEN(8), .PATTERN(8'b11010000), .HTHRESH(8), .LTHRESH(1))
     COR_SFD( 
     .clk(clk), 
     .reset(rst_sfd || reset), 
@@ -116,6 +138,23 @@ module mx_rcvr(
     .csum(csum_sfd), 
     .h_out(h_out_sfd), 
     .l_out(l_out_sfd));
+    
+   logic enb_eof, h_out_eof, l_out_eof;
+   logic d_in_eof, rst_eof;
+   logic [3:0] csum_eof;
+   logic [7:0] replace_eof = 12'bxxxxxxxxxxxx;
+   
+   //correlator module for sfd
+   correlator #(.LEN(12), .PATTERN(12'b111111111111), .HTHRESH(11), .LTHRESH(1))
+    COR_EOF( 
+    .clk(clk), 
+    .reset(rst_eof || reset), 
+    .enb(enb_eof), 
+    .d_in(d_in_eof), 
+    .replace(replace_eof),
+    .csum(csum_eof), 
+    .h_out(h_out_eof), 
+    .l_out(l_out_eof));
     
     logic enb_bit, h_out_bit, l_out_bit;
     logic d_in_bit;
@@ -163,17 +202,17 @@ module mx_rcvr(
     logic bit_up; 
     logic [2:0] bit_count;
     logic [3:0] time_count;
-    logic time_up, time_up_double, time_fix;  
+    logic time_up, time_up_double;  
     
     always_ff@(posedge clk)
         begin
             if((rst || reset_bit_count))
                 begin 
-                    bit_count <= 3'b000;
+                    bit_count <= 3'b111;
                 end
-             else if(bit_up && SixteenBaudRate)
+             else if(bit_up && clk)
                 begin
-                    bit_count <= bit_count + 1;
+                    bit_count <= bit_count - 1;
                 end
           end
                      
@@ -191,10 +230,6 @@ module mx_rcvr(
                  begin
                      time_count <= time_count + 2;
                  end   
-              else if(time_fix)
-                begin
-                  time_count <= 4'b0001;
-                end
               else
                  begin
                      time_count <= time_count;
@@ -211,14 +246,14 @@ module mx_rcvr(
        if(enable_data)
        begin
          case (bit_count)
-               3'd0 : d0 = rxd;
-               3'd1 : d1 = rxd;
-               3'd2 : d2 = rxd;
-               3'd3 : d3 = rxd;
-               3'd4 : d4 = rxd;
-               3'd5 : d5 = rxd;
-               3'd6 : d6 = rxd;
-               3'd7 : d7 = rxd;
+               3'd0 : d0 = ~rxd;
+               3'd1 : d1 = ~rxd;
+               3'd2 : d2 = ~rxd;
+               3'd3 : d3 = ~rxd;
+               3'd4 : d4 = ~rxd;
+               3'd5 : d5 = ~rxd;
+               3'd6 : d6 = ~rxd;
+               3'd7 : d7 = ~rxd;
          endcase
        end
    end // always_ff  
@@ -230,16 +265,36 @@ module mx_rcvr(
       
   logic idle_h_check = 0;
   logic idle_h_check_up;
+  logic reset_idle_check;
 
   always_ff@(posedge clk)
     begin
-        if((rst))
+        if((reset_idle_check || rst))
             begin 
                 idle_h_check <= 1'b0;
             end
          else if(idle_h_check_up && SixteenBaudRate)
             begin
                 idle_h_check <= idle_h_check + 1;
+            end
+      end
+
+  logic input_pre_check = 1'b0;
+  logic input_pre_check_up;
+
+  always_ff@(posedge clk)
+    begin
+        if((rst))
+            begin 
+                input_pre_check <= 1'b0;
+            end
+        else if(input_pre_check_up)
+            begin
+                input_pre_check <= 1'b1;
+            end
+         else if(SixteenBaudRate)
+            begin
+                input_pre_check <= 1'b0;
             end
       end
 
@@ -265,6 +320,70 @@ module mx_rcvr(
              end
        end
 
+  logic [4:0] time_count_eof;
+  logic reset_time_count_eof;
+  logic time_eof_up = 0;
+  logic time_eof_enabled = 0;
+
+ always_ff@(posedge clk)
+     begin
+         //if((reset_time_count_sfd || rst || time_count_sfd == 4'b1111))
+         if(reset_time_count_eof || rst)
+             begin 
+                 time_count_eof <= 5'b00000;
+             end
+          else if(time_eof_up && SixteenBaudRate)
+             begin
+                 time_count_eof <= time_count_eof + 1;
+             end 
+          else
+             begin
+                 time_count_eof <= time_count_eof;
+             end
+       end
+
+  logic [5:0] time_count_error;
+  logic reset_time_count_error;
+  logic time_error_up = 0;
+
+ always_ff@(posedge clk)
+     begin
+         //if((reset_time_count_sfd || rst || time_count_sfd == 4'b1111))
+         if(reset_time_count_error || rst)
+             begin 
+                 time_count_error <= 6'b000000;
+             end
+          else if(time_error_up && SixteenBaudRate)
+             begin
+                 time_count_error <= time_count_error + 1;
+             end 
+          else
+             begin
+                 time_count_error <= time_count_error;
+             end
+       end
+
+  logic [3:0] time_count_sfd_error;
+  logic reset_time_count_sfd_error;
+  logic time_sfd_error_up = 0;
+
+ always_ff@(posedge clk)
+     begin
+         //if((reset_time_count_sfd || rst || time_count_sfd == 4'b1111))
+         if(reset_time_count_sfd_error || rst)
+             begin 
+                 time_count_sfd_error <= 4'b0000;
+             end
+          else if(time_sfd_error_up && BaudRate)
+             begin
+                 time_count_sfd_error <= time_count_sfd_error + 1;
+             end 
+          else
+             begin
+                 time_count_sfd_error <= time_count_sfd_error;
+             end
+       end
+
 logic replace_bit_enb;
 
  always_ff@(posedge SixteenBaudRate)
@@ -284,9 +403,101 @@ logic replace_bit_enb;
              end
        end
 
+logic check_last_data = 1;
+logic at_least_one_byte = 0;
+
+// logic time_sfd_enabled_up, time_sfd_enabled_down;
+
+// always_ff@(posedge clk)
+//   begin
+//     if(rst)
+//       time_sfd_enabled <= 1'b0;
+//     else if(time_sfd_enabled_up)
+//       time_sfd_enabled <= 1'b1;
+//     else if(time_sfd_enabled_down)
+//       time_eof_enabled <= 1'b0;
+//     else
+//       time_eof_enabled <= time_eof_enabled;
+//   end
+
+logic totalReset = 0;
+
+logic check_last_data_up, check_last_data_down;
+
+always_ff@(posedge clk)
+  begin
+    if(rst || totalReset)
+      check_last_data <= 1'b1;
+    else if(check_last_data_up)
+      check_last_data <= 1'b1;
+    else if(check_last_data_down)
+      check_last_data <= 1'b0;
+    else
+      check_last_data <= check_last_data;
+  end
+
+logic at_least_one_byte_up, at_least_one_byte_down;
+
+always_ff@(posedge clk)
+  begin
+    if(rst || totalReset)
+      at_least_one_byte <= 1'b0;
+    else if(at_least_one_byte_up)
+      at_least_one_byte <= 1'b1;
+    else if(at_least_one_byte_down)
+      at_least_one_byte <= 1'b0;
+    else
+      at_least_one_byte <= at_least_one_byte;
+  end
+
+
+logic time_error_up_up, time_error_up_down;
+
+always_ff@(posedge clk)
+  begin
+    if(rst || totalReset)
+      time_error_up <= 1'b0;
+    else if(time_error_up_up)
+      time_error_up <= 1'b1;
+    else if(time_error_up_down)
+      time_error_up <= 1'b0;
+    else
+      time_error_up <= time_error_up;
+  end
+
+logic time_sfd_up_up, time_sfd_up_down;
+
+always_ff@(posedge clk)
+  begin
+    if(rst || totalReset)
+      time_sfd_up <= 1'b0;
+    else if(time_sfd_up_up)
+      time_sfd_up <= 1'b1;
+    else if(time_sfd_up_down)
+      time_sfd_up <= 1'b0;
+    else
+      time_sfd_up <= time_sfd_up;
+  end
+
+logic error_up, error_down;
+
+always_ff@(posedge clk)
+  begin
+    if(rst)
+      error <= 1'b0;
+    else if(error_up)
+      error <= 1'b1;
+    else if(error_down)
+      error <= 1'b0;
+    else
+      error <= error;
+  end
+
+
    always_comb
    begin    
     rst_bit = 0;
+    totalReset = 0;
     rst_baud = 0;
     rst_pre = 0;
     rst_sfd = 0;
@@ -296,9 +507,48 @@ logic replace_bit_enb;
     replace_pre = 8'bxxxxxxxx;
     replace_bit_enb = 0;
     time_up_double = 0;
-    time_sfd_up = time_sfd_up;
+
+    //time_sfd_up = time_sfd_up;
+    time_sfd_up_up = 0;
+    time_sfd_up_down = 0;
+
     reset_time_count_sfd = 0;
-    time_sfd_enabled = time_sfd_enabled;
+    //time_sfd_enabled = time_sfd_enabled;
+    input_pre_check_up = 0;
+    time_eof_up = 0;
+    reset_time_count_eof = 0;
+    time_sfd_enabled = 0;
+    //check_last_data = check_last_data;
+    check_last_data_up = 0;
+    check_last_data_down = 0;
+    //at_least_one_byte = at_least_one_byte;
+    at_least_one_byte_up = 0;
+    at_least_one_byte_down = 0;
+
+    reset_idle_check = 0;
+    reset_bit_count =  0;
+
+    reset_time_count_error = 0;
+    //time_error_up = time_error_up;
+    time_error_up_up = 0;
+    time_error_up_down = 0;
+
+    bit_up = 0;
+    enable_data = 0;
+
+    d_in_pre = 0;
+    d_in_bit = 0;
+    d_in_sfd = 0;
+    d_in_baud = 0;
+    d_in_eof = 0;
+    enb_eof = 0;
+
+    error_up = 0;
+    error_down = 0;
+
+    reset_time_count_sfd_error = 0;
+    time_sfd_error_up = 0;
+
    case(state)
        IDLE:
            begin
@@ -306,13 +556,15 @@ logic replace_bit_enb;
            write = 0;
            time_up = 1;
            bit_up = 0;
-           error = error;
+           reset_time_count_sfd_error = 1;
+           //error = error;
            enb_pre = 0;
            enb_bit = 0;
            enb_baud = 0;
            enb_sfd = 0;
            idle_h_check_up = 0;
            reset_time_count = 0;
+           next = IDLE;
            
            if(time_count % 2 == 0 && SixteenBaudRate)
            begin
@@ -362,7 +614,7 @@ logic replace_bit_enb;
            enb_baud = 0;
            enb_sfd = 0;
            cardet = 0;
-           error = error;
+           //error = error;
            reset_time_count = 0;
            next = PREAMBLE;           
            
@@ -375,15 +627,17 @@ logic replace_bit_enb;
                         
             end
             
-            if(h_out_bit == 1 && SixteenBaudRate)
+            if(h_out_bit == 1 && ~input_pre_check)
             //if(h_out_bit == 1)  
               begin
                 d_in_pre = 1; enb_pre = 1;
+                input_pre_check_up = 1;
               end
-            if(l_out_bit == 1 && SixteenBaudRate) 
+            if(l_out_bit == 1 && ~input_pre_check) 
             //if(l_out_bit == 1) 
               begin
                 d_in_pre = 0; enb_pre = 1;
+                input_pre_check_up = 1;
               end
 
            if(h_out_pre == 1)
@@ -393,6 +647,36 @@ logic replace_bit_enb;
             cardet = 1;
             
             end
+
+           if(time_count_sfd_error == 4'h6)
+            begin
+              next = IDLE;
+              rst_bit = 1;
+              rst_baud = 1;
+              rst_sfd = 1;
+              rst_pre = 1;
+              reset_time_count_eof = 1;
+              reset_time_count_sfd = 1;
+              reset_time_count_error = 1;
+              reset_time_count = 1;
+              reset_bit_count = 1;
+              reset_idle_check = 1;
+
+              //time_sfd_up = 0;
+
+              at_least_one_byte_down = 1;
+              at_least_one_byte_up = 0;
+
+              totalReset = 1;
+          end
+
+          reset_time_count_sfd_error = 1;
+
+          if(prev_csum_pre == prev_prev_csum_pre)
+          begin
+            time_sfd_error_up = 1;
+            reset_time_count_sfd_error = 0;
+          end
            
            
            end
@@ -408,12 +692,12 @@ logic replace_bit_enb;
            enb_bit = 0;
            enb_baud = 0;
            enb_sfd = 0;
-           cardet = 0;
+           cardet = 1;
            reset_time_count = 0;
            next = SFD;
 
            write = 0;
-           error = 0;
+           error_down = 1;
            
            if((time_count == 3 || time_count == 4 || time_count == 5 || time_count == 6 
               || time_count == 10 || time_count == 11 || time_count == 12 || time_count == 13))
@@ -424,28 +708,38 @@ logic replace_bit_enb;
                            
                end
             
-            if(h_out_bit == 1 && SixteenBaudRate && (time_count_sfd >= 4'ha || time_count_sfd == 0)) 
+            if(h_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check) 
               begin
                 d_in_sfd = 1; enb_sfd = 1;
-                time_sfd_up = 1;
+                d_in_pre = 1; enb_pre = 1;
+                time_sfd_up_up = 1;
+                time_sfd_up_down = 0;
                 //time_sfd_enabled = 1;
+                input_pre_check_up = 1;
               end
-            if(l_out_bit == 1 && SixteenBaudRate && (time_count_sfd >= 4'ha || time_count_sfd == 0)) 
+            if(l_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check) 
               begin
                 d_in_sfd = 0; enb_sfd = 1;
-                time_sfd_up = 1;
+                d_in_pre = 0; enb_pre = 1;
+                time_sfd_up_up = 1;
+                time_sfd_up_down = 0;
                 //time_sfd_enabled = 1;
+                input_pre_check_up = 1;
               end   
 
-            if(h_out_bit == 1 && SixteenBaudRate && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0) 
+            if(h_out_bit == 1 && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0 && ~input_pre_check) 
               begin
                 d_in_sfd = 1; enb_sfd = 1;
+                d_in_pre = 1; enb_pre = 1;
                 reset_time_count_sfd = 1;
+                input_pre_check_up = 1;
               end
-            if(l_out_bit == 1 && SixteenBaudRate && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0) 
+            if(l_out_bit == 1 && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0 && ~input_pre_check) 
               begin
                 d_in_sfd = 0; enb_sfd = 1;
+                d_in_pre = 0; enb_pre = 1;
                 reset_time_count_sfd = 1;
+                input_pre_check_up = 1;
               end            
 
            //BE CAREFUL HERE
@@ -456,7 +750,8 @@ logic replace_bit_enb;
             begin
             
             time_sfd_enabled = 1;
-            time_sfd_up = 0;
+            time_sfd_up_down = 1;
+            time_sfd_up_up = 0;
             reset_time_count_sfd = 1;
 
             //rst_bit = 1;
@@ -472,15 +767,45 @@ logic replace_bit_enb;
 
           end
 
+          if(time_count_sfd_error == 4'h6)
+            begin
+              error_up = 1;
+              error_down = 0;
+              next = IDLE;
+              rst_bit = 1;
+              rst_baud = 1;
+              rst_sfd = 1;
+              rst_pre = 1;
+              reset_time_count_eof = 1;
+              reset_time_count_sfd = 1;
+              reset_time_count_error = 1;
+              reset_time_count = 1;
+              reset_bit_count = 1;
+              reset_idle_check = 1;
+
+              //time_sfd_up = 0;
+
+              at_least_one_byte_down = 1;
+              at_least_one_byte_up = 0;
+
+              totalReset = 1;
+          end
+
+          //NEEDS TO BE FIXED, DOESNT GET OUT OF SFD RIGHT AWAY, WAITS FOR DECAY
+          if((csum_pre <= 6 && csum_pre >= 2)  )
+          begin
+            time_sfd_error_up = 1;
+          end
+
            end
        
        RECEIVE:
            begin
-           cardet = 0;
+           cardet = 1;
            write = 0;
            time_up = 1;
            bit_up = 0;
-           error = 0;
+           error_down = 1;
            enb_pre = 0;
            enb_bit = 0;
            enb_baud = 0;
@@ -490,7 +815,7 @@ logic replace_bit_enb;
 
 
            if((time_count == 3 || time_count == 4 || time_count == 5 || time_count == 6 
-              || time_count == 10 || time_count == 11 || time_count == 12 || time_count == 13))
+              || time_count == 9 || time_count == 10 || time_count == 11 || time_count == 12))
                begin
                    
                    d_in_bit = rxd;
@@ -498,49 +823,175 @@ logic replace_bit_enb;
                            
                end
 
+           if((time_count % 3 == 0) && SixteenBaudRate)
+               begin
+                   
+                   d_in_eof = rxd;
+                   enb_eof = 1;
+                           
+               end
             // if(l_out_bit && ~time_sfd_enabled)
             //   time_sfd_enabled = 1;
 
-            if(h_out_bit == 1 && SixteenBaudRate && (time_count_sfd >= 4'ha || time_count_sfd == 0)) 
+            if(h_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check) 
               begin
-                d_in_sfd = 1; enb_sfd = 1;
-                time_sfd_up = 1;
-                //time_sfd_enabled = 1;
+                //d_in_sfd = 1; enb_sfd = 1;
+
+                time_sfd_up_up = 1;
+                time_sfd_up_down = 0;
+                time_error_up_up = 1;
+                time_error_up_down = 0;
+
+                bit_up = 1;
+                enable_data = 1;
+                
+                input_pre_check_up = 1;
               end
-            if(l_out_bit == 1 && SixteenBaudRate && (time_count_sfd >= 4'ha || time_count_sfd == 0)) 
+            if(l_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check) 
               begin
-                d_in_sfd = 0; enb_sfd = 1;
-                time_sfd_up = 1;
-                //time_sfd_enabled = 1;
+                //d_in_sfd = 0; enb_sfd = 1;
+
+                time_sfd_up_up = 1;
+                time_sfd_up_down = 0;
+                time_error_up_up = 1;
+                time_error_up_down = 0;
+
+                bit_up = 1;
+                enable_data = 1;
+                
+                input_pre_check_up = 1;
               end   
 
-            if(h_out_bit == 1 && SixteenBaudRate && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0) 
+            if(h_out_bit == 1 && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0 && ~input_pre_check) 
               begin
-                d_in_sfd = 1; enb_sfd = 1;
+                //d_in_sfd = 1; enb_sfd = 1;
+
                 reset_time_count_sfd = 1;
+                reset_time_count_error = 1;
+
+                bit_up = 1;
+                enable_data = 1;
+
+                input_pre_check_up = 1;
               end
-            if(l_out_bit == 1 && SixteenBaudRate && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0) 
+            if(l_out_bit == 1 && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0 && ~input_pre_check) 
               begin
-                d_in_sfd = 0; enb_sfd = 1;
+                //d_in_sfd = 0; enb_sfd = 1;
+
                 reset_time_count_sfd = 1;
+                reset_time_count_error = 1;
+
+                bit_up = 1;
+                enable_data = 1;
+
+                input_pre_check_up = 1;
               end   
 
+            if(h_out_bit == 1 || h_out_bit ==1)
+              reset_time_count_error = 1;
+
+          if(bit_count == 7)
+            begin
+              if(~check_last_data)
+                begin
+                  write = 1;
+                  at_least_one_byte_up = 1;
+                  at_least_one_byte_down = 0;
+                end
+              tempdata = 8'bxxxxxxxx;
+            end
+
+          if(check_last_data && bit_count == 6)
+          begin
+            check_last_data_down = 1;
+            check_last_data_up = 0;
+          end
+
+          if(h_out_eof)
+            time_eof_up = 1;
+          else
+            reset_time_count_eof = 1;
+
+          if(h_out_eof == 1)
+             next = EOF;
+
+          // if(time_count_eof == 5'b10000 && SixteenBaudRate && bit_count == 7)
+          //    next = EOF;
+
+          // if(time_count_error == 6'b100010 && SixteenBaudRate)
+          // begin
+          //   error_up = 1;
+          //   error_down = 0;
+          //   next = IDLE;
+          //   rst_bit = 1;
+          //   rst_baud = 1;
+          //   rst_sfd = 1;
+          //   rst_pre = 1;
+          //   reset_time_count_eof = 1;
+          //   reset_time_count_sfd = 1;
+          //   reset_time_count_error = 1;
+          //   reset_time_count = 1;
+          //   reset_bit_count = 1;
+          //   reset_idle_check = 1;
+
+          //   //time_sfd_up = 0;
+
+          //   at_least_one_byte_down = 1;
+          //   at_least_one_byte_up = 0;
+
+          //   totalReset = 1;
+          // end
 
            end
        
        EOF:
           begin
-          cardet = 0;
+          cardet = 1;
           write = 0;
           time_up = 0;
           bit_up = 0;
-          error = 0;
+          error_down = 1;
           enb_pre = 0;
           enb_bit = 0;
           enb_baud = 0;
           enb_sfd = 0;
           reset_time_count = 0;
           next = EOF;
+
+          tempdata = data;
+          check_last_data_up = 1;
+          check_last_data_down = 0;
+
+          time_eof_up = 1;
+
+          d_in_eof = rxd;
+          enb_eof = 1;
+
+          //if(time_count_eof == 5'b11101 && SixteenBaudRate)
+          if(csum_eof < 4'h8)
+            begin 
+              next = IDLE;
+              rst_bit = 1;
+              rst_baud = 1;
+              rst_sfd = 1;
+              rst_pre = 1;
+              reset_time_count_eof = 1;
+              reset_time_count_sfd = 1;
+              reset_time_count_error = 1;
+              reset_time_count = 1;
+              reset_bit_count = 1;
+              reset_idle_check = 1;
+
+              //time_sfd_up = 0;
+
+              at_least_one_byte_down = 1;
+              at_least_one_byte_up = 0;
+
+              totalReset = 1;
+
+            end
+
+
           end 
       
              
@@ -550,7 +1001,7 @@ logic replace_bit_enb;
                next = IDLE;
                cardet = 1;
                write = 1;
-               error = 0;
+               error_down = 1;
                time_up = 0;
                bit_up = 0;
                enb_pre = 0;

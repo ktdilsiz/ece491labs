@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="C:/Users/husseinz/Desktop/ece 491/ece491labs/project_3/project_3.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab03/project_3/project_3.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="c51c0bdf49d24eab9bc91a915b2500cf"/>
@@ -50,7 +50,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv">
+      <File Path="$PPRDIR/../../../../../../husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -105,7 +105,7 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv">
+      <File Path="$PPRDIR/../../../../../../husseinz/Downloads/mxtest_2 - Extended mxtest module-20160917/mxtest_2_bench.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>

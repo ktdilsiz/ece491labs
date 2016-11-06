@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../sources/clkenb.sv"
+sv xil_defaultlib  "../../../sources/seven_seg.sv"
+sv xil_defaultlib  "../../../sources/correlator.sv"
+sv xil_defaultlib  "../../../sources/counter_parm.sv"
+sv xil_defaultlib  "../../../sources/mux8_parm.sv"
+sv xil_defaultlib  "../../../sources/decoder_3_8_en.sv"
+sv xil_defaultlib  "../../../sources/s_fifo4_modified.sv"
+sv xil_defaultlib  "../../../sources/mx_rcvr.sv"
+sv xil_defaultlib  "../../../sources/transmitter.sv"
+sv xil_defaultlib  "../../../sources/dispctl.sv"
+sv xil_defaultlib  "../../../sources/mxtest_2.sv"
+sv xil_defaultlib  "../../../sources/topmodule.sv"
+sv xil_defaultlib  "../../../tests/TopLevelTest.sv"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

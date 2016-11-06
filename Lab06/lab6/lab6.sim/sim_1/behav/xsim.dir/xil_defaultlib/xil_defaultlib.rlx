@@ -1,0 +1,16 @@
+0.4
+2016.2
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/lab6.sim/sim_1/behav/glbl.v,1464879896,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/clkenb.sv,1478075799,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/correlator.sv,1478075709,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/counter_parm.sv,1478075758,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/decoder_3_8_en.sv,1478075767,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/dispctl.sv,1478075731,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/mux8_parm.sv,1478075747,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/mx_rcvr.sv,1478282913,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/mxtest_2.sv,1478186340,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/s_fifo4_modified.sv,1478202204,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/seven_seg.sv,1478075778,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/topmodule.sv,1478227098,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/sources/transmitter.sv,1475623505,verilog,,,,,,,,,,,
+C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6/tests/TopLevelTest.sv,1478205285,verilog,,,,,,,,,,,

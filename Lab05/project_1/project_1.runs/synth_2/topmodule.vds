@@ -1,0 +1,908 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Nov 05 12:34:00 2016
+# Process ID: 10460
+# Current directory: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.runs/synth_2
+# Command line: vivado.exe -log topmodule.vds -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
+# Log file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.runs/synth_2/topmodule.vds
+# Journal file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source topmodule.tcl -notrace
+Command: synth_design -top topmodule -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10804 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 316.777 ; gain = 108.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topmodule' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:3]
+	Parameter BAUD bound to: 50000 - type: integer 
+	Parameter OUTPUTBAUD bound to: 19200 - type: integer 
+	Parameter numBits bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clkenb' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 50000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 2000 - type: integer 
+	Parameter DIVBITS bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb' (1#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized0' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 19200 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 5208 - type: integer 
+	Parameter DIVBITS bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized0' (1#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized1' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 1920 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 52083 - type: integer 
+	Parameter DIVBITS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized1' (1#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-638] synthesizing module 'transmitter' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Buffer/async_tran.sv:17]
+	Parameter BAUD bound to: 19200 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized2' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 19200 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 5208 - type: integer 
+	Parameter DIVBITS bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized2' (1#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'transmitter' (2#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Buffer/async_tran.sv:17]
+INFO: [Synth 8-638] synthesizing module 'm_transmitter' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Buffer/m_transmitter.sv:17]
+	Parameter BAUD bound to: 50000 - type: integer 
+	Parameter TWICEBAUD bound to: 100000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized3' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 100000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 1000 - type: integer 
+	Parameter DIVBITS bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized3' (2#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'm_transmitter' (3#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Buffer/m_transmitter.sv:17]
+INFO: [Synth 8-638] synthesizing module 'p_fifo4' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/s_fifo4_modified.sv:57]
+	Parameter numBits bound to: 64 - type: integer 
+	Parameter DIVBITS bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'p_fifo4' (4#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/s_fifo4_modified.sv:57]
+INFO: [Synth 8-638] synthesizing module 'mxtest_2' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/mxtest_2.sv:33]
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter WAIT_TIME_US bound to: 10000 - type: integer 
+	Parameter CLK_PD_NS bound to: 10 - type: integer 
+	Parameter WAIT_TIME bound to: 2000000 - type: integer 
+	Parameter WAIT_BITS bound to: 21 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/mxtest_2.sv:149]
+INFO: [Synth 8-256] done synthesizing module 'mxtest_2' (5#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/mxtest_2.sv:33]
+INFO: [Synth 8-638] synthesizing module 'mx_rcvr' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:21]
+	Parameter BAUD bound to: 50000 - type: integer 
+	Parameter TWICEBAUD bound to: 100000 - type: integer 
+	Parameter SIXTEENBAUD bound to: 800000 - type: integer 
+	Parameter SIXTYFOURBAUD bound to: 3200000 - type: integer 
+	Parameter BIT_RATE bound to: 50000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized4' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 100000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 1000 - type: integer 
+	Parameter DIVBITS bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized4' (5#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized5' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 800000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 125 - type: integer 
+	Parameter DIVBITS bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized5' (5#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-638] synthesizing module 'correlator' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+	Parameter LEN bound to: 8 - type: integer 
+	Parameter PATTERN bound to: 8'b10101010 
+	Parameter HTHRESH bound to: 7 - type: integer 
+	Parameter LTHRESH bound to: 1 - type: integer 
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'correlator' (6#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized0' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+	Parameter LEN bound to: 8 - type: integer 
+	Parameter PATTERN bound to: 8'b11010000 
+	Parameter HTHRESH bound to: 8 - type: integer 
+	Parameter LTHRESH bound to: 1 - type: integer 
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized0' (6#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized1' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+	Parameter LEN bound to: 12 - type: integer 
+	Parameter PATTERN bound to: 12'b111111111111 
+	Parameter HTHRESH bound to: 11 - type: integer 
+	Parameter LTHRESH bound to: 1 - type: integer 
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized1' (6#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+WARNING: [Synth 8-689] width (4) of port connection 'csum' does not match port width (5) of module 'correlator__parameterized1' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:155]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized2' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+	Parameter LEN bound to: 8 - type: integer 
+	Parameter PATTERN bound to: 8'b11110000 
+	Parameter HTHRESH bound to: 7 - type: integer 
+	Parameter LTHRESH bound to: 1 - type: integer 
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized2' (6#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized3' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+	Parameter LEN bound to: 8 - type: integer 
+	Parameter PATTERN bound to: 8'b11110000 
+	Parameter HTHRESH bound to: 7 - type: integer 
+	Parameter LTHRESH bound to: 1 - type: integer 
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized3' (6#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+WARNING: [Synth 8-3848] Net rst_eof in module/entity mx_rcvr does not have driver. [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:143]
+INFO: [Synth 8-256] done synthesizing module 'mx_rcvr' (7#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:21]
+INFO: [Synth 8-638] synthesizing module 'dispctl' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/dispctl.sv:25]
+INFO: [Synth 8-638] synthesizing module 'mux8_parm' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/mux8_parm.sv:2]
+	Parameter W bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/mux8_parm.sv:9]
+INFO: [Synth 8-256] done synthesizing module 'mux8_parm' (8#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/mux8_parm.sv:2]
+INFO: [Synth 8-638] synthesizing module 'counter_parm' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/counter_parm.sv:2]
+	Parameter W bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_parm' (9#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/counter_parm.sv:2]
+INFO: [Synth 8-638] synthesizing module 'decoder_3_8_en' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/decoder_3_8_en.sv:2]
+INFO: [Synth 8-256] done synthesizing module 'decoder_3_8_en' (10#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/decoder_3_8_en.sv:2]
+INFO: [Synth 8-638] synthesizing module 'seven_seg' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/seven_seg.sv:18]
+	Parameter BLANK bound to: 7'b1111111 
+	Parameter ZERO bound to: 7'b1000000 
+	Parameter ONE bound to: 7'b1111001 
+	Parameter TWO bound to: 7'b0100100 
+	Parameter THREE bound to: 7'b0110000 
+	Parameter FOUR bound to: 7'b0011001 
+	Parameter FIVE bound to: 7'b0010010 
+	Parameter SIX bound to: 7'b0000010 
+	Parameter SEVEN bound to: 7'b1111000 
+	Parameter EIGHT bound to: 7'b0000000 
+	Parameter NINE bound to: 7'b0010000 
+INFO: [Synth 8-226] default block is never used [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/seven_seg.sv:37]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg' (11#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/seven_seg.sv:18]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized6' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 1000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 100000 - type: integer 
+	Parameter DIVBITS bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized6' (11#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'dispctl' (12#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/dispctl.sv:25]
+WARNING: [Synth 8-3848] Net LED in module/entity topmodule does not have driver. [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:15]
+WARNING: [Synth 8-3848] Net UART_RXD_OUT_copy in module/entity topmodule does not have driver. [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:21]
+WARNING: [Synth 8-3848] Net JAtxen in module/entity topmodule does not have driver. [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:23]
+WARNING: [Synth 8-3848] Net JAcardet in module/entity topmodule does not have driver. [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:24]
+WARNING: [Synth 8-3848] Net JAwrite in module/entity topmodule does not have driver. [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:25]
+WARNING: [Synth 8-3848] Net JAerror in module/entity topmodule does not have driver. [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:26]
+INFO: [Synth 8-256] done synthesizing module 'topmodule' (13#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:3]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[7]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[6]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[5]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[4]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[3]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[2]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[1]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[0]
+WARNING: [Synth 8-3331] design topmodule has unconnected port UART_RXD_OUT_copy
+WARNING: [Synth 8-3331] design topmodule has unconnected port JAtxen
+WARNING: [Synth 8-3331] design topmodule has unconnected port JAcardet
+WARNING: [Synth 8-3331] design topmodule has unconnected port JAwrite
+WARNING: [Synth 8-3331] design topmodule has unconnected port JAerror
+WARNING: [Synth 8-3331] design topmodule has unconnected port SW[15]
+WARNING: [Synth 8-3331] design topmodule has unconnected port BTNR
+WARNING: [Synth 8-3331] design topmodule has unconnected port BTND
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 355.754 ; gain = 147.652
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 355.754 ; gain = 147.652
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/constrs_1/new/nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/constrs_1/new/nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/constrs_1/new/nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topmodule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topmodule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 664.691 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 664.691 ; gain = 456.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 664.691 ; gain = 456.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 664.691 ; gain = 456.590
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'm_transmitter'
+INFO: [Synth 8-5544] ROM "txen" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rdy" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mxtest_2'
+INFO: [Synth 8-5544] ROM "wait_count_enable" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wait_count_reset" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "send" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mx_rcvr'
+INFO: [Synth 8-5544] ROM "error_up" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error_down" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "time_up" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "check_last_data_up" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+                     TR0 |                             0001 |                             0001
+                     TR1 |                             0010 |                             0010
+                     TR2 |                             0011 |                             0011
+                     TR3 |                             0100 |                             0100
+                     TR4 |                             0101 |                             0101
+                     TR5 |                             0110 |                             0110
+                     TR6 |                             0111 |                             0111
+                     TR7 |                             1000 |                             1000
+                    WAIT |                             1001 |                             1111
+                    EOF1 |                             1010 |                             1101
+                    EOF2 |                             1011 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'm_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 WAIT_RH |                               00 |                              000
+                 WAIT_RL |                               01 |                              001
+           WAIT_RH_DELAY |                               10 |                              010
+              WAIT_DELAY |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mxtest_2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                             0000
+                PREAMBLE |                            00010 |                             1010
+                     SFD |                            00100 |                             0001
+                 RECEIVE |                            01000 |                             0010
+                     EOF |                            10000 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mx_rcvr'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 664.691 ; gain = 456.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 1     
+	  12 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 70    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 5     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 103   
+	  13 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 26    
+	   8 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module topmodule 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+Module clkenb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module transmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module m_transmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 3     
+Module p_fifo4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 64    
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 68    
+Module mxtest_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module clkenb__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module correlator 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module correlator__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module correlator__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	  12 Input      5 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module correlator__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module correlator__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   8 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mx_rcvr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	  14 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 26    
+	   8 Input      1 Bit        Muxes := 8     
+Module counter_parm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module decoder_3_8_en 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+Module clkenb__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 664.691 ; gain = 456.590
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "error_up" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error_down" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CLKENB3/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENDOUTPUT/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB2/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COR_PREAM/shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COR_SFD/shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COR_BIT/shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "COR_MIS_BAUD/shreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB3/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "DECODER/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENBEIGHT/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENDOUTPUT/enb" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[7]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[6]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[5]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[4]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[3]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[2]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[1]
+WARNING: [Synth 8-3331] design topmodule has unconnected port LED[0]
+WARNING: [Synth 8-3331] design topmodule has unconnected port UART_RXD_OUT_copy
+WARNING: [Synth 8-3331] design topmodule has unconnected port JAtxen
+WARNING: [Synth 8-3331] design topmodule has unconnected port JAcardet
+WARNING: [Synth 8-3331] design topmodule has unconnected port JAwrite
+WARNING: [Synth 8-3331] design topmodule has unconnected port JAerror
+WARNING: [Synth 8-3331] design topmodule has unconnected port SW[15]
+WARNING: [Synth 8-3331] design topmodule has unconnected port BTNR
+WARNING: [Synth 8-3331] design topmodule has unconnected port BTND
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 664.691 ; gain = 456.590
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 664.691 ; gain = 456.590
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|mxtest_2    | byterom    | 32x8          | LUT            | 
+|mxtest_2    | byterom    | 32x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'URCVR/replace_bit_reg[6]' (FDR) to 'URCVR/replace_bit_reg[0]'
+INFO: [Synth 8-3886] merging instance 'URCVR/replace_bit_reg[2]' (FDR) to 'URCVR/replace_bit_reg[0]'
+INFO: [Synth 8-3886] merging instance 'URCVR/replace_bit_reg[0]' (FDR) to 'URCVR/replace_bit_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\URCVR/replace_bit_reg[4] )
+INFO: [Synth 8-3886] merging instance 'URCVR/replace_bit_reg[7]' (FDS) to 'URCVR/replace_bit_reg[1]'
+INFO: [Synth 8-3886] merging instance 'URCVR/replace_bit_reg[3]' (FDS) to 'URCVR/replace_bit_reg[1]'
+INFO: [Synth 8-3886] merging instance 'URCVR/replace_bit_reg[1]' (FDS) to 'URCVR/replace_bit_reg[5]'
+WARNING: [Synth 8-3332] Sequential element (URCVR/replace_bit_reg[7]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (URCVR/replace_bit_reg[6]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (URCVR/replace_bit_reg[4]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (URCVR/replace_bit_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (URCVR/replace_bit_reg[2]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (URCVR/replace_bit_reg[1]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (URCVR/replace_bit_reg[0]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (URCVR/error_reg) is unused and will be removed from module topmodule.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 664.691 ; gain = 456.590
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 664.691 ; gain = 456.590
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 664.691 ; gain = 456.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    19|
+|3     |LUT1   |    73|
+|4     |LUT2   |    54|
+|5     |LUT3   |   311|
+|6     |LUT4   |    57|
+|7     |LUT5   |    69|
+|8     |LUT6   |   267|
+|9     |MUXF7  |    31|
+|10    |MUXF8  |    13|
+|11    |FDCE   |    14|
+|12    |FDRE   |   737|
+|13    |FDSE   |     5|
+|14    |IBUF   |    19|
+|15    |OBUF   |    26|
+|16    |OBUFT  |    13|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------+---------------------------+------+
+|      |Instance         |Module                     |Cells |
++------+-----------------+---------------------------+------+
+|1     |top              |                           |  1709|
+|2     |  CLKENBEIGHT    |clkenb                     |    32|
+|3     |  CLKENDOUTPUT   |clkenb__parameterized0     |    45|
+|4     |  DISPCTL        |dispctl                    |    74|
+|5     |    CLKENB       |clkenb__parameterized6     |    60|
+|6     |    COUNTER_PARM |counter_parm               |    14|
+|7     |  FIFO           |p_fifo4                    |  1003|
+|8     |  MTRANS         |m_transmitter              |    78|
+|9     |    CLKENB       |clkenb_1                   |    33|
+|10    |    CLKENB2      |clkenb__parameterized3     |    28|
+|11    |  TRANS          |transmitter                |    58|
+|12    |    CLKENB       |clkenb__parameterized2     |    45|
+|13    |  URCVR          |mx_rcvr                    |   249|
+|14    |    CLKENB       |clkenb_0                   |    33|
+|15    |    CLKENB3      |clkenb__parameterized5     |    30|
+|16    |    COR_BIT      |correlator__parameterized2 |    49|
+|17    |    COR_EOF      |correlator__parameterized1 |    33|
+|18    |    COR_PREAM    |correlator                 |    22|
+|19    |    COR_SFD      |correlator__parameterized0 |    16|
+|20    |  U_MXTEST       |mxtest_2                   |    99|
++------+-----------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 688.469 ; gain = 141.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 688.469 ; gain = 480.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+188 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 688.469 ; gain = 454.082
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 688.469 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 05 12:34:33 2016...

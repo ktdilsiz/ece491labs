@@ -25,10 +25,10 @@ module rcvrTEST();
     logic [7:0] data;
     logic cardet, write, error;
  
-     mx_rcvr #(.BAUD(2_500_000_0 / 16)) URVR(.clk(clk), .rst(rst), .rxd(rxd), .cardet(cardet), .data(data), .write(write), .error(error));
+     mx_rcvr #(.BAUD(800_000/ 16)) URVR(.clk(clk), .rst(rst), .rxd(rxd), .cardet(cardet), .data(data), .write(write), .error(error));
     
     logic BaudRate;
-      clkenb #(.DIVFREQ(2_500_000_0 / 8)) CLKENB3(.clk(clk), .reset(rst), .enb(BaudRate));
+      clkenb #(.DIVFREQ(800_000 / 8)) CLKENB3(.clk(clk), .reset(rst), .enb(BaudRate));
     
     import check_p1::*;
   
@@ -64,18 +64,61 @@ module rcvrTEST();
   task check_erroreous_input;
      rst = 0; 
        
+     check_preamble;
+
      check("cardet before error", cardet, 1'h0);
      check("data before error", data, 8'hxx);
      check("write before error", write, 1'h0);
      
-     repeat (2) 
-       begin 
-           @(posedge clk) rxd = 1; #10 rxd = ~rxd;
-           @(posedge clk) rxd = 0; #10 rxd = ~rxd;
-       end
-     
-     repeat(2) @(posedge clk) rxd = 0;
-     repeat(2) @(posedge clk) rxd = 1;
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    //////////////////////////////////////////////
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
      
      check("cardet after error", cardet, 1'h0);
      check("data after error", data, 8'hxx);
@@ -93,12 +136,26 @@ module rcvrTEST();
   
     check_sfd;
     
-    @(posedge clk) rxd = 1; #10 rxd = ~rxd;
-    @(posedge clk) rxd = 0; #10 rxd = ~rxd;
-    @(posedge clk) rxd = 1; #10 rxd = ~rxd;
-    @(posedge clk) rxd = 1; #10 rxd = ~rxd;
-    @(posedge clk) rxd = 1; #10 rxd = ~rxd;
-    @(posedge clk) rxd = 0; #10 rxd = ~rxd;
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 1; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = ~rxd;
+
+    @(posedge BaudRate) rxd = noise_error; 
+    @(posedge BaudRate) rxd = noise_error; 
 
     check("cardet after error", cardet, 1'h0);
     check("data after error", data, 8'hxx);
@@ -151,24 +208,23 @@ module rcvrTEST();
     check("cardet before sfd", cardet, 1'h1);
     check("data before sfd", data, 8'hxx);
     check("write before sfd", write, 1'h0);
-  
+      @(posedge BaudRate) rxd = 1; 
+      @(posedge BaudRate) rxd = 0; 
+
+      @(posedge BaudRate) rxd = 1; 
+      @(posedge BaudRate) rxd = 0; 
+
+      @(posedge BaudRate) rxd = 0; 
+      @(posedge BaudRate) rxd = 1; 
+
+      @(posedge BaudRate) rxd = 1; 
+      @(posedge BaudRate) rxd = 0; 
+
   repeat (4) 
     begin
         @(posedge BaudRate) rxd = 0; 
         @(posedge BaudRate) rxd = ~rxd;
     end
-
-      @(posedge BaudRate) rxd = 1; 
-      @(posedge BaudRate) rxd = 0; 
-
-      @(posedge BaudRate) rxd = 0; 
-      @(posedge BaudRate) rxd = 1; 
-
-      @(posedge BaudRate) rxd = 1; 
-      @(posedge BaudRate) rxd = 0; 
-
-      @(posedge BaudRate) rxd = 1; 
-      @(posedge BaudRate) rxd = 0; 
 
   
   check("cardet after sfd", cardet, 1'h1);
@@ -186,7 +242,7 @@ module rcvrTEST();
     check("data before receive", data, 8'hxx);
     check("write before receive", write, 1'h0);
     
-    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = 1; 
     @(posedge BaudRate) rxd = ~rxd;
 
     @(posedge BaudRate) rxd = 0; 
@@ -305,18 +361,21 @@ module rcvrTEST();
   //check EOF
   task check_EOF;
   
+    check_receive;
+  
     check("cardet before EOF", cardet, 1'h1);
     check("data before EOF", data, 8'bxx);
     check("write before EOF", write, 1'h1);
     
-    rst = 0;
-    repeat (2) @(posedge clk) rxd = 1;
+    repeat (4) @(posedge BaudRate) rxd = 1;
     
     check("cardet after EOF", cardet, 1'h1);
     check("data after EOF", data, 8'bxx);
     check("write after EOF", write, 1'h1);
   
   endtask
+
+
 
   logic noise_error;
 
@@ -341,10 +400,17 @@ module rcvrTEST();
     //check_preamble;
     //check_sfd;
     
-    check_receive;
+    //check_receive;
 
-//    check_EOF;
-//    check_erroreous_input;
+    //check_EOF;
+
+    check_EOF;
+    // check_premature_error;
+    // repeat(100) @(posedge BaudRate) rxd = 0;
+    repeat(100) @(posedge BaudRate) rxd = 0;
+    check_erroreous_input;
+    repeat(100) @(posedge BaudRate) rxd = 0;
+    check_EOF;
 //    check_premature_error;
 //    check_summary_stop;
 

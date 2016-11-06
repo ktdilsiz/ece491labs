@@ -2,19 +2,20 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Sat Oct 29 20:15:04 2016
-# Process ID: 7224
-# Current directory: C:/Users/husseinz/Desktop/Lab05
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5136 C:\Users\husseinz\Desktop\Lab05\Lab_5.xpr
-# Log file: C:/Users/husseinz/Desktop/Lab05/vivado.log
-# Journal file: C:/Users/husseinz/Desktop/Lab05\vivado.jou
+# Start of session at: Fri Nov 04 16:13:08 2016
+# Process ID: 7764
+# Current directory: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3176 C:\Users\dilsizk\Desktop\ece491\ece491labs\Lab05\Lab_5.xpr
+# Log file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/vivado.log
+# Journal file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/husseinz/Desktop/Lab05/Lab_5.xpr
+open_project C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Lab_5.xpr
 INFO: [Project 1-313] Project file moved from 'C:/Users/husseinz/Desktop/Lab_5' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'C:/Users/husseinz/Desktop/Lab05/Lab_5.cache/ip', nor could it be found using path 'C:/Users/husseinz/Desktop/Lab_5/Lab_5.cache/ip'.
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Lab_5.cache/ip', nor could it be found using path 'C:/Users/husseinz/Desktop/Lab_5/Lab_5.cache/ip'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Lab_5.ip_user_files', nor could it be found using path 'C:/Users/husseinz/Desktop/Lab_5/Lab_5.ip_user_files'.
 CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DSANumComputeUnits
 CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimRadix
 CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTimeUnit
@@ -24,5 +25,3 @@ WARNING: [Project 1-231] Project 'Lab_5.xpr' was created with a future version a
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Sat Oct 29 20:16:54 2016...

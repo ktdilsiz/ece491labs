@@ -1,0 +1,75 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 7764
+
+Current time: 	11/4/16 4:13:17 PM EDT
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	dilsizk
+User home directory: C:/Users/dilsizk
+User working directory: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.2/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/dilsizk/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/dilsizk/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	227 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 415 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// HOptionPane Warning: 'This project was created with a future version of Vivado. It will be opened in read-only<br>mode for the protection of unrecognized data.<br>Please use 'File | Save Project As...' if you need to alter a copy of this project.<br>The project may or may not open reliably with this version of Vivado.<br>OK to proceed and open the project? (Future Project Version)'
+// [GUI Memory]: 43 MB (+42362kb) [00:00:03]
+// [Engine Memory]: 415 MB (+283572kb) [00:00:03]
+// HMemoryUtils.trashcanNow. Engine heap size: 415 MB. GUI used memory: 29 MB. Current time: 11/4/16 4:13:19 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 428 MB. GUI used memory: 29 MB. Current time: 11/4/16 4:13:34 PM EDT
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\dilsizk\Desktop\ece491\ece491labs\Lab05\Lab_5.xpr. Version: Vivado v2016.3 
+selectButton("PAResourceOtoP.PABaseTab_THIS_PROJECT_WILL_BE_OPENED_IN_READ_ONLY_OK", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, T:JDialog)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// Tcl Message: open_project C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Lab_5.xpr 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, bL:g)
+// [Engine Memory]: 518 MB (+86277kb) [00:00:35]
+// [GUI Memory]: 50 MB (+5050kb) [00:00:36]
+// [Engine Memory]: 549 MB (+5193kb) [00:00:36]
+// [GUI Memory]: 57 MB (+5170kb) [00:00:36]
+// [GUI Memory]: 63 MB (+2853kb) [00:00:36]
+// Tcl Message: open_project C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/Lab_5.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/husseinz/Desktop/Lab_5' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'. 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, bL:g)
+// Project name: Lab_5; location: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05; part: xc7a200tfbg676-2
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 38 MB. Current time: 11/4/16 4:13:49 PM EDT
