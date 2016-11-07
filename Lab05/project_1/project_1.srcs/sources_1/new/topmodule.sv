@@ -3,7 +3,7 @@
 module topmodule (
 		  // un-comment the ports that you will use
           input logic         CLK100MHZ,
-		  input logic [15:0]  SW,
+		  input logic [14:0]  SW,
 		  input logic 	      BTNC,
 		  input logic 	      BTNU, 
 		  input logic 	      BTNL, 
@@ -12,13 +12,13 @@ module topmodule (
 		  output logic [6:0]  SEGS,
 		  output logic [7:0]  AN,
 		  output logic 	      DP,
-		  output logic [7:0]  LED,
+//		  output logic [7:0]  LED,
           output logic [7:0]  data_m_receiver,
           //output logic        data_m_trans,
 //		  input logic         UART_TXD_IN,
 //		  input logic         UART_RTS,		  
 		  output logic        UART_RXD_OUT,
-		  output logic        UART_RXD_OUT_copy,
+//		  output logic        UART_RXD_OUT_copy,
 		  output logic        JAtxd,
 		  output logic        JAtxen,
 		  output logic        JAcardet,
@@ -42,14 +42,21 @@ module topmodule (
         logic [6:0] segments;
         logic [2:0] sev_data;
 
-        assign length = {SW[14],SW[12:8]};
+        assign length = {SW[13:8]};
+
+ //       assign UART_RXD_OUT_copy = UART_RXD_OUT;
+
+        assign JAtxen = txen_mtrans_out;
+        assign JAerror = error_mr_out;
+        assign JAcardet = cardet_mr_out;
+        assign JAwrite = write_mr_out;
         
         logic [7:0] tempdata;
         logic tempsend;
         
         always_ff@(posedge CLK100MHZ)
         begin
-            if(SW[13]) 
+            if(SW[14]) 
             begin
                 tempdata <= data_mx_out;
                 tempsend <= send_mx_out;
@@ -124,7 +131,7 @@ module topmodule (
         mxtest_2 #(.WAIT_TIME(2_000_000)) U_MXTEST (
             .clk(CLK100MHZ), 
             .reset(BTNC), 
-            .run(BTNU), 
+            .run(BTNU || BTND || BTNR), 
             .send(send_mx_out),
             .length(length), 
             .data(data_mx_out), 
@@ -135,7 +142,7 @@ module topmodule (
 	    //logic write_mr_out, 
 	    logic error_mr_out;
 	    
-	    mx_rcvr #(.BAUD(BAUD)) URCVR (
+	    mx_rcvr2 #(.BAUD(BAUD)) URCVR (
             .rxd(txd_mtrans_out), 
             .clk(CLK100MHZ), 
             .rst(BTNC),

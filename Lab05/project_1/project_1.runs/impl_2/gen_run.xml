@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1478363640">
+<GenRun Id="impl_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1478530526">
+  <File Type="OPT-DCP" Name="topmodule_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="topmodule_route_status.pb"/>
   <File Type="PA-TCL" Name="topmodule.tcl"/>
-  <File Type="OPT-DCP" Name="topmodule_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="topmodule_timing_summary_init.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="topmodule_methodology_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="topmodule.vdi"/>
   <File Type="PWROPT-DRC" Name="topmodule_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="topmodule_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="topmodule_timing_summary_init.rpt"/>
   <File Type="OPT-DRC" Name="topmodule_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="topmodule_pwropt.dcp"/>
   <File Type="OPT-HWDEF" Name="topmodule.hwdef"/>
@@ -31,8 +31,8 @@
   <File Type="ROUTE-DRC" Name="topmodule_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="topmodule_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="topmodule_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="topmodule_methodology_drc_routed.pb"/>
   <File Type="BG-BIT" Name="topmodule.bit"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="topmodule_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR" Name="topmodule_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="topmodule_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="topmodule_power_routed.rpx"/>
@@ -206,14 +206,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Buffer/nexys4DDR.sv">
+    <File Path="$PSRCDIR/sources_1/new/register.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/register.sv">
+    <File Path="$PSRCDIR/sources_1/new/mx_rcvr2.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

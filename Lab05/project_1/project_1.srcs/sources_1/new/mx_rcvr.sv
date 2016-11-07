@@ -128,7 +128,7 @@ module mx_rcvr(
    logic [3:0] csum_sfd;
    
    //correlator module for sfd
-   correlator #(.LEN(8), .PATTERN(8'b11010000), .HTHRESH(8), .LTHRESH(1))
+   correlator #(.LEN(8), .PATTERN(8'b11010000), .HTHRESH(7), .LTHRESH(1))
     COR_SFD( 
     .clk(clk), 
     .reset(rst_sfd || reset), 
@@ -298,7 +298,7 @@ module mx_rcvr(
             end
       end
 
-  logic [3:0] time_count_sfd;
+  logic [3:0] time_count_sfd = 0;
   logic reset_time_count_sfd;
   logic time_sfd_up = 0;
   logic time_sfd_enabled = 0;
@@ -493,6 +493,20 @@ always_ff@(posedge clk)
       error <= error;
   end
 
+logic time_sfd_enabled_up, time_sfd_enabled_down;
+
+always_ff@(posedge clk)
+  begin
+
+    if(rst || totalReset)
+      time_sfd_enabled <= 0;
+    else if(time_sfd_enabled_up)
+      time_sfd_enabled <= 1;
+    else if(time_sfd_enabled_down)
+      time_sfd_enabled <= 0;
+    else
+      time_sfd_enabled <= time_sfd_enabled;
+  end
 
    always_comb
    begin    
@@ -507,6 +521,7 @@ always_ff@(posedge clk)
     replace_pre = 8'bxxxxxxxx;
     replace_bit_enb = 0;
     time_up_double = 0;
+    time_up = 0;
 
     //time_sfd_up = time_sfd_up;
     time_sfd_up_up = 0;
@@ -517,7 +532,9 @@ always_ff@(posedge clk)
     input_pre_check_up = 0;
     time_eof_up = 0;
     reset_time_count_eof = 0;
-    time_sfd_enabled = 0;
+    //time_sfd_enabled = 0;
+    time_sfd_enabled_up = 0;
+    time_sfd_enabled_down = 0;
     //check_last_data = check_last_data;
     check_last_data_up = 0;
     check_last_data_down = 0;
@@ -527,6 +544,7 @@ always_ff@(posedge clk)
 
     reset_idle_check = 0;
     reset_bit_count =  0;
+    reset_time_count  = 0;
 
     reset_time_count_error = 0;
     //time_error_up = time_error_up;
@@ -640,11 +658,13 @@ always_ff@(posedge clk)
                 input_pre_check_up = 1;
               end
 
-           if(h_out_pre == 1)
+           if(time_sfd_enabled)
             begin
             
             next = SFD;
             cardet = 1;
+            time_sfd_enabled_down = 1;
+            //reset_time_count  = 1;
             
             end
 
@@ -677,6 +697,24 @@ always_ff@(posedge clk)
             time_sfd_error_up = 1;
             reset_time_count_sfd_error = 0;
           end
+
+          if((time_count % 3 == 0) && SixteenBaudRate)
+             begin
+                 
+                 d_in_eof = rxd;
+                 enb_eof = 1;
+                         
+             end
+
+
+          if(h_out_pre == 1)
+            begin
+            
+            time_sfd_enabled_up = 1;
+
+            //rst_bit = 1;
+
+            end
            
            
            end
@@ -700,7 +738,7 @@ always_ff@(posedge clk)
            error_down = 1;
            
            if((time_count == 3 || time_count == 4 || time_count == 5 || time_count == 6 
-              || time_count == 10 || time_count == 11 || time_count == 12 || time_count == 13))
+              || time_count == 10 || time_count == 11 || time_count == 12 || time_count == 13) && SixteenBaudRate )
                begin
                    
                    d_in_bit = rxd;
@@ -708,7 +746,7 @@ always_ff@(posedge clk)
                            
                end
             
-            if(h_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check) 
+            if(h_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check && SixteenBaudRate ) 
               begin
                 d_in_sfd = 1; enb_sfd = 1;
                 d_in_pre = 1; enb_pre = 1;
@@ -717,7 +755,7 @@ always_ff@(posedge clk)
                 //time_sfd_enabled = 1;
                 input_pre_check_up = 1;
               end
-            if(l_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check) 
+            if(l_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check && SixteenBaudRate ) 
               begin
                 d_in_sfd = 0; enb_sfd = 1;
                 d_in_pre = 0; enb_pre = 1;
@@ -727,14 +765,14 @@ always_ff@(posedge clk)
                 input_pre_check_up = 1;
               end   
 
-            if(h_out_bit == 1 && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0 && ~input_pre_check) 
+            if(h_out_bit == 1 && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0 && ~input_pre_check && SixteenBaudRate ) 
               begin
                 d_in_sfd = 1; enb_sfd = 1;
                 d_in_pre = 1; enb_pre = 1;
                 reset_time_count_sfd = 1;
                 input_pre_check_up = 1;
               end
-            if(l_out_bit == 1 && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0 && ~input_pre_check) 
+            if(l_out_bit == 1 && time_count_sfd <= 4'h7 && time_count_sfd != 4'h0 && ~input_pre_check && SixteenBaudRate ) 
               begin
                 d_in_sfd = 0; enb_sfd = 1;
                 d_in_pre = 0; enb_pre = 1;
@@ -749,7 +787,7 @@ always_ff@(posedge clk)
           if(h_out_sfd == 1)
             begin
             
-            time_sfd_enabled = 1;
+            time_sfd_enabled_up = 1;
             time_sfd_up_down = 1;
             time_sfd_up_up = 0;
             reset_time_count_sfd = 1;
@@ -758,7 +796,7 @@ always_ff@(posedge clk)
 
             end
 
-          if(time_count == 4'b1110 && time_sfd_enabled)
+          if(time_count == 4'b1111 && time_sfd_enabled)
           begin
             next = RECEIVE;
             cardet = 1;
@@ -767,7 +805,7 @@ always_ff@(posedge clk)
 
           end
 
-          if(time_count_sfd_error == 4'h6)
+          if(time_count_sfd_error == 4'd15)
             begin
               error_up = 1;
               error_down = 0;
@@ -796,6 +834,18 @@ always_ff@(posedge clk)
           begin
             time_sfd_error_up = 1;
           end
+
+
+         if((time_count % 3 == 0) && SixteenBaudRate)
+             begin
+                 
+                 d_in_eof = rxd;
+                 enb_eof = 1;
+                         
+             end
+
+          if(l_out_eof == 1)
+             next = IDLE;
 
            end
        
@@ -833,7 +883,7 @@ always_ff@(posedge clk)
             // if(l_out_bit && ~time_sfd_enabled)
             //   time_sfd_enabled = 1;
 
-            if(h_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check) 
+            if(h_out_bit == 1 && (time_count_sfd >= 4'hb || time_count_sfd == 0) && ~input_pre_check) 
               begin
                 //d_in_sfd = 1; enb_sfd = 1;
 
@@ -847,7 +897,7 @@ always_ff@(posedge clk)
                 
                 input_pre_check_up = 1;
               end
-            if(l_out_bit == 1 && (time_count_sfd >= 4'ha || time_count_sfd == 0) && ~input_pre_check) 
+            if(l_out_bit == 1 && (time_count_sfd >= 4'hb || time_count_sfd == 0) && ~input_pre_check) 
               begin
                 //d_in_sfd = 0; enb_sfd = 1;
 
@@ -892,7 +942,7 @@ always_ff@(posedge clk)
 
           if(bit_count == 7)
             begin
-              if(~check_last_data)
+              if(~check_last_data && SixteenBaudRate)
                 begin
                   write = 1;
                   at_least_one_byte_up = 1;
@@ -1009,6 +1059,9 @@ always_ff@(posedge clk)
                enb_baud = 0;
                enb_sfd = 0;
                reset_time_count = 0;
+
+               $display("i was in default");
+
            end     
        endcase
      end

@@ -41,7 +41,7 @@ module mxtest_2(
 	      );
    
    parameter  MEM_SIZE = 32;
-   parameter  WAIT_TIME_US  = 10_000;   // delay between frames in clock cycles (10ms default)
+   parameter  WAIT_TIME_US  = 2_000_000;   // delay between frames in clock cycles (10ms default)
    parameter  CLK_PD_NS = 10;          // clock period in ns (10ns for Nexys4DDR)
    parameter  WAIT_TIME = (WAIT_TIME_US*1000)/CLK_PD_NS;
    

@@ -42,7 +42,7 @@ module mx_rcvr_testbench();
     logic rxd_noisy, rxd_in;
     logic noise_error, noise_on; 
     
-    mx_rcvr #(.BIT_RATE(BIT_RATE), .BAUD(BIT_RATE) ) 
+    mx_rcvr2 #(.BIT_RATE(BIT_RATE), .BAUD(BIT_RATE) ) 
             DUV (.clk(clk), .rst(reset), .rxd(rxd_in), .cardet(cardet), .data(data_out), .write(write), .error(error));
     
     // simulation clk = 100MHz.

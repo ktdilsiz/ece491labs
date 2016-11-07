@@ -25,7 +25,7 @@ module rcvrTEST();
     logic [7:0] data;
     logic cardet, write, error;
  
-     mx_rcvr #(.BAUD(800_000/ 16)) URVR(.clk(clk), .rst(rst), .rxd(rxd), .cardet(cardet), .data(data), .write(write), .error(error));
+     mx_rcvr2 #(.BAUD(800_000/ 16)) URVR(.clk(clk), .rst(rst), .rxd(rxd), .cardet(cardet), .data(data), .write(write), .error(error));
     
     logic BaudRate;
       clkenb #(.DIVFREQ(800_000 / 8)) CLKENB3(.clk(clk), .reset(rst), .enb(BaudRate));
@@ -372,6 +372,8 @@ module rcvrTEST();
     check("cardet after EOF", cardet, 1'h1);
     check("data after EOF", data, 8'bxx);
     check("write after EOF", write, 1'h1);
+
+     @(posedge BaudRate) rxd = 0;
   
   endtask
 
@@ -404,11 +406,15 @@ module rcvrTEST();
 
     //check_EOF;
 
+    //repeat(3) @(posedge BaudRate) rxd = 0;
+
+    #33833;
+
     check_EOF;
     // check_premature_error;
     // repeat(100) @(posedge BaudRate) rxd = 0;
-    repeat(100) @(posedge BaudRate) rxd = 0;
-    check_erroreous_input;
+    // repeat(100) @(posedge BaudRate) rxd = 0;
+    // check_erroreous_input;
     repeat(100) @(posedge BaudRate) rxd = 0;
     check_EOF;
 //    check_premature_error;
