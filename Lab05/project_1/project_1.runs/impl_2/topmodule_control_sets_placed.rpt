@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date         : Tue Nov 08 00:07:46 2016
-| Host         : ECE400-F6M7KB2 running 64-bit Service Pack 1  (build 7601)
+| Date         : Tue Nov 08 11:18:17 2016
+| Host         : ECE400-5FGC082 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_control_sets -verbose -file topmodule_control_sets_placed.rpt
 | Design       : topmodule
 | Device       : xc7a100t
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    78 |
-| Unused register locations in slices containing registers |    41 |
+| Number of unique control sets                            |    82 |
+| Unused register locations in slices containing registers |    58 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,99 +33,103 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              26 |           12 |
+| No           | No                    | No                     |              22 |           11 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             148 |           52 |
-| Yes          | No                    | No                     |             548 |          158 |
-| Yes          | No                    | Yes                    |              15 |            6 |
-| Yes          | Yes                   | No                     |              38 |           14 |
+| No           | Yes                   | No                     |             148 |           49 |
+| Yes          | No                    | No                     |             524 |          167 |
+| Yes          | No                    | Yes                    |              14 |            5 |
+| Yes          | Yes                   | No                     |              66 |           19 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+----------------------------+-------------------------------+------------------+----------------+
-|     Clock Signal     |        Enable Signal       |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
-+----------------------+----------------------------+-------------------------------+------------------+----------------+
-|  CLK100MHZ_IBUF_BUFG | TRANS/CLKENB/E[0]          | BTNC_IBUF                     |                2 |              4 |
-|  CLK100MHZ_IBUF_BUFG | MTRANS/CLKENB/E[0]         | BTNC_IBUF                     |                2 |              4 |
-|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB5/E[0]         | URCVR/COR_BIT/SR[0]           |                2 |              4 |
-|  CLK100MHZ_IBUF_BUFG | MTRANS/E[0]                | U_MXTEST/byte_addr[4]_i_1_n_0 |                2 |              5 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/wp[5]_i_1_n_0         | BTNC_IBUF                     |                2 |              6 |
-|  CLK100MHZ_IBUF_BUFG |                            | URCVR/COR_EOF/reset0          |                2 |              6 |
-|  CLK100MHZ_IBUF_BUFG | URCVR/COR_BIT/enb_sfd      |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[8][7]_i_1_n_0     |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB2/enb_pre      |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB3/enb_bit      |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[9][7]_i_1_n_0     |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[16][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[0][7]_i_1_n_0     |                               |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[10][7]_i_1_n_0    |                               |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[11][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[12][7]_i_1_n_0    |                               |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[13][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[14][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[15][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[17][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[18][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[19][7]_i_1_n_0    |                               |                4 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[1][7]_i_1_n_0     |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[20][7]_i_1_n_0    |                               |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[21][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[22][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[23][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[24][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[25][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[26][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[27][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[28][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[29][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[2][7]_i_1_n_0     |                               |                4 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[30][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[31][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[32][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[33][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[34][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[35][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[36][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[37][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[38][7]_i_1_n_0    |                               |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[39][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[3][7]_i_1_n_0     |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[40][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[41][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[42][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[43][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[44][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[45][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[46][7]_i_1_n_0    |                               |                5 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[47][7]_i_1_n_0    |                               |                4 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[48][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[49][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[4][7]_i_1_n_0     |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[50][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[51][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[52][7]_i_1_n_0    |                               |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[53][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[54][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[55][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[56][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[57][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[58][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[59][7]_i_1_n_0    |                               |                4 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[5][7]_i_1_n_0     |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[60][7]_i_1_n_0    |                               |                2 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[61][7]_i_1_n_0    |                               |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[62][7]_i_1_n_0    |                               |                1 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[63][7]_i_1_n_0    |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[6][7]_i_1_n_0     |                               |                3 |              8 |
-|  CLK100MHZ_IBUF_BUFG | FIFO/mem[7][7]_i_1_n_0     |                               |                4 |              8 |
-|  CLK100MHZ_IBUF_BUFG | TRANS/rp_reg[0]            | BTNC_IBUF                     |                4 |              9 |
-|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB3/enb_eof      |                               |                3 |             12 |
-|  CLK100MHZ_IBUF_BUFG | U_MXTEST/wait_count_enable | U_MXTEST/byte_addr[4]_i_1_n_0 |                6 |             21 |
-|  CLK100MHZ_IBUF_BUFG |                            |                               |               12 |             26 |
-|  CLK100MHZ_IBUF_BUFG |                            | BTNC_IBUF                     |               50 |            142 |
-+----------------------+----------------------------+-------------------------------+------------------+----------------+
++----------------------+------------------------------------------+---------------------------------+------------------+----------------+
+|     Clock Signal     |               Enable Signal              |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++----------------------+------------------------------------------+---------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG | URCVR/COR_EOF/shreg_reg[6]_0             |                                 |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | URCVR/COR_EOF/shreg_reg[6]_1             | URCVR/COR_EOF/shreg_reg[7]_1    |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | MTRANS/CLKENB/E[0]                       | BTNC_IBUF                       |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB/time_count_sfd_error_reg[4] | URCVR/clear                     |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB3/shreg_reg[6]               |                                 |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB3/shreg_reg[6]               | URCVR/COR_EOF/shreg_reg[7]_0    |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB5/E[0]                       | URCVR/COR_BIT/SR[0]             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | TRANS/CLKENB/E[0]                        | BTNC_IBUF                       |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | URCVR/COR_EOF/shreg_reg[6]_0             | URCVR/COR_EOF/shreg_reg[7]_1    |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | URCVR/COR_EOF/shreg_reg[6]_1             |                                 |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG | MTRANS/E[0]                              | U_MXTEST/byte_addr[4]_i_1_n_0   |                2 |              5 |
+|  CLK100MHZ_IBUF_BUFG |                                          | URCVR/COR_EOF/shreg_reg[7]_0    |                2 |              6 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/wp[5]_i_1_n_0                       | BTNC_IBUF                       |                2 |              6 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/rp[5]_i_1_n_0                       | BTNC_IBUF                       |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[60][7]_i_1_n_0                  |                                 |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[14][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[0][7]_i_1_n_0                   |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[10][7]_i_1_n_0                  |                                 |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[11][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[12][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[13][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[15][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[16][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[17][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[18][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[19][7]_i_1_n_0                  |                                 |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[1][7]_i_1_n_0                   |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[20][7]_i_1_n_0                  |                                 |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[21][7]_i_1_n_0                  |                                 |                5 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[22][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[23][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[24][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[25][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[26][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[27][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[28][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[29][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[2][7]_i_1_n_0                   |                                 |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[30][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[31][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[32][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[33][7]_i_1_n_0                  |                                 |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[34][7]_i_1_n_0                  |                                 |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[35][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[36][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[37][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[38][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[39][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[3][7]_i_1_n_0                   |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[40][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[41][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[42][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[43][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[44][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[45][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[46][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[47][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[48][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[49][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[4][7]_i_1_n_0                   |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[50][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[52][7]_i_1_n_0                  |                                 |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[53][7]_i_1_n_0                  |                                 |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[54][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[55][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[56][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[57][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[58][7]_i_1_n_0                  |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[59][7]_i_1_n_0                  |                                 |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[5][7]_i_1_n_0                   |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[51][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[61][7]_i_1_n_0                  |                                 |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[62][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[63][7]_i_1_n_0                  |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[6][7]_i_1_n_0                   |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[7][7]_i_1_n_0                   |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[8][7]_i_1_n_0                   |                                 |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | FIFO/mem[9][7]_i_1_n_0                   |                                 |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | URCVR/CLKENB3/shreg_reg[11]              | URCVR/COR_EOF/shreg[11]_i_1_n_0 |                3 |             12 |
+|  CLK100MHZ_IBUF_BUFG | U_MXTEST/wait_count_enable               | U_MXTEST/byte_addr[4]_i_1_n_0   |                6 |             21 |
+|  CLK100MHZ_IBUF_BUFG |                                          |                                 |               11 |             22 |
+|  CLK100MHZ_IBUF_BUFG |                                          | BTNC_IBUF                       |               47 |            142 |
++----------------------+------------------------------------------+---------------------------------+------------------+----------------+
 
 

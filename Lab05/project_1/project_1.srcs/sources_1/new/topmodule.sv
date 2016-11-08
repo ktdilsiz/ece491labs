@@ -134,7 +134,7 @@ module topmodule (
         mxtest_2 #(.WAIT_TIME(2_000_000)) U_MXTEST (
             .clk(CLK100MHZ), 
             .reset(BTNC), 
-            .run(BTNU || BTND || BTNR), 
+            .run(BTNU || BTND), 
             .send(send_mx_out),
             .length(length), 
             .data(data_mx_out), 
@@ -149,6 +149,7 @@ module topmodule (
             .rxd(txd_mtrans_out), 
             .clk(CLK100MHZ), 
             .rst(BTNC),
+            .button(BTNR),
             .data(data_m_receiver),
             .cardet(cardet_mr_out), 
             .write(write_mr_out), 

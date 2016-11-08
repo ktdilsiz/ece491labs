@@ -54,12 +54,12 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.xpr [current_project]
-  set_property ip_repo_paths c:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.cache/ip [current_project]
-  set_property ip_output_repo c:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.cache/ip [current_project]
-  add_files -quiet C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.runs/synth_2/topmodule.dcp
-  read_xdc C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/constrs_1/new/nexys4DDR.xdc
+  set_property webtalk.parent_dir {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.xpr} [current_project]
+  set_property ip_repo_paths {{c:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.cache/ip}} [current_project]
+  set_property ip_output_repo {{c:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.cache/ip}} [current_project]
+  add_files -quiet {{C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/synth_2/topmodule.dcp}}
+  read_xdc {{C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/constrs_1/new/nexys4DDR.xdc}}
   link_design -top topmodule -part xc7a100tcsg324-1
   write_hwdef -file topmodule.hwdef
   close_msg_db -file init_design.pb

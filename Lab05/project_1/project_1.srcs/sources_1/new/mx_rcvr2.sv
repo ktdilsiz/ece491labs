@@ -21,14 +21,14 @@
 
 
 module mx_rcvr2(
-	input logic rxd, clk, rst,
+	input logic rxd, clk, rst, button,
     output logic [7:0] data,
     output logic cardet, write, error
    );
 
-	assign error = h_out_bit;
-	assign cardet = (state == RECEIVE) ? 1 : 0;
-	//assign cardet = write;
+	//assign error = button; //ja4
+	assign error = (state == PREAMBLE) ? 1 : 0; //ja9
+	assign cardet = (csum_sfd >= 7);
    
    parameter BAUD = 9600;
    parameter TWICEBAUD = BAUD * 2;
@@ -80,7 +80,7 @@ module mx_rcvr2(
    correlator #(.LEN(8), .PATTERN(8'b10101010), .HTHRESH(7), .LTHRESH(1)) 
        COR_PREAM( 
        .clk(clk), 
-       .reset(rst_pre || rst), 
+       .reset(rst_pre || rst || button), 
        .enb(enb_pre), 
        .d_in(d_in_pre), 
        .replace(replace_pre),
@@ -96,7 +96,7 @@ module mx_rcvr2(
    correlator #(.LEN(8), .PATTERN(8'b11010000), .HTHRESH(7), .LTHRESH(1))
     COR_SFD( 
     .clk(clk), 
-    .reset(rst_sfd || rst), 
+    .reset(rst_sfd || rst || button), 
     .enb(enb_sfd), 
     .d_in(d_in_sfd), 
     .replace(replace_sfd),
@@ -113,7 +113,7 @@ module mx_rcvr2(
    correlator #(.LEN(12), .PATTERN(12'b111111111111), .HTHRESH(10), .LTHRESH(1))
     COR_EOF( 
     .clk(clk), 
-    .reset(rst_eof || rst), 
+    .reset(rst_eof || rst || button), 
     .enb(enb_eof), 
     .d_in(d_in_eof), 
     .replace(replace_eof),
@@ -432,7 +432,7 @@ always_ff@(posedge clk)
           end
 
           //ERROR IS HERE KEMAL AND ZAINAB LOOK AHAHA WOLOLOLO
-        if(h_out_pre && SixteenBaudRate)
+        if((h_out_pre) && SixteenBaudRate)
        	begin
         	next = SFD;
         	time_up_double = 1;
@@ -478,7 +478,7 @@ always_ff@(posedge clk)
         	fourth_count_up = 1;
 
 
-        if(h_out_sfd && SixteenBaudRate)
+        if((h_out_sfd) && SixteenBaudRate)
         begin
         	next = RECEIVE;
         	time_up_double = 1;

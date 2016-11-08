@@ -41,7 +41,7 @@ module correlator #(parameter LEN=16, PATTERN=16'b0000000011111111, HTHRESH=13, 
    // the left and newest data is on the right
    always_ff  @(posedge clk)
    begin
-     if (reset) shreg <= 'x;
+     if (reset) shreg <= 8'b00000000;
      else if (replace == 8'b10101010)
       begin
           shreg <= replace;
@@ -53,6 +53,7 @@ module correlator #(parameter LEN=16, PATTERN=16'b0000000011111111, HTHRESH=13, 
    assign match = shreg ^ ~PATTERN;
 
    assign csum = countones(match);
+   //assign csum = match[0] + match[1] + match[2] + match[3] + match[4] + match[5] + match[6] + match[7] + match[8];
 
    assign h_out = csum >= HTHRESH;
    

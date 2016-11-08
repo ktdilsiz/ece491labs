@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Tue Nov 08 00:08:11 2016
-| Host             : ECE400-F6M7KB2 running 64-bit Service Pack 1  (build 7601)
+| Date             : Tue Nov 08 11:18:43 2016
+| Host             : ECE400-5FGC082 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file topmodule_power_routed.rpt -pb topmodule_power_summary_routed.pb -rpx topmodule_power_routed.rpx
 | Design           : topmodule
 | Device           : xc7a100tcsg324-1
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.112 |
-| Dynamic (W)              | 0.015 |
+| Total On-Chip Power (W)  | 0.109 |
+| Dynamic (W)              | 0.012 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.5  |
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.001 |     1658 |       --- |             --- |
-|   LUT as Logic |     0.001 |      571 |     63400 |            0.90 |
-|   Register     |    <0.001 |      775 |    126800 |            0.61 |
+| Slice Logic    |     0.002 |     1672 |       --- |             --- |
+|   LUT as Logic |     0.001 |      590 |     63400 |            0.93 |
+|   Register     |    <0.001 |      774 |    126800 |            0.61 |
 |   CARRY4       |    <0.001 |       19 |     15850 |            0.12 |
-|   F7/F8 Muxes  |    <0.001 |       44 |     63400 |            0.07 |
-|   Others       |     0.000 |       29 |       --- |             --- |
-| Signals        |     0.001 |     1389 |       --- |             --- |
-| I/O            |     0.009 |       60 |       210 |           28.57 |
+|   F7/F8 Muxes  |    <0.001 |       41 |     63400 |            0.06 |
+|   Others       |     0.000 |       28 |       --- |             --- |
+| Signals        |     0.001 |     1405 |       --- |             --- |
+| I/O            |     0.006 |       60 |       210 |           28.57 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.112 |          |           |                 |
+| Total          |     0.109 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -138,7 +138,7 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| topmodule        |     0.015 |
+| topmodule        |     0.012 |
 |   CLKENBEIGHT    |    <0.001 |
 |   CLKENDOUTPUT   |    <0.001 |
 |   DISPCTL        |    <0.001 |
