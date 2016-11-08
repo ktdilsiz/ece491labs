@@ -1,0 +1,103 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+START: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after at time 159995.
+FAIL(cardet, pre-EOF) Failed test 5 at time 840115.
+  Expected value 0x0, Inspected Value 0x1
+FAIL: Requirement test 10a - 24-bit preamble/SFD, single byte, rxd high before/after. (1/5 falures)
+START: Requirement test 10b - 24-bit preamble/SFD, 24 (or more) bytes, rxd high before/after at time 1040215.
+FAIL(data, post-byte) Failed test 12 at time 1580236.
+  Expected value 0x33, Inspected Value 0x58
+FAIL(write, post-byte) Failed test 13 at time 1580236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 18 at time 1740236.
+  Expected value 0x80, Inspected Value 0xa
+FAIL(write, post-byte) Failed test 19 at time 1740236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 24 at time 1900236.
+  Expected value 0x2a, Inspected Value 0xa0
+FAIL(write, post-byte) Failed test 25 at time 1900236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 30 at time 2060236.
+  Expected value 0xe8, Inspected Value 0xb8
+FAIL(write, post-byte) Failed test 31 at time 2060236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 36 at time 2220236.
+  Expected value 0x5c, Inspected Value 0xd1
+FAIL(write, post-byte) Failed test 37 at time 2220236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 42 at time 2380236.
+  Expected value 0x48, Inspected Value 0x94
+FAIL(write, post-byte) Failed test 43 at time 2380236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 48 at time 2540236.
+  Expected value 0x4d, Inspected Value 0x97
+FAIL(write, post-byte) Failed test 49 at time 2540236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 54 at time 2700236.
+  Expected value 0x5f, Inspected Value 0xd5
+FAIL(write, post-byte) Failed test 55 at time 2700236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 60 at time 2860236.
+  Expected value 0x25, Inspected Value 0x21
+FAIL(write, post-byte) Failed test 61 at time 2860236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(write, post-byte) Failed test 67 at time 3020236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 72 at time 3180236.
+  Expected value 0xb8, Inspected Value 0xea
+FAIL(write, post-byte) Failed test 73 at time 3180236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 78 at time 3340236.
+  Expected value 0xc6, Inspected Value 0x1b
+FAIL(write, post-byte) Failed test 79 at time 3340236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 84 at time 3500236.
+  Expected value 0xb6, Inspected Value 0x69
+FAIL(write, post-byte) Failed test 85 at time 3500236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 90 at time 3660236.
+  Expected value 0x90, Inspected Value 0x4e
+FAIL(write, post-byte) Failed test 91 at time 3660236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 96 at time 3820236.
+  Expected value 0xf7, Inspected Value 0x7b
+FAIL(write, post-byte) Failed test 97 at time 3820236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 102 at time 3980236.
+  Expected value 0x5e, Inspected Value 0xd3
+FAIL(write, post-byte) Failed test 103 at time 3980236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 108 at time 4140236.
+  Expected value 0x6, Inspected Value 0x5
+FAIL(write, post-byte) Failed test 109 at time 4140236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 114 at time 4300236.
+  Expected value 0x25, Inspected Value 0x23
+FAIL(write, post-byte) Failed test 115 at time 4300236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 120 at time 4460236.
+  Expected value 0x66, Inspected Value 0x31
+FAIL(write, post-byte) Failed test 121 at time 4460236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(write, post-byte) Failed test 127 at time 4620236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 132 at time 4780236.
+  Expected value 0x78, Inspected Value 0xf0
+FAIL(write, post-byte) Failed test 133 at time 4780236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 138 at time 4940236.
+  Expected value 0xa4, Inspected Value 0x2f
+FAIL(write, post-byte) Failed test 139 at time 4940236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 144 at time 5100236.
+  Expected value 0x9f, Inspected Value 0xcb
+FAIL(write, post-byte) Failed test 145 at time 5100236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data, post-byte) Failed test 150 at time 5260236.
+  Expected value 0x6, Inspected Value 0x7
+FAIL(write, post-byte) Failed test 151 at time 5260236.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(cardet, pre-EOF) Failed test 152 at time 5420235.
+  Expected value 0x0, Inspected Value 0x1
+FAIL: Requirement test 10b - 24-bit preamble/SFD, 24 (or more) bytes, rxd high before/after. (47/147 falures)
+START: Requirement test 10d - erroneous full low bit within frame at time 5640235.

@@ -25,7 +25,7 @@ set_property -dict {PACKAGE_PIN T13 IOSTANDARD LVCMOS33} [get_ports {SW[11]}]
 set_property -dict {PACKAGE_PIN H6 IOSTANDARD LVCMOS33} [get_ports {SW[12]}]
 set_property -dict {PACKAGE_PIN U12 IOSTANDARD LVCMOS33} [get_ports {SW[13]}]
 set_property -dict {PACKAGE_PIN U11 IOSTANDARD LVCMOS33} [get_ports {SW[14]}]
-#set_property -dict {PACKAGE_PIN V10 IOSTANDARD LVCMOS33} [get_ports {SW[15]}]
+set_property -dict {PACKAGE_PIN V10 IOSTANDARD LVCMOS33} [get_ports {SW[15]}]
 
 
 ## LEDs
@@ -111,14 +111,14 @@ set_property -dict {PACKAGE_PIN G18 IOSTANDARD LVCMOS33} [get_ports JAwrite]
 
 ##Pmod Header JB
 
-set_property -dict {PACKAGE_PIN D14 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[0]}]
-set_property -dict {PACKAGE_PIN F16 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[1]}]
-set_property -dict {PACKAGE_PIN G16 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[2]}]
-set_property -dict {PACKAGE_PIN H14 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[3]}]
-set_property -dict {PACKAGE_PIN E16 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[4]}]
-set_property -dict {PACKAGE_PIN F13 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[5]}]
-set_property -dict {PACKAGE_PIN G13 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[6]}]
-set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[7]}]
+set_property -dict {PACKAGE_PIN D14 IOSTANDARD LVCMOS33} [get_ports {inJA1}]
+set_property -dict {PACKAGE_PIN F16 IOSTANDARD LVCMOS33} [get_ports {outJA2}]
+set_property -dict {PACKAGE_PIN G16 IOSTANDARD LVCMOS33} [get_ports {outJA3}]
+set_property -dict {PACKAGE_PIN H14 IOSTANDARD LVCMOS33} [get_ports {outJA4}]
+#set_property -dict {PACKAGE_PIN E16 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[4]}]
+#set_property -dict {PACKAGE_PIN F13 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[5]}]
+#set_property -dict {PACKAGE_PIN G13 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[6]}]
+#set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports {data_m_receiver[7]}]
 
 
 ##Pmod Header JC
@@ -135,14 +135,14 @@ set_property -dict { PACKAGE_PIN E6    IOSTANDARD LVCMOS33 } [get_ports { data_m
 
 ##Pmod Header JD
 
-#set_property -dict { PACKAGE_PIN H4    IOSTANDARD LVCMOS33 } [get_ports { UART_RXD_OUT }]; #IO_L21N_T3_DQS_35 Sch=jd[1]
-#set_property -dict { PACKAGE_PIN H1    IOSTANDARD LVCMOS33 } [get_ports { JD[2] }]; #IO_L17P_T2_35 Sch=jd[2]
-#set_property -dict { PACKAGE_PIN G1    IOSTANDARD LVCMOS33 } [get_ports { JD[3] }]; #IO_L17N_T2_35 Sch=jd[3]
-#set_property -dict { PACKAGE_PIN G3    IOSTANDARD LVCMOS33 } [get_ports { JD[4] }]; #IO_L20N_T3_35 Sch=jd[4]
-#set_property -dict { PACKAGE_PIN H2    IOSTANDARD LVCMOS33 } [get_ports { JD[7] }]; #IO_L15P_T2_DQS_35 Sch=jd[7]
-#set_property -dict { PACKAGE_PIN G4    IOSTANDARD LVCMOS33 } [get_ports { JD[8] }]; #IO_L20P_T3_35 Sch=jd[8]
-#set_property -dict { PACKAGE_PIN G2    IOSTANDARD LVCMOS33 } [get_ports { JD[9] }]; #IO_L15N_T2_DQS_35 Sch=jd[9]
-#set_property -dict { PACKAGE_PIN F3    IOSTANDARD LVCMOS33 } [get_ports { JD[10] }]; #IO_L13N_T2_MRCC_35 Sch=jd[10]
+set_property -dict { PACKAGE_PIN H4    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[0] }]; #IO_L21N_T3_DQS_35 Sch=jd[1]
+set_property -dict { PACKAGE_PIN H1    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[1] }]; #IO_L17P_T2_35 Sch=jd[2]
+set_property -dict { PACKAGE_PIN G1    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[2] }]; #IO_L17N_T2_35 Sch=jd[3]
+set_property -dict { PACKAGE_PIN G3    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[3] }]; #IO_L20N_T3_35 Sch=jd[4]
+set_property -dict { PACKAGE_PIN H2    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[4] }]; #IO_L15P_T2_DQS_35 Sch=jd[7]
+set_property -dict { PACKAGE_PIN G4    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[5] }]; #IO_L20P_T3_35 Sch=jd[8]
+set_property -dict { PACKAGE_PIN G2    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[6] }]; #IO_L15N_T2_DQS_35 Sch=jd[9]
+set_property -dict { PACKAGE_PIN F3    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[7] }]; #IO_L13N_T2_MRCC_35 Sch=jd[10]
 
 
 ##Pmod Header JXADC

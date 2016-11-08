@@ -38,6 +38,7 @@ read_verilog -library xil_defaultlib -sv {
   {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/Buffer/check_p.sv}
   {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/register.sv}
   {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv}
+  {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/New folder/single_pulser.sv}
 }
 foreach dcp [get_files -quiet -all *.dcp] {
   set_property used_in_implementation false $dcp

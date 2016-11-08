@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1478621837">
+<GenRun Id="impl_2" LaunchPart="xc7a100tcsg324-1" LaunchTime="1478636846">
   <File Type="OPT-DCP" Name="topmodule_opt.dcp"/>
   <File Type="ROUTE-STATUS-PB" Name="topmodule_route_status.pb"/>
   <File Type="PA-TCL" Name="topmodule.tcl"/>
@@ -214,6 +214,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/mx_rcvr2.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/New folder/single_pulser.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

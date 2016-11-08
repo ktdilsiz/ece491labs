@@ -27,8 +27,8 @@ module mx_rcvr2(
    );
 
 	//assign error = button; //ja4
-	assign error = (state == PREAMBLE) ? 1 : 0; //ja9
-	assign cardet = (csum_sfd >= 7);
+	//assign error = (state == PREAMBLE) ? 1 : 0; //ja9
+	//assign cardet = (csum_sfd >= 7);
    
    parameter BAUD = 9600;
    parameter TWICEBAUD = BAUD * 2;
@@ -349,7 +349,18 @@ always_ff@(posedge clk)
     	else if(check_first_byte_up && BaudRate)
     		check_first_byte <= 1'b1;
     end
-
+    
+logic error_up, error_down;
+    
+    always_ff@(posedge clk)
+    begin
+        if(rst || error_down)
+            error <= 0'b0;
+        else if(error_up)
+            error <= 1'b1;
+        else
+            error <= error;
+    end
 
    always_comb
    begin  
@@ -395,8 +406,11 @@ always_ff@(posedge clk)
 
    	fourth_count_up = 0;
    	fourth_count_reset = 0;
+   	
+   	error_up = 0;
+   	error_down = 0;
 
-   	//cardet = 0;
+   	cardet = 0;
    	//error = 0;
 
    	replace_pre = 8'bxxxxxxxx;
@@ -449,7 +463,8 @@ always_ff@(posedge clk)
        	next = SFD;
        	time_up = 1;
        	time_sfd_error_up = 1;
-       	//cardet = 1;
+       	cardet = 1;
+       	error_down = 1;
 
        	if(((time_count >= 3 && time_count <= 6) || 
        		(time_count <= 4'he && time_count >= 4'hb)) && 
@@ -485,7 +500,7 @@ always_ff@(posedge clk)
         	//rst_sfd = 1;
         end
 
-        if(time_count_sfd_error == 5'd30)
+        if(time_count_sfd_error == 5'd16)
         begin
         	next = PREAMBLE;
        		reset_time_count = 1;
@@ -496,6 +511,7 @@ always_ff@(posedge clk)
        		rst_bit = 1;
 
        		fourth_count_reset = 1;
+       		error_up = 1;
         end
 
     //    if((time_count % 2 == 1) && SixteenBaudRate)
@@ -511,7 +527,7 @@ always_ff@(posedge clk)
        begin
        	next = RECEIVE;
        	time_up = 1;
-       	//cardet = 1;
+       	cardet = 1;
 
        	if(((time_count >= 3 && time_count <= 6) || 
        		(time_count <= 4'he && time_count >= 4'hb)) && 
@@ -594,6 +610,7 @@ always_ff@(posedge clk)
        		rst_bit = 1;
 
        		fourth_count_reset = 1;
+       		error_up = 1;
         end
 
        end
@@ -605,7 +622,7 @@ always_ff@(posedge clk)
 
        	enb_eof = 1;
 
-       	//cardet = 1;
+       	cardet = 1;
 
        	if(~h_out_eof)
        	begin

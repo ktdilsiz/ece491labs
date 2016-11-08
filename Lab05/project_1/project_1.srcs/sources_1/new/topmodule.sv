@@ -3,7 +3,7 @@
 module topmodule (
 		  // un-comment the ports that you will use
           input logic         CLK100MHZ,
-		  input logic [14:0]  SW,
+		  input logic [15:0]  SW,
 		  input logic 	      BTNC,
 		  input logic 	      BTNU, 
 		  input logic 	      BTNL, 
@@ -25,15 +25,22 @@ module topmodule (
 		  output logic        JAtxen,
 		  output logic        JAcardet,
 		  output logic        JAwrite,
-          output logic        JAerror
+          output logic        JAerror,
+          input logic        inJA1,
+          output logic        outJA2, outJA3, outJA4
 //		  output logic        UART_CTS		  
             );
 
+        assign rxdata = inJA1;
+        assign outJA2 = txd_mtrans_out;
+        assign outJA3 = (SW[15]) ? 1 : 0  ;
+        assign outJA4 = (txen_mtrans_out) ? 0 : 1 ;
+        
 	    logic [7:0] data_fifo_in;
         //logic [7:0] data_mx_out;
 
         parameter BAUD = 50000;
-        parameter OUTPUTBAUD = 19200;
+        parameter OUTPUTBAUD = 9600;
 
         clkenb #(.DIVFREQ(BAUD)) CLKENBEIGHT(.clk(CLK100MHZ), .reset(BTNC), .enb(BaudRate));
         clkenb #(.DIVFREQ(OUTPUTBAUD)) CLKENDOUTPUT(.clk(CLK100MHZ), .reset(BTNC), .enb(BaudRateOutput));
@@ -45,8 +52,27 @@ module topmodule (
         logic [2:0] sev_data;
 
         assign length = {SW[13:8]};
+        
+        //single_pulser PULSER(.clk(CLK100MHZ), .din(BTNU), .d_pulse(buttonPulsed));
 
  //       assign UART_RXD_OUT_copy = UART_RXD_OUT;
+ 
+//    logic buttonDebounced = 0;
+//    logic buttonPressed = 0;
+ 
+//    always_ff @(posedge CLK100MHZ)
+//        begin
+//            if(buttonPresed)
+//                buttonDebounced <= 0;
+//            else if(BTNU && SW[15])
+//                begin
+//                    buttonDebounced <= 1;
+//                    buttonPressed <= 1;
+//                end
+//            else if(SW[15])
+//                buttonDebounced <= 1;
+                        
+//        end
 
         assign JAtxen = txen_mtrans_out;
         assign JAerror = error_mr_out;
@@ -131,7 +157,7 @@ module topmodule (
         //logic ready_mtrans_out, 
         logic send_mx_out;
 
-        mxtest_2 #(.WAIT_TIME(2_000_000)) U_MXTEST (
+        mxtest_2 #(.WAIT_TIME(2_000_000_0)) U_MXTEST (
             .clk(CLK100MHZ), 
             .reset(BTNC), 
             .run(BTNU || BTND), 
@@ -146,7 +172,8 @@ module topmodule (
 	    logic error_mr_out;
 	    
 	    mx_rcvr2 #(.BAUD(BAUD)) URCVR (
-            .rxd(txd_mtrans_out), 
+            //.rxd(txd_mtrans_out), 
+            .rxd(rxdata || txd_mtrans_out),
             .clk(CLK100MHZ), 
             .rst(BTNC),
             .button(BTNR),
