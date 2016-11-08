@@ -14,7 +14,9 @@ module topmodule (
 		  output logic 	      DP,
 //		  output logic [7:0]  LED,
           output logic [7:0]  data_m_receiver,
-          //output logic        data_m_trans,
+          output logic [7:0]  data_mx_out,
+          output logic        txd_mtrans_out,
+//        output logic        data_m_trans,
 //		  input logic         UART_TXD_IN,
 //		  input logic         UART_RTS,		  
 		  output logic        UART_RXD_OUT,
@@ -28,7 +30,7 @@ module topmodule (
             );
 
 	    logic [7:0] data_fifo_in;
-        logic [7:0] data_mx_out;
+        //logic [7:0] data_mx_out;
 
         parameter BAUD = 50000;
         parameter OUTPUTBAUD = 19200;
@@ -94,7 +96,8 @@ module topmodule (
             .rdy(ready_trans)
         );
 
-    logic txd_mtrans_out, txen_mtrans_out;
+    //logic txd_mtrans_out;
+    logic txen_mtrans_out;
 
         m_transmitter #(.BAUD(BAUD)) MTRANS(
             .data(~tempdata), 

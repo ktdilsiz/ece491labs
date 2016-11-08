@@ -242,17 +242,17 @@ module rcvrTEST();
     check("data before receive", data, 8'hxx);
     check("write before receive", write, 1'h0);
     
-    @(posedge BaudRate) rxd = 1; 
-    @(posedge BaudRate) rxd = ~rxd;
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = 0;
 
     @(posedge BaudRate) rxd = 0; 
-    @(posedge BaudRate) rxd = ~rxd;
+    @(posedge BaudRate) rxd = 0;
 
-    @(posedge BaudRate) rxd = 1; 
-    @(posedge BaudRate) rxd = ~rxd;
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = 0;
 
-    @(posedge BaudRate) rxd = 1; 
-    @(posedge BaudRate) rxd = ~rxd;
+    @(posedge BaudRate) rxd = 0; 
+    @(posedge BaudRate) rxd = 0;
 
     check("write after receive", write, 1'h0);
     @(posedge BaudRate) rxd = 1; 
@@ -408,7 +408,7 @@ module rcvrTEST();
 
     //repeat(3) @(posedge BaudRate) rxd = 0;
 
-    #33833;
+    //#33833;
 
     check_EOF;
     // check_premature_error;

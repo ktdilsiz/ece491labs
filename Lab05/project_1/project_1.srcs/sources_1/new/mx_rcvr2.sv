@@ -25,6 +25,10 @@ module mx_rcvr2(
     output logic [7:0] data,
     output logic cardet, write, error
    );
+
+	assign error = h_out_bit;
+	assign cardet = (state == RECEIVE) ? 1 : 0;
+	//assign cardet = write;
    
    parameter BAUD = 9600;
    parameter TWICEBAUD = BAUD * 2;
@@ -105,7 +109,7 @@ module mx_rcvr2(
    logic [4:0] csum_eof;
    logic [11:0] replace_eof = 12'bxxxxxxxxxxxx;
    
-   //correlator module for sfd
+   //correlator module for eof
    correlator #(.LEN(12), .PATTERN(12'b111111111111), .HTHRESH(10), .LTHRESH(1))
     COR_EOF( 
     .clk(clk), 
@@ -159,7 +163,7 @@ module mx_rcvr2(
     logic [3:0] time_count = 4'b0000;
     logic time_up, time_up_double, time_down;  
     
-    always_ff@(posedge SixteenBaudRate)
+    always_ff@(posedge clk)
         begin
             if((rst || reset_bit_count))
                 begin 
@@ -195,49 +199,49 @@ module mx_rcvr2(
                  end
            end
 
-   // logic enable_data;  
-   // logic d0,d1,d2,d3,d4,d5,d6,d7;  
-    
-   //  assign data = {d7,d6,d5,d4,d3,d2,d1,d0};
-        
-   // always_ff@(posedge clk) 
-   // begin
-   //     if(enable_data)
-   //     begin
-   //       case (bit_count)
-   //             3'd0 : d0 = ~rxd;
-   //             3'd1 : d1 = ~rxd;
-   //             3'd2 : d2 = ~rxd;
-   //             3'd3 : d3 = ~rxd;
-   //             3'd4 : d4 = ~rxd;
-   //             3'd5 : d5 = ~rxd;
-   //             3'd6 : d6 = ~rxd;
-   //             3'd7 : d7 = ~rxd;
-   //       endcase
-   //     end
-   // end // always_ff 
-
    logic enable_data;  
    logic d0,d1,d2,d3,d4,d5,d6,d7;  
     
-    assign data = {d6,d5,d4,d3,d2,d1,d0,d7};
+    assign data = {d7,d6,d5,d4,d3,d2,d1,d0};
         
    always_ff@(posedge clk) 
    begin
        if(enable_data)
        begin
          case (bit_count)
-               3'd0 : d0 = (h_out_bit) ? 1 : 0;
-               3'd1 : d1 = (h_out_bit) ? 1 : 0;
-               3'd2 : d2 = (h_out_bit) ? 1 : 0;
-               3'd3 : d3 = (h_out_bit) ? 1 : 0;
-               3'd4 : d4 = (h_out_bit) ? 1 : 0;
-               3'd5 : d5 = (h_out_bit) ? 1 : 0;
-               3'd6 : d6 = (h_out_bit) ? 1 : 0;
-               3'd7 : d7 = (h_out_bit) ? 1 : 0;
+               3'd0 : d0 = rxd;
+               3'd1 : d1 = rxd;
+               3'd2 : d2 = rxd;
+               3'd3 : d3 = rxd;
+               3'd4 : d4 = rxd;
+               3'd5 : d5 = rxd;
+               3'd6 : d6 = rxd;
+               3'd7 : d7 = rxd;
          endcase
        end
    end // always_ff 
+
+   // logic enable_data;  
+   // logic d0,d1,d2,d3,d4,d5,d6,d7;  
+    
+   //  assign data = {d6,d5,d4,d3,d2,d1,d0,d7};
+        
+   // always_ff@(posedge clk) 
+   // begin
+   //     if(enable_data)
+   //     begin
+   //       case (bit_count)
+   //             3'd0 : d0 = (h_out_bit) ? 1 : 0;
+   //             3'd1 : d1 = (h_out_bit) ? 1 : 0;
+   //             3'd2 : d2 = (h_out_bit) ? 1 : 0;
+   //             3'd3 : d3 = (h_out_bit) ? 1 : 0;
+   //             3'd4 : d4 = (h_out_bit) ? 1 : 0;
+   //             3'd5 : d5 = (h_out_bit) ? 1 : 0;
+   //             3'd6 : d6 = (h_out_bit) ? 1 : 0;
+   //             3'd7 : d7 = (h_out_bit) ? 1 : 0;
+   //       endcase
+   //     end
+   // end // always_ff 
 
 
   logic input_pre_check = 1'b0;
@@ -312,6 +316,28 @@ module mx_rcvr2(
        end   	
 
 
+  logic [3:0] time_count_empty;
+  logic reset_time_count_empty;
+  logic time_empty_up = 0;
+
+ always_ff@(posedge clk)
+     begin
+         //if((reset_time_count_sfd || rst || time_count_sfd == 4'b1111))
+         if(reset_time_count_empty || rst || (~time_empty_up && time_count_empty != 4'b1111))
+             begin 
+                 time_count_empty <= 4'b0000;
+             end
+          else if(time_empty_up && EightBaudRate)
+             begin
+                 time_count_empty <= time_count_empty + 1;
+             end 
+          else
+             begin
+                 time_count_empty <= time_count_empty;
+             end
+       end   
+
+
 logic check_first_byte = 0;
 logic check_first_byte_up = 0;
 logic check_first_byte_down = 0;
@@ -343,6 +369,7 @@ always_ff@(posedge clk)
    	reset_time_count = 0;
    	reset_bit_count = 0;
    	reset_time_count_sfd_error = 0;
+   	reset_time_count_empty = 0;
 
    	d_in_pre = 0;
    	d_in_sfd = 0;
@@ -364,11 +391,13 @@ always_ff@(posedge clk)
 
    	write = 0;
 
+   	time_empty_up = 0;
+
    	fourth_count_up = 0;
    	fourth_count_reset = 0;
 
-   	cardet = 0;
-   	error = 0;
+   	//cardet = 0;
+   	//error = 0;
 
    	replace_pre = 8'bxxxxxxxx;
    	replace_sfd = 8'bxxxxxxxx;
@@ -382,6 +411,7 @@ always_ff@(posedge clk)
        	next = PREAMBLE;
        	time_up = 1;
        	reset_time_count_sfd_error = 1;
+       	reset_time_count_empty = 1;
        	check_first_byte_down = 1;
 
        	if(time_count % 2 == 1 && SixteenBaudRate)
@@ -394,16 +424,19 @@ always_ff@(posedge clk)
             d_in_pre = 1; enb_pre = 1;
             input_pre_check_up = 1;
           end
+
         if(l_out_bit == 1 && ~input_pre_check && TwiceBaudRate) 
           begin
             d_in_pre = 0; enb_pre = 1;
             input_pre_check_up = 1;
           end
 
+          //ERROR IS HERE KEMAL AND ZAINAB LOOK AHAHA WOLOLOLO
         if(h_out_pre && SixteenBaudRate)
        	begin
         	next = SFD;
         	time_up_double = 1;
+        	//rst_pre = 1;
        	end
 
        	//if(time_down) time_down = 0;
@@ -416,7 +449,7 @@ always_ff@(posedge clk)
        	next = SFD;
        	time_up = 1;
        	time_sfd_error_up = 1;
-       	cardet = 1;
+       	//cardet = 1;
 
        	if(((time_count >= 3 && time_count <= 6) || 
        		(time_count <= 4'he && time_count >= 4'hb)) && 
@@ -449,6 +482,7 @@ always_ff@(posedge clk)
         begin
         	next = RECEIVE;
         	time_up_double = 1;
+        	//rst_sfd = 1;
         end
 
         if(time_count_sfd_error == 5'd30)
@@ -464,13 +498,20 @@ always_ff@(posedge clk)
        		fourth_count_reset = 1;
         end
 
+    //    if((time_count % 2 == 1) && SixteenBaudRate)
+	   // begin
+	       
+	   //     enb_eof = 1;
+	               
+	   // end
+
        end
 
        RECEIVE:
        begin
        	next = RECEIVE;
        	time_up = 1;
-       	cardet = 1;
+       	//cardet = 1;
 
        	if(((time_count >= 3 && time_count <= 6) || 
        		(time_count <= 4'he && time_count >= 4'hb)) && 
@@ -488,7 +529,7 @@ always_ff@(posedge clk)
 
         if(h_out_bit == 1 && FourthBaudRate && (fourth_count == 0))
           begin
-            enable_data = 1;
+            //enable_data = 1;
             bit_up = 1;
 
             input_check_up = 1;
@@ -497,7 +538,7 @@ always_ff@(posedge clk)
           end
         if(l_out_bit == 1 && FourthBaudRate && (fourth_count == 0)) 
           begin
-            enable_data = 1;
+            //enable_data = 1;
             bit_up = 1;
 
             input_check_up = 1;
@@ -505,21 +546,54 @@ always_ff@(posedge clk)
             fourth_count_reset = 0;            
           end
 
+        if(fourth_count == 1 && FourthBaudRate)
+        	enable_data = 1;
+
         if(fourth_count != 0)
         	fourth_count_up = 1;          
 
-        if(bit_count == 6)
+        if(bit_count == 0)
         begin
         	if(check_first_byte && BaudRate)
         		write = 1;
         end
 
-        if(~check_first_byte && bit_count == 5)
+        if(~check_first_byte && bit_count == 7)
         	check_first_byte_up = 1;
 
         if(h_out_eof == 1)
         begin
             next = EOF;
+        end
+
+        // if(l_out_eof == 1)
+        // begin
+        //     next = PREAMBLE;
+       	// 	reset_time_count = 1;
+       	// 	reset_bit_count = 1;
+
+       	// 	rst_pre = 1;
+       	// 	rst_sfd = 1;
+       	// 	rst_bit = 1;
+
+       	// 	fourth_count_reset = 1;
+        // end
+
+
+        if(~h_out_bit && ~l_out_bit)
+        	time_empty_up = 1;
+
+        if(time_count_empty == 4'b1111)
+        begin
+        	next = PREAMBLE;
+       		reset_time_count = 1;
+       		reset_bit_count = 1;
+
+       		rst_pre = 1;
+       		rst_sfd = 1;
+       		rst_bit = 1;
+
+       		fourth_count_reset = 1;
         end
 
        end
@@ -531,7 +605,7 @@ always_ff@(posedge clk)
 
        	enb_eof = 1;
 
-       	cardet = 1;
+       	//cardet = 1;
 
        	if(~h_out_eof)
        	begin
@@ -551,6 +625,14 @@ always_ff@(posedge clk)
        default:
        begin
        	next = PREAMBLE;
+       		reset_time_count = 1;
+       		reset_bit_count = 1;
+
+       		rst_pre = 1;
+       		rst_sfd = 1;
+       		rst_bit = 1;
+
+       		fourth_count_reset = 1;
 
        end
    endcase

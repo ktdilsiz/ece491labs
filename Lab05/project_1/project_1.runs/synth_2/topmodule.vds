@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Mon Nov 07 09:55:32 2016
-# Process ID: 7208
+# Start of session at: Tue Nov 08 00:06:46 2016
+# Process ID: 10540
 # Current directory: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.runs/synth_2
 # Command line: vivado.exe -log topmodule.vds -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
 # Log file: C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.runs/synth_2/topmodule.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11780 
+INFO: Helper process launched with PID 3140 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 316.680 ; gain = 108.766
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 316.434 ; gain = 108.703
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'topmodule' [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:3]
 	Parameter BAUD bound to: 50000 - type: integer 
@@ -171,7 +171,7 @@ INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized8' (11#1) [C:
 INFO: [Synth 8-256] done synthesizing module 'dispctl' (12#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/dispctl.sv:25]
 INFO: [Synth 8-256] done synthesizing module 'topmodule' (13#1) [C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 353.582 ; gain = 145.668
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 354.105 ; gain = 146.375
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -181,7 +181,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 353.582 ; gain = 145.668
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 354.105 ; gain = 146.375
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -197,22 +197,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 663.227 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 663.785 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 663.785 ; gain = 456.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 663.785 ; gain = 456.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 663.785 ; gain = 456.055
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
@@ -305,10 +305,11 @@ INFO: [Synth 8-5546] ROM "shreg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "shreg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mx_rcvr2'
 INFO: [Synth 8-5546] ROM "reset_time_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "reset_time_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cardet" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "reset_time_count_sfd_error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "time_sfd_error_up" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "time_up" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "cardet" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -350,7 +351,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mx_rcvr2'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 663.785 ; gain = 456.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -376,7 +377,7 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit       Adders := 2     
 	  12 Input      5 Bit       Adders := 1     
 	   8 Input      4 Bit       Adders := 4     
-	   2 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
@@ -393,7 +394,7 @@ Detailed RTL Component Info :
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 2     
 	                5 Bit    Registers := 2     
-	                4 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 25    
@@ -409,13 +410,14 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	  18 Input      4 Bit        Muxes := 1     
-	  10 Input      2 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 97    
+	   2 Input      1 Bit        Muxes := 98    
 	  13 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 22    
 	   8 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -613,20 +615,20 @@ Module mx_rcvr2
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
 	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 10    
 +---Muxes : 
-	   2 Input      2 Bit        Muxes := 1     
-	  10 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 7     
-	   4 Input      1 Bit        Muxes := 15    
+	   2 Input      2 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 16    
 	   8 Input      1 Bit        Muxes := 8     
 Module counter_parm 
 Detailed RTL Component Info : 
@@ -661,14 +663,16 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 663.227 ; gain = 455.313
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 663.785 ; gain = 456.055
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "reset_time_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "reset_time_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "CLKENB2/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB3/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB4/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB5/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENDOUTPUT/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
@@ -678,17 +682,18 @@ INFO: [Synth 8-5546] ROM "COR_PREAM/shreg" won't be mapped to RAM because it is 
 INFO: [Synth 8-5546] ROM "COR_SFD/shreg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "COR_BIT/shreg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "COR_MIS_BAUD/shreg" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "CLKENB3/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB4/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB3/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB2/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB5/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "DECODER/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENBEIGHT/enb" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "CLKENDOUTPUT/enb" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 663.785 ; gain = 456.055
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 663.785 ; gain = 456.055
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -715,9 +720,9 @@ Start Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (URCVR/time_count_reg[3]) is unused and will be removed from module topmodule.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 663.785 ; gain = 456.055
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 663.785 ; gain = 456.055
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -731,10 +736,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 663.227 ; gain = 455.313
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 663.785 ; gain = 456.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -746,16 +751,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 683.965 ; gain = 476.234
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -772,7 +777,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -785,7 +790,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -797,25 +802,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -833,53 +838,55 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    19|
-|3     |LUT1   |    73|
-|4     |LUT2   |    51|
-|5     |LUT3   |   310|
-|6     |LUT4   |    55|
-|7     |LUT5   |    89|
-|8     |LUT6   |   242|
+|3     |LUT1   |    77|
+|4     |LUT2   |    64|
+|5     |LUT3   |   316|
+|6     |LUT4   |    64|
+|7     |LUT5   |    99|
+|8     |LUT6   |   235|
 |9     |MUXF7  |    31|
 |10    |MUXF8  |    13|
-|11    |FDCE   |    14|
-|12    |FDRE   |   747|
-|13    |IBUF   |    21|
-|14    |OBUF   |    30|
+|11    |FDCE   |    15|
+|12    |FDRE   |   757|
+|13    |FDSE   |     3|
+|14    |IBUF   |    21|
+|15    |OBUF   |    39|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-----------------+---------------------------+------+
 |      |Instance         |Module                     |Cells |
 +------+-----------------+---------------------------+------+
-|1     |top              |                           |  1696|
+|1     |top              |                           |  1754|
 |2     |  CLKENBEIGHT    |clkenb                     |    32|
 |3     |  CLKENDOUTPUT   |clkenb__parameterized0     |    45|
 |4     |  DISPCTL        |dispctl                    |    74|
 |5     |    CLKENB       |clkenb__parameterized8     |    60|
 |6     |    COUNTER_PARM |counter_parm               |    14|
-|7     |  FIFO           |p_fifo4                    |  1003|
+|7     |  FIFO           |p_fifo4                    |  1014|
 |8     |  MTRANS         |m_transmitter              |    79|
 |9     |    CLKENB       |clkenb_1                   |    33|
 |10    |    CLKENB2      |clkenb__parameterized3     |    28|
-|11    |  TRANS          |transmitter                |    58|
+|11    |  TRANS          |transmitter                |    59|
 |12    |    CLKENB       |clkenb__parameterized2     |    45|
-|13    |  URCVR          |mx_rcvr2                   |   241|
+|13    |  URCVR          |mx_rcvr2                   |   277|
 |14    |    CLKENB       |clkenb_0                   |    41|
 |15    |    CLKENB2      |clkenb__parameterized4     |    31|
-|16    |    CLKENB3      |clkenb__parameterized5     |    24|
-|17    |    CLKENB4      |clkenb__parameterized6     |    25|
-|18    |    COR_BIT      |correlator__parameterized2 |    30|
-|19    |    COR_EOF      |correlator__parameterized1 |    25|
-|20    |    COR_PREAM    |correlator                 |    13|
-|21    |    COR_SFD      |correlator__parameterized0 |    17|
-|22    |  U_MXTEST       |mxtest_2                   |   100|
+|16    |    CLKENB3      |clkenb__parameterized5     |    22|
+|17    |    CLKENB4      |clkenb__parameterized6     |    38|
+|18    |    CLKENB5      |clkenb__parameterized7     |    23|
+|19    |    COR_BIT      |correlator__parameterized2 |    21|
+|20    |    COR_EOF      |correlator__parameterized1 |    28|
+|21    |    COR_PREAM    |correlator                 |    14|
+|22    |    COR_SFD      |correlator__parameterized0 |    15|
+|23    |  U_MXTEST       |mxtest_2                   |   101|
 +------+-----------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 686.047 ; gain = 478.133
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 683.965 ; gain = 476.234
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 686.047 ; gain = 138.883
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 686.047 ; gain = 478.133
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 683.965 ; gain = 136.930
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 683.965 ; gain = 476.234
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -889,8 +896,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-190 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+194 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 686.047 ; gain = 452.270
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 686.047 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 07 09:56:02 2016...
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 683.965 ; gain = 450.180
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 683.965 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 08 00:07:16 2016...
