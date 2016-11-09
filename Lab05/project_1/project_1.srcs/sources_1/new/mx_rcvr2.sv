@@ -77,7 +77,7 @@ module mx_rcvr2(
 
    
    //instantiate the correlator module
-   correlator #(.LEN(8), .PATTERN(8'b10101010), .HTHRESH(7), .LTHRESH(1)) 
+   correlator #(.LEN(8), .PATTERN(8'b01010101), .HTHRESH(7), .LTHRESH(1)) 
        COR_PREAM( 
        .clk(clk), 
        .reset(rst_pre || rst || button), 
@@ -93,7 +93,7 @@ module mx_rcvr2(
    logic [3:0] csum_sfd;
    
    //correlator module for sfd
-   correlator #(.LEN(8), .PATTERN(8'b11010000), .HTHRESH(7), .LTHRESH(1))
+   correlator #(.LEN(8), .PATTERN(8'b00001011), .HTHRESH(8), .LTHRESH(1))
     COR_SFD( 
     .clk(clk), 
     .reset(rst_sfd || rst || button), 
@@ -136,6 +136,22 @@ module mx_rcvr2(
     .csum(csum_bit), 
     .h_out(h_out_bit), 
     .l_out(l_out_bit));
+    
+    logic enb_bit_16, h_out_bit_16, l_out_bit_16, rst_bit_16;
+    logic d_in_bit_16;
+    logic [4:0] csum_bit_16;
+
+ //correlator module for bit
+ correlator #(.LEN(16), .PATTERN(16'b1111111100000000), .HTHRESH(14), .LTHRESH(2)) 
+    COR_BIT16( 
+    .clk(clk), 
+    .reset(rst_bit_16 || reset), 
+    .enb(enb_bit_16), 
+    .d_in(d_in_bit_16), 
+    .replace(replace_bit_16),
+    .csum(csum_bit_16), 
+    .h_out(h_out_bit_16), 
+    .l_out(l_out_bit_16));      
    
     logic enb_baud, h_out_baud, l_out_baud;
     logic d_in_baud;
@@ -385,6 +401,7 @@ logic error_up, error_down;
    	d_in_pre = 0;
    	d_in_sfd = 0;
    	d_in_bit = rxd;
+   	d_in_bit_16 = rxd;
    	d_in_eof = rxd;
    	d_in_baud = rxd;
 
@@ -393,12 +410,14 @@ logic error_up, error_down;
    	enb_sfd = 0;
    	enb_pre = 0;
    	enb_baud = 0;
+   	enb_bit_16 = 0;
 
    	rst_bit = 0;
    	rst_sfd = 0;
    	rst_pre = 0;
    	rst_baud = 0;
    	rst_eof = 0;
+   	rst_bit_16 = 0;
 
    	write = 0;
 
@@ -432,14 +451,19 @@ logic error_up, error_down;
            begin
               enb_bit = 1;
            end
+           
+       	if(SixteenBaudRate)
+           begin
+              enb_bit_16 = 1;
+           end           
 
-        if(h_out_bit == 1 && ~input_pre_check && TwiceBaudRate)
+        if(h_out_bit_16 == 1 && ~input_pre_check && TwiceBaudRate)
           begin
             d_in_pre = 1; enb_pre = 1;
             input_pre_check_up = 1;
           end
 
-        if(l_out_bit == 1 && ~input_pre_check && TwiceBaudRate) 
+        if(l_out_bit_16 == 1 && ~input_pre_check && TwiceBaudRate) 
           begin
             d_in_pre = 0; enb_pre = 1;
             input_pre_check_up = 1;
@@ -500,7 +524,7 @@ logic error_up, error_down;
         	//rst_sfd = 1;
         end
 
-        if(time_count_sfd_error == 5'd16)
+        if(time_count_sfd_error == 5'd25)
         begin
         	next = PREAMBLE;
        		reset_time_count = 1;
@@ -509,6 +533,7 @@ logic error_up, error_down;
        		rst_pre = 1;
        		rst_sfd = 1;
        		rst_bit = 1;
+       		rst_bit_16 = 1;       		
 
        		fourth_count_reset = 1;
        		error_up = 1;
@@ -608,6 +633,7 @@ logic error_up, error_down;
        		rst_pre = 1;
        		rst_sfd = 1;
        		rst_bit = 1;
+       		rst_bit_16 = 1;   
 
        		fourth_count_reset = 1;
        		error_up = 1;
@@ -633,6 +659,7 @@ logic error_up, error_down;
        		rst_pre = 1;
        		rst_sfd = 1;
        		rst_bit = 1;
+       		rst_bit_16 = 1;   
 
        		fourth_count_reset = 1;
        	end
@@ -648,6 +675,7 @@ logic error_up, error_down;
        		rst_pre = 1;
        		rst_sfd = 1;
        		rst_bit = 1;
+       		rst_bit_16 = 1;   
 
        		fourth_count_reset = 1;
 

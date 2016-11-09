@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
-| Date             : Tue Nov 08 15:28:55 2016
+| Date             : Wed Nov 09 18:50:16 2016
 | Host             : ECE400-5FGC082 running 64-bit Service Pack 1  (build 7601)
 | Command          : report_power -file topmodule_power_routed.rpt -pb topmodule_power_summary_routed.pb -rpx topmodule_power_routed.rpx
 | Design           : topmodule
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.112 |
-| Dynamic (W)              | 0.015 |
+| Total On-Chip Power (W)  | 0.111 |
+| Dynamic (W)              | 0.014 |
 | Device Static (W)        | 0.097 |
 | Effective TJA (C/W)      | 4.6   |
 | Max Ambient (C)          | 84.5  |
@@ -50,16 +50,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.003 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |     1675 |       --- |             --- |
-|   LUT as Logic |     0.001 |      571 |     63400 |            0.90 |
-|   Register     |    <0.001 |      782 |    126800 |            0.62 |
+| Slice Logic    |     0.001 |     1644 |       --- |             --- |
+|   LUT as Logic |     0.001 |      608 |     63400 |            0.96 |
+|   Register     |    <0.001 |      796 |    126800 |            0.63 |
 |   CARRY4       |    <0.001 |       22 |     15850 |            0.14 |
-|   F7/F8 Muxes  |    <0.001 |       44 |     63400 |            0.07 |
-|   Others       |     0.000 |       25 |       --- |             --- |
-| Signals        |     0.002 |     1413 |       --- |             --- |
-| I/O            |     0.009 |       65 |       210 |           30.95 |
+|   F7/F8 Muxes  |    <0.001 |       90 |     63400 |            0.14 |
+|   Others       |     0.000 |       27 |       --- |             --- |
+| Signals        |     0.001 |     1290 |       --- |             --- |
+| I/O            |     0.008 |       65 |       210 |           30.95 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.112 |          |           |                 |
+| Total          |     0.111 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.021 |       0.006 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
-| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
+| Vcco33    |       3.300 |     0.006 |       0.002 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,7 +138,7 @@ Table of Contents
 +------------------+-----------+
 | Name             | Power (W) |
 +------------------+-----------+
-| topmodule        |     0.015 |
+| topmodule        |     0.014 |
 |   CLKENBEIGHT    |    <0.001 |
 |   CLKENDOUTPUT   |    <0.001 |
 |   DISPCTL        |    <0.001 |
@@ -157,6 +157,7 @@ Table of Contents
 |     CLKENB4      |    <0.001 |
 |     CLKENB5      |    <0.001 |
 |     COR_BIT      |    <0.001 |
+|     COR_BIT16    |    <0.001 |
 |     COR_EOF      |    <0.001 |
 |     COR_PREAM    |    <0.001 |
 |     COR_SFD      |    <0.001 |

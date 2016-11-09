@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9084 
+INFO: Helper process launched with PID 9528 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 317.000 ; gain = 108.848
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 316.500 ; gain = 108.707
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'topmodule' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:3]
 	Parameter BAUD bound to: 50000 - type: integer 
@@ -64,12 +64,12 @@ INFO: [Synth 8-638] synthesizing module 'p_fifo4' [C:/Users/dilsizk/Desktop/ece 
 	Parameter DIVBITS bound to: 6 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'p_fifo4' (4#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/s_fifo4_modified.sv:57]
 INFO: [Synth 8-638] synthesizing module 'mxtest_2' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/mxtest_2.sv:33]
-	Parameter MEM_SIZE bound to: 32 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
 	Parameter WAIT_TIME_US bound to: 2000000 - type: integer 
 	Parameter CLK_PD_NS bound to: 10 - type: integer 
 	Parameter WAIT_TIME bound to: 20000000 - type: integer 
 	Parameter WAIT_BITS bound to: 25 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/mxtest_2.sv:150]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/mxtest_2.sv:186]
 INFO: [Synth 8-256] done synthesizing module 'mxtest_2' (5#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/mxtest_2.sv:33]
 INFO: [Synth 8-638] synthesizing module 'mx_rcvr2' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:23]
 	Parameter BAUD bound to: 50000 - type: integer 
@@ -103,15 +103,15 @@ INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized7' [C:/Users/dilsi
 INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized7' (5#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
 INFO: [Synth 8-638] synthesizing module 'correlator' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 	Parameter LEN bound to: 8 - type: integer 
-	Parameter PATTERN bound to: 8'b10101010 
+	Parameter PATTERN bound to: 8'b01010101 
 	Parameter HTHRESH bound to: 7 - type: integer 
 	Parameter LTHRESH bound to: 1 - type: integer 
 	Parameter W bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'correlator' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 INFO: [Synth 8-638] synthesizing module 'correlator__parameterized0' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 	Parameter LEN bound to: 8 - type: integer 
-	Parameter PATTERN bound to: 8'b11010000 
-	Parameter HTHRESH bound to: 7 - type: integer 
+	Parameter PATTERN bound to: 8'b00001011 
+	Parameter HTHRESH bound to: 8 - type: integer 
 	Parameter LTHRESH bound to: 1 - type: integer 
 	Parameter W bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized0' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
@@ -130,12 +130,22 @@ INFO: [Synth 8-638] synthesizing module 'correlator__parameterized2' [C:/Users/d
 	Parameter W bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized2' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 INFO: [Synth 8-638] synthesizing module 'correlator__parameterized3' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+	Parameter LEN bound to: 16 - type: integer 
+	Parameter PATTERN bound to: 16'b1111111100000000 
+	Parameter HTHRESH bound to: 14 - type: integer 
+	Parameter LTHRESH bound to: 2 - type: integer 
+	Parameter W bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized3' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+WARNING: [Synth 8-689] width (1) of port connection 'replace' does not match port width (16) of module 'correlator__parameterized3' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:151]
+INFO: [Synth 8-638] synthesizing module 'correlator__parameterized4' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 	Parameter LEN bound to: 8 - type: integer 
 	Parameter PATTERN bound to: 8'b11110000 
 	Parameter HTHRESH bound to: 7 - type: integer 
 	Parameter LTHRESH bound to: 1 - type: integer 
 	Parameter W bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized3' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized4' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+WARNING: [Synth 8-3848] Net reset in module/entity mx_rcvr2 does not have driver. [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:148]
+WARNING: [Synth 8-3848] Net replace_bit_16 in module/entity mx_rcvr2 does not have driver. [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:151]
 INFO: [Synth 8-256] done synthesizing module 'mx_rcvr2' (7#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:23]
 INFO: [Synth 8-638] synthesizing module 'dispctl' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/dispctl.sv:25]
 INFO: [Synth 8-638] synthesizing module 'mux8_parm' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/mux8_parm.sv:2]
@@ -170,7 +180,7 @@ INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized8' (11#1) [C:
 INFO: [Synth 8-256] done synthesizing module 'dispctl' (12#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/dispctl.sv:25]
 INFO: [Synth 8-256] done synthesizing module 'topmodule' (13#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 354.973 ; gain = 146.820
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 354.879 ; gain = 147.086
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -179,8 +189,9 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[0] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:146]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 354.973 ; gain = 146.820
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 354.879 ; gain = 147.086
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -196,22 +207,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 664.426 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 664.441 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.441 ; gain = 456.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.441 ; gain = 456.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.441 ; gain = 456.648
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
@@ -345,7 +356,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mx_rcvr2'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 664.441 ; gain = 456.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -366,17 +377,20 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
-	   2 Input      6 Bit       Adders := 4     
-	   2 Input      5 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 5     
 	  12 Input      5 Bit       Adders := 1     
+	  16 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
 	   8 Input      4 Bit       Adders := 4     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
+	   2 Input     16 Bit         XORs := 1     
 	   2 Input      8 Bit         XORs := 4     
 +---Registers : 
 	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 1     
 	               11 Bit    Registers := 3     
@@ -384,32 +398,32 @@ Detailed RTL Component Info :
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 70    
 	                7 Bit    Registers := 1     
-	                6 Bit    Registers := 2     
-	                5 Bit    Registers := 2     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 3     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 26    
 +---Muxes : 
 	   2 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
 	   2 Input     14 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 2     
 	   2 Input     11 Bit        Muxes := 3     
 	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 14    
 	   8 Input      8 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 1     
 	  18 Input      4 Bit        Muxes := 1     
 	  10 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	  11 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 103   
+	   2 Input      1 Bit        Muxes := 105   
 	  13 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 24    
+	   4 Input      1 Bit        Muxes := 25    
 	   8 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -511,11 +525,11 @@ Module mxtest_2
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
 +---Registers : 
-	                5 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
 	  10 Input      2 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 4     
 Module clkenb__parameterized4 
@@ -601,6 +615,17 @@ Detailed RTL Component Info :
 Module correlator__parameterized3 
 Detailed RTL Component Info : 
 +---Adders : 
+	  16 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module correlator__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
 	   8 Input      4 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      8 Bit         XORs := 1     
@@ -626,7 +651,7 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit        Muxes := 1     
 	  11 Input      2 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 8     
-	   4 Input      1 Bit        Muxes := 18    
+	   4 Input      1 Bit        Muxes := 19    
 	   8 Input      1 Bit        Muxes := 8     
 Module counter_parm 
 Detailed RTL Component Info : 
@@ -661,7 +686,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 664.426 ; gain = 456.273
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 664.441 ; gain = 456.648
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -686,9 +711,9 @@ INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too s
 INFO: [Synth 8-5546] ROM "CLKENBEIGHT/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENDOUTPUT/enb" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 664.441 ; gain = 456.648
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 664.441 ; gain = 456.648
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -703,8 +728,8 @@ ROM:
 +------------+------------+---------------+----------------+
 |Module Name | RTL Object | Depth x Width | Implemented As | 
 +------------+------------+---------------+----------------+
-|mxtest_2    | byterom    | 32x8          | LUT            | 
-|mxtest_2    | byterom    | 32x8          | LUT            | 
+|mxtest_2    | byterom    | 64x8          | LUT            | 
+|mxtest_2    | byterom    | 64x8          | LUT            | 
 +------------+------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -715,9 +740,9 @@ Start Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (URCVR/time_count_reg[3]) is unused and will be removed from module topmodule.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 664.441 ; gain = 456.648
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 664.441 ; gain = 456.648
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -731,10 +756,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 664.426 ; gain = 456.273
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 664.441 ; gain = 456.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -746,16 +771,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 676.461 ; gain = 468.668
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -772,7 +797,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -785,7 +810,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -797,25 +822,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -833,16 +858,16 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    22|
-|3     |LUT1   |    87|
-|4     |LUT2   |    87|
-|5     |LUT3   |   322|
-|6     |LUT4   |    63|
-|7     |LUT5   |    98|
-|8     |LUT6   |   218|
-|9     |MUXF7  |    31|
-|10    |MUXF8  |    13|
-|11    |FDCE   |    15|
-|12    |FDRE   |   764|
+|3     |LUT1   |    88|
+|4     |LUT2   |    77|
+|5     |LUT3   |    55|
+|6     |LUT4   |   130|
+|7     |LUT5   |    78|
+|8     |LUT6   |   355|
+|9     |MUXF7  |    71|
+|10    |MUXF8  |    19|
+|11    |FDCE   |    12|
+|12    |FDRE   |   781|
 |13    |FDSE   |     3|
 |14    |IBUF   |    23|
 |15    |OBUF   |    42|
@@ -852,36 +877,37 @@ Report Instance Areas:
 +------+-----------------+---------------------------+------+
 |      |Instance         |Module                     |Cells |
 +------+-----------------+---------------------------+------+
-|1     |top              |                           |  1789|
-|2     |  CLKENBEIGHT    |clkenb                     |    32|
-|3     |  CLKENDOUTPUT   |clkenb__parameterized0     |    50|
+|1     |top              |                           |  1757|
+|2     |  CLKENBEIGHT    |clkenb                     |    33|
+|3     |  CLKENDOUTPUT   |clkenb__parameterized0     |    51|
 |4     |  DISPCTL        |dispctl                    |    74|
 |5     |    CLKENB       |clkenb__parameterized8     |    60|
 |6     |    COUNTER_PARM |counter_parm               |    14|
-|7     |  FIFO           |p_fifo4                    |  1010|
-|8     |  MTRANS         |m_transmitter              |    82|
+|7     |  FIFO           |p_fifo4                    |   911|
+|8     |  MTRANS         |m_transmitter              |    83|
 |9     |    CLKENB       |clkenb_1                   |    33|
 |10    |    CLKENB2      |clkenb__parameterized3     |    28|
-|11    |  TRANS          |transmitter                |    63|
+|11    |  TRANS          |transmitter                |    67|
 |12    |    CLKENB       |clkenb__parameterized2     |    50|
-|13    |  URCVR          |mx_rcvr2                   |   289|
+|13    |  URCVR          |mx_rcvr2                   |   346|
 |14    |    CLKENB       |clkenb_0                   |    35|
-|15    |    CLKENB2      |clkenb__parameterized4     |    32|
-|16    |    CLKENB3      |clkenb__parameterized5     |    23|
-|17    |    CLKENB4      |clkenb__parameterized6     |    38|
-|18    |    CLKENB5      |clkenb__parameterized7     |    23|
+|15    |    CLKENB2      |clkenb__parameterized4     |    31|
+|16    |    CLKENB3      |clkenb__parameterized5     |    26|
+|17    |    CLKENB4      |clkenb__parameterized6     |    42|
+|18    |    CLKENB5      |clkenb__parameterized7     |    22|
 |19    |    COR_BIT      |correlator__parameterized2 |    23|
-|20    |    COR_EOF      |correlator__parameterized1 |    35|
-|21    |    COR_PREAM    |correlator                 |    14|
-|22    |    COR_SFD      |correlator__parameterized0 |    15|
-|23    |  U_MXTEST       |mxtest_2                   |   112|
+|20    |    COR_BIT16    |correlator__parameterized3 |    63|
+|21    |    COR_EOF      |correlator__parameterized1 |    29|
+|22    |    COR_PREAM    |correlator                 |    12|
+|23    |    COR_SFD      |correlator__parameterized0 |    11|
+|24    |  U_MXTEST       |mxtest_2                   |   115|
 +------+-----------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 689.266 ; gain = 141.895
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 689.266 ; gain = 481.113
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 676.461 ; gain = 128.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -891,8 +917,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-186 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+188 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 689.266 ; gain = 455.094
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 689.266 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 08 15:28:01 2016...
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 676.461 ; gain = 442.684
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 676.461 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 09 18:49:20 2016...

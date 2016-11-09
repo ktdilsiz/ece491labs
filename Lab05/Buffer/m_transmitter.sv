@@ -27,6 +27,9 @@ module m_transmitter (
     logic BaudRate;
     
     logic [7:0] tempdata;
+    logic [7:0] reversed;
+    
+    assign reversed = {data[7], data[6], data[5], data[4], data[3], data[2], data[1], data[0]};
         
     //logic clkEnb;
    // logic [7:0] k;
@@ -177,7 +180,7 @@ module m_transmitter (
                     begin
                     txd = 0;
                     next = IDLE;
-                    rdy = 1;
+                    rdy = 1;  //don't have ready unless send is asserted
                     txen = 0;
                     end
             end    

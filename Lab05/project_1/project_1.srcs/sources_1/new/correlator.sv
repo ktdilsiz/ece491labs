@@ -41,7 +41,7 @@ module correlator #(parameter LEN=16, PATTERN=16'b0000000011111111, HTHRESH=13, 
    // the left and newest data is on the right
    always_ff  @(posedge clk)
    begin
-     if (reset) shreg <= 8'b00000000;
+     if (reset) shreg <= 16'b0000000000000000;
      else if (replace == 8'b10101010)
       begin
           shreg <= replace;

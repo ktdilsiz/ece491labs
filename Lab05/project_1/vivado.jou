@@ -2,10 +2,10 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Tue Nov 08 09:34:01 2016
-# Process ID: 6420
+# Start of session at: Wed Nov 09 13:19:41 2016
+# Process ID: 7020
 # Current directory: C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3204 C:\Users\dilsizk\Desktop\ece 491\ece491labs\Lab05\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5968 C:\Users\dilsizk\Desktop\ece 491\ece491labs\Lab05\project_1\project_1.xpr
 # Log file: C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/vivado.log
 # Journal file: C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1\vivado.jou
 #-----------------------------------------------------------
@@ -14,12 +14,19 @@ open_project {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/projec
 reset_run synth_2
 launch_runs impl_2 -to_step write_bitstream
 wait_on_run impl_2
-reset_run impl_2 -prev_step 
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
 open_hw
 connect_hw_server
 open_hw_target
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292744872A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210292744872A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
 current_hw_device [lindex [get_hw_devices] 0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
@@ -33,10 +40,110 @@ set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
+launch_simulation
+source mx_rcvr_testbench.tcl
+restart
+run 1000 us
+run 1000 us
+run 1000 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevelTest [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode None [current_project]
+launch_simulation
+source TopLevelTest.tcl
+run 1000 us
+run 10000 us
+run 10000 us
+run 10000 us
+restart
+run 30000 us
+close_sim
+launch_simulation
+source TopLevelTest.tcl
+restart
+restart
+run 30000 us
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+restart
+run 30000 us
+relaunch_sim
+run 30000 us
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+relaunch_sim
+run 30000 us
+restart
+run 30000 us
+restart
+run 30000 us
+restart
+run 30000 us
+restart
+run 30000 us
+restart
+run 30000 us
+restart
+run 30000 us
+relaunch_sim
+run 30000 us
+reset_run synth_2
+launch_runs synth_2
+wait_on_run synth_2
+launch_runs impl_2
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+run 30000 us
+relaunch_sim
+run 30000 us
+relaunch_sim
+run 30000 us
+relaunch_sim
+run 30000 us
+relaunch_sim
+relaunch_sim
+run 30000 us
+relaunch_sim
+run 30000 us
+relaunch_sim
+run 30000 us
+relaunch_sim
+run 30000 us
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+relaunch_sim
+restart
+run 30000 us
+restart
+run 30000 us
+relaunch_sim
+run 30000 us
 reset_run synth_2
 launch_runs impl_2 -to_step write_bitstream
 wait_on_run impl_2
@@ -65,6 +172,9 @@ set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
@@ -72,6 +182,17 @@ refresh_hw_device [lindex [get_hw_devices] 0]
 reset_run synth_2
 launch_runs impl_2 -to_step write_bitstream
 wait_on_run impl_2
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream
+wait_on_run impl_2
+restart
+run 30000 us
+relaunch_sim
+run 30000 us
 set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
@@ -100,26 +221,16 @@ refresh_hw_device [lindex [get_hw_devices] 0]
 launch_simulation
 source TopLevelTest.tcl
 restart
-run all
+run 30000 us
+relaunch_sim
+run 3000 us
+relaunch_sim
+run 3000 us
 reset_run synth_2
 launch_runs impl_2 -to_step write_bitstream
 wait_on_run impl_2
 relaunch_sim
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
+run 30000 us
 reset_run synth_2
 launch_runs impl_2 -to_step write_bitstream
 wait_on_run impl_2
@@ -127,111 +238,16 @@ set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
+restart
+run 3000 us
 relaunch_sim
-run 1000 us
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-reset_run synth_2
-launch_runs synth_2
-wait_on_run synth_2
-launch_runs impl_2
-wait_on_run impl_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
+run 3000 us
 relaunch_sim
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 100000 us
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-add_files -norecurse {{C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/New folder/single_pulser.sv}}
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-reset_run synth_2
-launch_runs synth_2
-wait_on_run synth_2
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
+run 3000 us
+restart
+run 3000 us
 relaunch_sim
-run 100000 us
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
+run 3000 us
 reset_run synth_2
 launch_runs impl_2 -to_step write_bitstream
 wait_on_run impl_2
@@ -239,158 +255,3 @@ set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
 set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
 program_hw_devices [lindex [get_hw_devices] 0]
 refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-open_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top mx_rcvr_testbench [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode None [current_project]
-launch_simulation
-source mx_rcvr_testbench.tcl
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-run 1000 us
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-reset_run impl_2 -noclean_dir 
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run synth_2
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run impl_2 -prev_step 
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/bits/wimpFiTop-2016-09-19.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/bits/wimpFiTop-2016-09-19.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run impl_2 -prev_step 
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/bits/wimpFiTop-2016-09-19.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-reset_run impl_2 -prev_step 
-launch_runs impl_2 -to_step write_bitstream
-wait_on_run impl_2
-set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
-set_property PROGRAM.FILE {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/impl_2/topmodule.bit} [lindex [get_hw_devices] 0]
-program_hw_devices [lindex [get_hw_devices] 0]
-refresh_hw_device [lindex [get_hw_devices] 0]
-close_sim

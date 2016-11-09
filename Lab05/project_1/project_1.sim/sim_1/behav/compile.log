@@ -15,7 +15,7 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 
 INFO: [VRFC 10-311] analyzing module p_fifo4
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/Buffer/m_transmitter.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module m_transmitter
-INFO: [VRFC 10-2458] undeclared symbol TwiceBaudRate, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/Buffer/m_transmitter.sv:35]
+INFO: [VRFC 10-2458] undeclared symbol TwiceBaudRate, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/Buffer/m_transmitter.sv:38]
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/mxtest_2.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module mxtest_2
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/dispctl.sv" into library xil_defaultlib
@@ -26,6 +26,8 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 
 INFO: [VRFC 10-311] analyzing module mx_rcvr
 INFO: [VRFC 10-2458] undeclared symbol TwiceBaudRate, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:40]
 INFO: [VRFC 10-2458] undeclared symbol reset, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:65]
+INFO: [VRFC 10-2458] undeclared symbol rst_bit_16, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:183]
+INFO: [VRFC 10-2458] undeclared symbol replace_bit_16, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:186]
 WARNING: [VRFC 10-756] identifier csum_pre is used before its declaration [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr.sv:99]
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module topmodule
@@ -78,13 +80,15 @@ INFO: [VRFC 10-2458] undeclared symbol TwiceBaudRate, assumed default net type w
 INFO: [VRFC 10-2458] undeclared symbol SixteenBaudRate, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:42]
 INFO: [VRFC 10-2458] undeclared symbol FourthBaudRate, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:43]
 INFO: [VRFC 10-2458] undeclared symbol EightBaudRate, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:44]
-WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:358]
+INFO: [VRFC 10-2458] undeclared symbol reset, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:148]
+INFO: [VRFC 10-2458] undeclared symbol replace_bit_16, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:151]
+WARNING: [VRFC 10-965] invalid size of integer constant literal [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:374]
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/New folder/single_pulser.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module single_pulser
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sim_1/new/TopLevelTest.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TopLevelTest
 INFO: [VRFC 10-2458] undeclared symbol outdata, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sim_1/new/TopLevelTest.sv:45]
-INFO: [VRFC 10-2458] undeclared symbol BaudRate, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sim_1/new/TopLevelTest.sv:61]
+INFO: [VRFC 10-2458] undeclared symbol BaudRate, assumed default net type wire [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sim_1/new/TopLevelTest.sv:62]
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/rcvrTEST.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module rcvrTEST
 WARNING: [VRFC 10-756] identifier noise_error is used before its declaration [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/rcvrTEST.sv:157]

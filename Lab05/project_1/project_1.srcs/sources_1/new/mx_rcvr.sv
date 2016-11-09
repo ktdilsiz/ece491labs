@@ -171,6 +171,22 @@ module mx_rcvr(
     .csum(csum_bit), 
     .h_out(h_out_bit), 
     .l_out(l_out_bit));
+    
+    logic enb_bit_16, h_out_bit_16, l_out_bit_16;
+    logic d_in_bit_16;
+    logic [4:0] csum_bit_16;
+
+ //correlator module for bit
+ correlator #(.LEN(16), .PATTERN(16'b1111111100000000), .HTHRESH(14), .LTHRESH(2)) 
+    COR_BIT16( 
+    .clk(clk), 
+    .reset(rst_bit_16 || reset), 
+    .enb(enb_bit_16), 
+    .d_in(d_in_bit_16), 
+    .replace(replace_bit_16),
+    .csum(csum_bit_16), 
+    .h_out(h_out_bit_16), 
+    .l_out(l_out_bit_16));    
    
     logic enb_baud, h_out_baud, l_out_baud;
     logic d_in_baud;

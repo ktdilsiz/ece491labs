@@ -173,6 +173,7 @@ module topmodule (
 	    
 	    mx_rcvr2 #(.BAUD(BAUD)) URCVR (
             //.rxd(txd_mtrans_out), 
+            //.rxd(rxdata),
             .rxd(rxdata || txd_mtrans_out),
             .clk(CLK100MHZ), 
             .rst(BTNC),

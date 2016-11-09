@@ -40,7 +40,7 @@ module mxtest_2(
 	      input logic 	 ready // ready input (connects to transmitter ready output)
 	      );
    
-   parameter  MEM_SIZE = 32;
+   parameter  MEM_SIZE = 64;
    parameter  WAIT_TIME_US  = 2_000_000;   // delay between frames in clock cycles (10ms default)
    parameter  CLK_PD_NS = 10;          // clock period in ns (10ns for Nexys4DDR)
    parameter  WAIT_TIME = (WAIT_TIME_US*1000)/CLK_PD_NS;
@@ -74,9 +74,13 @@ module mxtest_2(
    // ROM Contents - change these to the values of your choice
    wire [0:MEM_SIZE-1][7:0] byterom  = {
 					//8'h32,  // byterom[0]
-					8'h73,
-					8'haa,
-					8'h0b,
+					//8'h20,
+					//8'haa,
+					//8'haa,
+					8'h20,
+					8'h55,
+					8'h55,
+					8'hd0,
 					8'h4f,
 					8'h6c,
 					8'h61,
@@ -105,7 +109,39 @@ module mxtest_2(
 					8'h29,
 					8'h30,
 					8'h31,
-					8'h32				
+					8'h32,
+					
+					8'h33,
+                    8'h34,
+                    8'h0b,
+                    8'h4f,
+                    8'h6c,
+                    8'h61,
+                    8'h66, 
+                    8'h20, 
+                    8'h6c,
+                    8'h69,
+                    8'h6b,
+                    8'h65,
+                    8'h73,
+                    8'h20,
+                    8'h77, 
+                    8'h61,
+                    8'h72,
+                    8'h6d,
+                    8'h20,
+                    8'h68,
+                    8'h75,
+                    8'h67,
+                    8'h73, 
+                    8'h24,
+                    8'h25,
+                    8'h26,
+                    8'h27,
+                    8'h28,
+                    8'h29,
+                    8'h30,
+                    8'h31								
 					};
    
    assign data = byterom[byte_addr];

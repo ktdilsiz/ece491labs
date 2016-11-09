@@ -22,7 +22,7 @@
 
 module TopLevelTest();
 
-	logic clk, btnc, btnu, btnl, btnr, btnd, jardy, jawrite, jacardet, jaerror, jatxen, dp;
+	logic clk, btnc, btnu, btnl, btnr, btnd, jardy, jawrite, jacardet, jaerror, jatxen, dp, rxdata;
 	logic [14:0] switches;
 	logic [7:0] leds = 8'b00000000;
 	logic [6:0] segs;
@@ -48,7 +48,8 @@ module TopLevelTest();
 		  .JAtxen(jatxen),
 		  .JAcardet(jacardet),
 		  .JAwrite(jawrite),
-		  .JAerror(jaerror)  
+		  .JAerror(jaerror),
+		  .inJA1(rxdata)
             );
 
 	always
@@ -79,6 +80,7 @@ module TopLevelTest();
 
     		btnu = 1;
     		mxtest_input = 1;
+    		rxdata = 0;
             btnc = 0;
     		//clr = 0;
     		//re_fifo = 0;
