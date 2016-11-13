@@ -90,3 +90,5 @@ dismissDialog("Critical Messages"); // a:a (cd:JFrame)
 // HMemoryUtils.trashcanNow. Engine heap size: 515 MB. GUI used memory: 39 MB. Current time: 11/12/16 9:33:12 PM EST
 // HMemoryUtils.trashcanNow. Engine heap size: 545 MB. GUI used memory: 39 MB. Current time: 11/12/16 9:34:07 PM EST
 // [Engine Memory]: 545 MB (+26181kb) [00:04:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 545 MB. GUI used memory: 40 MB. Current time: 11/12/16 10:04:07 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 545 MB. GUI used memory: 38 MB. Current time: 11/12/16 10:34:08 PM EST
