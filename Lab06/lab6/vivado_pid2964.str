@@ -1,0 +1,94 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 2964
+
+Current time: 	11/12/16 9:30:10 PM EST
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 7
+Version: 6.1
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1680x1050
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	husseinz
+User home directory: C:/Users/husseinz
+User working directory: C:/Users/husseinz/Desktop/491/ece491labs/Lab06/lab6
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/husseinz/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/husseinz/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	159 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 381 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 40 MB (+39823kb) [00:00:25]
+// [Engine Memory]: 356 MB (+221460kb) [00:00:25]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// aK:r (cd:JFrame): Older Project Version: addNotify
+// [Engine Memory]: 381 MB (+8192kb) [00:00:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 382 MB. GUI used memory: 28 MB. Current time: 11/12/16 9:30:12 PM EST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aK:r)
+// Opening Vivado Project: C:\Users\husseinz\Desktop\491\ece491labs\Lab06\lab6\lab6.xpr. Version: Vivado v2016.2 
+// bt:g (cd:JFrame):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aK:r (cd:JFrame)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/husseinz/Desktop/491/ece491labs/Lab06/lab6/lab6.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/husseinz/Desktop/491/ece491labs/Lab06/lab6/lab6.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/dilsizk/Desktop/ece491/ece491labs/Lab06/lab6' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'lab6.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 413 MB (+13370kb) [00:01:24]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 443 MB (+10041kb) [00:01:27]
+// [GUI Memory]: 43 MB (+781kb) [00:01:29]
+// [GUI Memory]: 49 MB (+3976kb) [00:01:29]
+// HMemoryUtils.trashcanNow. Engine heap size: 462 MB. GUI used memory: 32 MB. Current time: 11/12/16 9:31:11 PM EST
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 687.434 ; gain = 88.277 
+// Project name: lab6; location: C:/Users/husseinz/Desktop/491/ece491labs/Lab06/lab6; part: xc7a100tcsg324-1
+// [Engine Memory]: 470 MB (+4609kb) [00:01:30]
+// Elapsed time: 21 seconds
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 56 MB (+4619kb) [00:01:31]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cd:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+// [GUI Memory]: 62 MB (+3243kb) [00:01:53]
+// [GUI Memory]: 70 MB (+5714kb) [00:02:05]
+// [GUI Memory]: 81 MB (+7455kb) [00:02:29]
+// [Engine Memory]: 495 MB (+1798kb) [00:02:34]
+// HMemoryUtils.trashcanNow. Engine heap size: 515 MB. GUI used memory: 39 MB. Current time: 11/12/16 9:33:12 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 545 MB. GUI used memory: 39 MB. Current time: 11/12/16 9:34:07 PM EST
+// [Engine Memory]: 545 MB (+26181kb) [00:04:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 545 MB. GUI used memory: 40 MB. Current time: 11/12/16 10:04:07 PM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 545 MB. GUI used memory: 38 MB. Current time: 11/12/16 10:34:08 PM EST
