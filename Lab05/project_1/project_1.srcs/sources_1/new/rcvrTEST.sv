@@ -25,7 +25,7 @@ module rcvrTEST();
     logic [7:0] data;
     logic cardet, write, error;
  
-     mx_rcvr2 #(.BAUD(800_000/ 16)) URVR(.clk(clk), .rst(rst), .rxd(rxd), .cardet(cardet), .data(data), .write(write), .error(error));
+     mx_rcvr2 #(.BAUD(800_000/ 16)) URVR(.clk(clk), .rst(rst), .rxd(rxd_in), .cardet(cardet), .data(data), .write(write), .error(error));
     
     logic BaudRate;
       clkenb #(.DIVFREQ(800_000 / 8)) CLKENB3(.clk(clk), .reset(rst), .enb(BaudRate));
@@ -39,6 +39,10 @@ module rcvrTEST();
      #5 clk = 0;
      #5 ;
     end
+
+    //logic rxd_in;
+
+    assign rxd_in = rxd ^ noise_error;
     
   //check rst 
    task check_rst;
@@ -172,13 +176,23 @@ module rcvrTEST();
     check("data before preamble", data, 8'hxx);
     check("write before preamble", write, 1'h0);
 
-  repeat (4) 
+  repeat (2) 
     begin 
         @(posedge BaudRate) rxd = 1; 
         @(posedge BaudRate) rxd = ~rxd;
         @(posedge BaudRate) rxd = 0; 
         @(posedge BaudRate) rxd = ~rxd;
     end
+
+        @(posedge BaudRate) rxd = 1; 
+        @(posedge BaudRate) rxd = ~rxd;
+        @(posedge BaudRate) rxd = 0; 
+        @(posedge BaudRate) rxd = ~rxd;   
+
+        @(posedge BaudRate) rxd = 1; 
+        @(posedge BaudRate) rxd = ~rxd;
+        @(posedge BaudRate) rxd = 0; 
+        @(posedge BaudRate) rxd = ~rxd;        
   
     check("cardet middle of preamble of 16 bits", cardet, 1'h1);
     check("data middle of preamble of 16 bits", data, 8'hxx);
@@ -208,23 +222,24 @@ module rcvrTEST();
     check("cardet before sfd", cardet, 1'h1);
     check("data before sfd", data, 8'hxx);
     check("write before sfd", write, 1'h0);
-      @(posedge BaudRate) rxd = 1; 
-      @(posedge BaudRate) rxd = 0; 
-
-      @(posedge BaudRate) rxd = 1; 
-      @(posedge BaudRate) rxd = 0; 
-
-      @(posedge BaudRate) rxd = 0; 
-      @(posedge BaudRate) rxd = 1; 
-
-      @(posedge BaudRate) rxd = 1; 
-      @(posedge BaudRate) rxd = 0; 
 
   repeat (4) 
     begin
         @(posedge BaudRate) rxd = 0; 
         @(posedge BaudRate) rxd = ~rxd;
     end
+
+      @(posedge BaudRate) rxd = 1; 
+      @(posedge BaudRate) rxd = ~rxd; 
+
+      @(posedge BaudRate) rxd = 0; 
+      @(posedge BaudRate) rxd = ~rxd;
+
+      @(posedge BaudRate) rxd = 1; 
+      @(posedge BaudRate) rxd = ~rxd; 
+
+      @(posedge BaudRate) rxd = 1; 
+      @(posedge BaudRate) rxd = ~rxd;
 
   
   check("cardet after sfd", cardet, 1'h1);
@@ -243,16 +258,16 @@ module rcvrTEST();
     check("write before receive", write, 1'h0);
     
     @(posedge BaudRate) rxd = 0; 
-    @(posedge BaudRate) rxd = 0;
+    @(posedge BaudRate) rxd = ~rxd;;
 
     @(posedge BaudRate) rxd = 0; 
-    @(posedge BaudRate) rxd = 0;
+    @(posedge BaudRate) rxd = ~rxd;;
 
     @(posedge BaudRate) rxd = 0; 
-    @(posedge BaudRate) rxd = 0;
+    @(posedge BaudRate) rxd = ~rxd;;
 
     @(posedge BaudRate) rxd = 0; 
-    @(posedge BaudRate) rxd = 0;
+    @(posedge BaudRate) rxd = ~rxd;;
 
     check("write after receive", write, 1'h0);
     @(posedge BaudRate) rxd = 1; 
@@ -383,7 +398,7 @@ module rcvrTEST();
 
     always @(posedge clk) begin
         #1; // inject error (if any) after clock edge
-        if ($urandom_range(100,1) <= 50) noise_error = 1;
+        if ($urandom_range(100,1) <= 12) noise_error = 1;
         else noise_error = 0;
 
         //$display ("Error Value is %0d", noise_error);
@@ -411,10 +426,10 @@ module rcvrTEST();
     //#33833;
 
     check_EOF;
-    // check_premature_error;
-    // repeat(100) @(posedge BaudRate) rxd = 0;
-    // repeat(100) @(posedge BaudRate) rxd = 0;
-    // check_erroreous_input;
+    //  check_premature_error;
+    // // repeat(100) @(posedge BaudRate) rxd = 0;
+    //  repeat(100) @(posedge BaudRate) rxd = 0;
+    //  check_erroreous_input;
     repeat(100) @(posedge BaudRate) rxd = 0;
     check_EOF;
 //    check_premature_error;

@@ -2,8 +2,8 @@
 # Vivado v2016.2 (64-bit)
 # SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
 # IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Wed Nov 09 18:48:47 2016
-# Process ID: 6756
+# Start of session at: Sat Nov 26 21:09:27 2016
+# Process ID: 4632
 # Current directory: C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/synth_2
 # Command line: vivado.exe -log topmodule.vds -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
 # Log file: C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.runs/synth_2/topmodule.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9528 
+INFO: Helper process launched with PID 5380 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 316.500 ; gain = 108.707
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 317.117 ; gain = 108.711
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'topmodule' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:3]
 	Parameter BAUD bound to: 50000 - type: integer 
@@ -102,13 +102,20 @@ INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized7' [C:/Users/dilsi
 	Parameter DIVAMT bound to: 250 - type: integer 
 	Parameter DIVBITS bound to: 8 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized7' (5#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized8' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+	Parameter DIVFREQ bound to: 3200000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 31 - type: integer 
+	Parameter DIVBITS bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized8' (5#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
 INFO: [Synth 8-638] synthesizing module 'correlator' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
-	Parameter LEN bound to: 8 - type: integer 
-	Parameter PATTERN bound to: 8'b01010101 
-	Parameter HTHRESH bound to: 7 - type: integer 
+	Parameter LEN bound to: 10 - type: integer 
+	Parameter PATTERN bound to: 10'b0101010101 
+	Parameter HTHRESH bound to: 10 - type: integer 
 	Parameter LTHRESH bound to: 1 - type: integer 
-	Parameter W bound to: 4 - type: integer 
+	Parameter W bound to: 5 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'correlator' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+WARNING: [Synth 8-689] width (8) of port connection 'replace' does not match port width (10) of module 'correlator' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:87]
 INFO: [Synth 8-638] synthesizing module 'correlator__parameterized0' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 	Parameter LEN bound to: 8 - type: integer 
 	Parameter PATTERN bound to: 8'b00001011 
@@ -119,25 +126,25 @@ INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized0' (6#1) 
 INFO: [Synth 8-638] synthesizing module 'correlator__parameterized1' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 	Parameter LEN bound to: 12 - type: integer 
 	Parameter PATTERN bound to: 12'b111111111111 
-	Parameter HTHRESH bound to: 10 - type: integer 
+	Parameter HTHRESH bound to: 11 - type: integer 
 	Parameter LTHRESH bound to: 1 - type: integer 
 	Parameter W bound to: 5 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized1' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 INFO: [Synth 8-638] synthesizing module 'correlator__parameterized2' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 	Parameter LEN bound to: 8 - type: integer 
 	Parameter PATTERN bound to: 8'b11110000 
-	Parameter HTHRESH bound to: 7 - type: integer 
-	Parameter LTHRESH bound to: 1 - type: integer 
+	Parameter HTHRESH bound to: 4 - type: integer 
+	Parameter LTHRESH bound to: 3 - type: integer 
 	Parameter W bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized2' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
+WARNING: [Synth 8-689] width (10) of port connection 'replace' does not match port width (8) of module 'correlator__parameterized2' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:136]
 INFO: [Synth 8-638] synthesizing module 'correlator__parameterized3' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
-	Parameter LEN bound to: 16 - type: integer 
-	Parameter PATTERN bound to: 16'b1111111100000000 
-	Parameter HTHRESH bound to: 14 - type: integer 
-	Parameter LTHRESH bound to: 2 - type: integer 
-	Parameter W bound to: 5 - type: integer 
+	Parameter LEN bound to: 64 - type: integer 
+	Parameter PATTERN bound to: 64'b1111111111111111111111111111111100000000000000000000000000000000 
+	Parameter HTHRESH bound to: 50 - type: integer 
+	Parameter LTHRESH bound to: 14 - type: integer 
+	Parameter W bound to: 7 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized3' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
-WARNING: [Synth 8-689] width (1) of port connection 'replace' does not match port width (16) of module 'correlator__parameterized3' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:151]
 INFO: [Synth 8-638] synthesizing module 'correlator__parameterized4' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
 	Parameter LEN bound to: 8 - type: integer 
 	Parameter PATTERN bound to: 8'b11110000 
@@ -145,8 +152,8 @@ INFO: [Synth 8-638] synthesizing module 'correlator__parameterized4' [C:/Users/d
 	Parameter LTHRESH bound to: 1 - type: integer 
 	Parameter W bound to: 4 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'correlator__parameterized4' (6#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/correlator.sv:24]
-WARNING: [Synth 8-3848] Net reset in module/entity mx_rcvr2 does not have driver. [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:148]
-WARNING: [Synth 8-3848] Net replace_bit_16 in module/entity mx_rcvr2 does not have driver. [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:151]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:228]
+WARNING: [Synth 8-3848] Net replace_bit_16 in module/entity mx_rcvr2 does not have driver. [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:77]
 INFO: [Synth 8-256] done synthesizing module 'mx_rcvr2' (7#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:23]
 INFO: [Synth 8-638] synthesizing module 'dispctl' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/dispctl.sv:25]
 INFO: [Synth 8-638] synthesizing module 'mux8_parm' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/mux8_parm.sv:2]
@@ -172,16 +179,16 @@ INFO: [Synth 8-638] synthesizing module 'seven_seg' [C:/Users/dilsizk/Desktop/ec
 	Parameter NINE bound to: 7'b0010000 
 INFO: [Synth 8-226] default block is never used [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/seven_seg.sv:37]
 INFO: [Synth 8-256] done synthesizing module 'seven_seg' (11#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/seven_seg.sv:18]
-INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized8' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized9' [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
 	Parameter DIVFREQ bound to: 1000 - type: integer 
 	Parameter CLKFREQ bound to: 100000000 - type: integer 
 	Parameter DIVAMT bound to: 100000 - type: integer 
 	Parameter DIVBITS bound to: 17 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized8' (11#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized9' (11#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/clkenb.sv:21]
 INFO: [Synth 8-256] done synthesizing module 'dispctl' (12#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/dispctl.sv:25]
 INFO: [Synth 8-256] done synthesizing module 'topmodule' (13#1) [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/topmodule.sv:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 354.879 ; gain = 147.086
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 358.023 ; gain = 149.617
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -190,9 +197,72 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[0] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:146]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[63] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[62] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[61] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[60] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[59] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[58] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[57] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[56] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[55] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[54] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[53] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[52] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[51] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[50] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[49] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[48] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[47] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[46] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[45] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[44] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[43] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[42] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[41] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[40] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[39] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[38] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[37] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[36] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[35] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[34] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[33] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[32] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[31] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[30] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[29] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[28] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[27] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[26] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[25] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[24] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[23] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[22] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[21] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[20] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[19] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[18] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[17] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[16] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[15] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[14] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[13] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[12] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[11] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[10] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[9] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[8] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[7] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[6] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[5] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[4] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[3] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[2] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[1] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
+WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[0] to constant 0 [C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 354.879 ; gain = 147.086
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 358.023 ; gain = 149.617
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -208,22 +278,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 664.441 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 668.105 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 668.105 ; gain = 459.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 668.105 ; gain = 459.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 668.105 ; gain = 459.699
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
@@ -309,11 +379,23 @@ INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "shreg" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "shreg" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mx_rcvr2'
-INFO: [Synth 8-5546] ROM "reset_time_count" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "reset_time_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "reset_time_count_sfd_error" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "time_sfd_error_up" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "reset_time_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "d0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "d7" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "fourth_count_up" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "error_down" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "check_first_byte_down" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "time_up" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "cardet" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -357,7 +439,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mx_rcvr2'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 668.105 ; gain = 459.699
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -378,53 +460,57 @@ Detailed RTL Component Info :
 	   2 Input      9 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      7 Bit       Adders := 1     
+	  64 Input      7 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 2     
+	  10 Input      5 Bit       Adders := 1     
 	  12 Input      5 Bit       Adders := 1     
-	  16 Input      5 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 1     
-	   8 Input      4 Bit       Adders := 4     
-	   2 Input      4 Bit       Adders := 2     
-	   2 Input      3 Bit       Adders := 2     
+	   8 Input      4 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 3     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
-	   2 Input     16 Bit         XORs := 1     
-	   2 Input      8 Bit         XORs := 4     
+	   2 Input     64 Bit         XORs := 1     
+	   2 Input     10 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 3     
 +---Registers : 
+	               64 Bit    Registers := 1     
 	               17 Bit    Registers := 2     
-	               16 Bit    Registers := 1     
 	               14 Bit    Registers := 2     
 	               12 Bit    Registers := 1     
 	               11 Bit    Registers := 3     
-	               10 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
 	                9 Bit    Registers := 1     
 	                8 Bit    Registers := 70    
 	                7 Bit    Registers := 1     
 	                6 Bit    Registers := 3     
-	                5 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 3     
-	                3 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 26    
+	                1 Bit    Registers := 28    
 +---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
 	   2 Input     17 Bit        Muxes := 2     
-	   2 Input     16 Bit        Muxes := 2     
 	   2 Input     14 Bit        Muxes := 2     
 	   2 Input     12 Bit        Muxes := 2     
 	   2 Input     11 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 14    
+	   2 Input      8 Bit        Muxes := 12    
 	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 3     
-	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
 	  18 Input      4 Bit        Muxes := 1     
 	  10 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	  11 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 105   
+	   2 Input      1 Bit        Muxes := 127   
 	  13 Input      1 Bit        Muxes := 1     
 	  12 Input      1 Bit        Muxes := 3     
-	   4 Input      1 Bit        Muxes := 25    
+	   4 Input      1 Bit        Muxes := 31    
 	   8 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -435,15 +521,18 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module topmodule 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   6 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 2     
 Module clkenb 
 Detailed RTL Component Info : 
@@ -571,16 +660,26 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module correlator 
 Detailed RTL Component Info : 
 +---Adders : 
-	   8 Input      4 Bit       Adders := 1     
+	  10 Input      5 Bit       Adders := 1     
 +---XORs : 
-	   2 Input      8 Bit         XORs := 1     
+	   2 Input     10 Bit         XORs := 1     
 +---Registers : 
-	                8 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input      8 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 2     
 Module correlator__parameterized0 
 Detailed RTL Component Info : 
@@ -616,13 +715,13 @@ Detailed RTL Component Info :
 Module correlator__parameterized3 
 Detailed RTL Component Info : 
 +---Adders : 
-	  16 Input      5 Bit       Adders := 1     
+	  64 Input      7 Bit       Adders := 1     
 +---XORs : 
-	   2 Input     16 Bit         XORs := 1     
+	   2 Input     64 Bit         XORs := 1     
 +---Registers : 
-	               16 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
 Module correlator__parameterized4 
 Detailed RTL Component Info : 
@@ -639,7 +738,7 @@ Module mx_rcvr2
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 3     
 	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
 +---Registers : 
@@ -649,10 +748,11 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 1     
 	                1 Bit    Registers := 11    
 +---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	  11 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 8     
-	   4 Input      1 Bit        Muxes := 19    
+	   2 Input      1 Bit        Muxes := 28    
+	   4 Input      1 Bit        Muxes := 25    
 	   8 Input      1 Bit        Muxes := 8     
 Module counter_parm 
 Detailed RTL Component Info : 
@@ -665,7 +765,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input      8 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
-Module clkenb__parameterized8 
+Module clkenb__parameterized9 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     17 Bit       Adders := 1     
@@ -687,34 +787,36 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 664.441 ; gain = 456.648
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 668.105 ; gain = 459.699
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "CLKENB64/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "reset_time_count" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "reset_time_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fourth_count_up" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "CLKENB2/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB3/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB4/enb" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "CLKENB5/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENDOUTPUT/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB2/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "COR_BIT16/shreg" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "COR_BIT16/shreg" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "COR_MIS_BAUD/shreg" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "CLKENB5/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB2/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB4/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENB3/enb" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "CLKENB2/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "DECODER/" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENBEIGHT/enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "CLKENDOUTPUT/enb" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 668.105 ; gain = 459.699
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 668.105 ; gain = 459.699
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -739,11 +841,11 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (URCVR/time_count_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (time_count_reg[3]) is unused and will be removed from module mx_rcvr2.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 668.105 ; gain = 459.699
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 668.105 ; gain = 459.699
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -757,10 +859,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 664.441 ; gain = 456.648
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 668.105 ; gain = 459.699
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 770.633 ; gain = 562.227
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -772,16 +874,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 771.559 ; gain = 563.152
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -798,7 +900,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -811,7 +913,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -823,25 +925,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -859,56 +961,55 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    22|
-|3     |LUT1   |    88|
-|4     |LUT2   |    77|
-|5     |LUT3   |    55|
-|6     |LUT4   |   130|
-|7     |LUT5   |    78|
-|8     |LUT6   |   355|
-|9     |MUXF7  |    71|
-|10    |MUXF8  |    19|
-|11    |FDCE   |    12|
-|12    |FDRE   |   781|
-|13    |FDSE   |     3|
-|14    |IBUF   |    23|
-|15    |OBUF   |    42|
+|3     |LUT1   |    83|
+|4     |LUT2   |    78|
+|5     |LUT3   |   103|
+|6     |LUT4   |    69|
+|7     |LUT5   |   152|
+|8     |LUT6   |   337|
+|9     |MUXF7  |    33|
+|10    |FDCE   |    12|
+|11    |FDRE   |   840|
+|12    |FDSE   |     3|
+|13    |IBUF   |    23|
+|14    |OBUF   |    42|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+-----------------+---------------------------+------+
 |      |Instance         |Module                     |Cells |
 +------+-----------------+---------------------------+------+
-|1     |top              |                           |  1757|
-|2     |  CLKENBEIGHT    |clkenb                     |    33|
-|3     |  CLKENDOUTPUT   |clkenb__parameterized0     |    51|
+|1     |top              |                           |  1798|
+|2     |  CLKENBEIGHT    |clkenb                     |    35|
+|3     |  CLKENDOUTPUT   |clkenb__parameterized0     |    50|
 |4     |  DISPCTL        |dispctl                    |    74|
-|5     |    CLKENB       |clkenb__parameterized8     |    60|
+|5     |    CLKENB       |clkenb__parameterized9     |    60|
 |6     |    COUNTER_PARM |counter_parm               |    14|
-|7     |  FIFO           |p_fifo4                    |   911|
-|8     |  MTRANS         |m_transmitter              |    83|
-|9     |    CLKENB       |clkenb_1                   |    33|
-|10    |    CLKENB2      |clkenb__parameterized3     |    28|
-|11    |  TRANS          |transmitter                |    67|
+|7     |  FIFO           |p_fifo4                    |   827|
+|8     |  MTRANS         |m_transmitter              |    82|
+|9     |    CLKENB       |clkenb_1                   |    32|
+|10    |    CLKENB2      |clkenb__parameterized3     |    29|
+|11    |  TRANS          |transmitter                |    62|
 |12    |    CLKENB       |clkenb__parameterized2     |    50|
-|13    |  URCVR          |mx_rcvr2                   |   346|
-|14    |    CLKENB       |clkenb_0                   |    35|
-|15    |    CLKENB2      |clkenb__parameterized4     |    31|
+|13    |  URCVR          |mx_rcvr2                   |   464|
+|14    |    CLKENB       |clkenb_0                   |    34|
+|15    |    CLKENB2      |clkenb__parameterized4     |    29|
 |16    |    CLKENB3      |clkenb__parameterized5     |    26|
-|17    |    CLKENB4      |clkenb__parameterized6     |    42|
-|18    |    CLKENB5      |clkenb__parameterized7     |    22|
-|19    |    COR_BIT      |correlator__parameterized2 |    23|
-|20    |    COR_BIT16    |correlator__parameterized3 |    63|
-|21    |    COR_EOF      |correlator__parameterized1 |    29|
-|22    |    COR_PREAM    |correlator                 |    12|
+|17    |    CLKENB4      |clkenb__parameterized6     |    51|
+|18    |    CLKENB64     |clkenb__parameterized8     |    13|
+|19    |    COR_BIT      |correlator__parameterized2 |    12|
+|20    |    COR_BIT16    |correlator__parameterized3 |   182|
+|21    |    COR_EOF      |correlator__parameterized1 |    38|
+|22    |    COR_PREAM    |correlator                 |    17|
 |23    |    COR_SFD      |correlator__parameterized0 |    11|
 |24    |  U_MXTEST       |mxtest_2                   |   115|
 +------+-----------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 771.559 ; gain = 563.152
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 676.461 ; gain = 128.719
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 676.461 ; gain = 468.668
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 771.559 ; gain = 222.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 771.559 ; gain = 563.152
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -918,8 +1019,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-188 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+205 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 676.461 ; gain = 442.684
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 676.461 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 09 18:49:20 2016...
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 771.559 ; gain = 537.250
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 771.559 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 26 21:10:11 2016...

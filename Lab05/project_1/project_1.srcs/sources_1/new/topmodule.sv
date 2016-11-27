@@ -107,6 +107,35 @@ module topmodule (
       logic send_into_trans_test;
       assign send_into_trans_test = send_into_trans;
 
+      logic [7:0] data_hold = 8'h00;
+      logic [2:0] wait_delay;
+      logic wait_delay_up;
+
+      always_ff @(posedge CLK100MHZ) begin
+      	if(BTNC)
+      		data_hold <= 8'h00;
+      	else if(write_mr_out) begin
+      		data_hold <= data_m_receiver;
+      		wait_delay_up <= 1;
+      	end else begin
+      		data_hold <= data_hold;
+      		wait_delay_up <= 0;
+      	end
+      end
+
+      always_ff @(posedge CLK100MHZ) begin 
+      	if(BTNC)
+      		wait_delay <= 0;
+      	else if((wait_delay_up)) begin
+      		wait_delay <= wait_delay + 1;
+      	end 
+      	else if(wait_delay != 0 && BaudRate) begin
+      		wait_delay <= wait_delay + 1;
+      	end else begin
+      		wait_delay <= wait_delay;
+      	end
+      end
+
 
   // add SystemVerilog code & module instantiations here
 
@@ -142,13 +171,21 @@ module topmodule (
     data_m_receiver[1], data_m_receiver[2], data_m_receiver[3], 
     data_m_receiver[4], data_m_receiver[5], data_m_receiver[6], data_m_receiver[7]};
 
+    logic [7:0] data_fifo_in_hold;
+
+    assign data_fifo_in_hold = {data_hold[0], 
+    data_hold[1], data_hold[2], data_hold[3], 
+    data_hold[4], data_hold[5], data_hold[6], data_hold[7]};
+
          p_fifo4 #(.numBits(numBits)) FIFO(  
             .clk(CLK100MHZ), 
             .rst(~BTNC),        //needs that ~ cause rst is asserted low
             .clr(BTNC), 
-            .we(write_mr_out && BaudRate), 
+            //.we(write_mr_out && BaudRate && ~error_mr_out), 
+            .we(wait_delay == 3'b111 && ~error_mr_out && BaudRate),
             .re(read_en_fifo_test && BaudRateOutput),
-            .din(data_fifo_in),
+            //.din(data_fifo_in),
+            .din(data_fifo_in_hold),
             .full(full_fifo_out),
             .empty(empty_fifo_out),
             .dout(data_fifo_out)
@@ -169,7 +206,7 @@ module topmodule (
 
 	    logic cardet_mr_out; 
 	    //logic write_mr_out, 
-	    logic error_mr_out;
+	    //logic error_mr_out;
 	    
 	    mx_rcvr2 #(.BAUD(BAUD)) URCVR (
             //.rxd(txd_mtrans_out), 
