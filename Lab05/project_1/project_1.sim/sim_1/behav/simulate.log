@@ -1,0 +1,42 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+FAIL(cardet middle of preamble of 16 bits) Failed test 4 at time 160000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data after receive) Failed test 18 at time 640000.
+  Expected value 0xbb, Inspected Value 0xX
+FAIL(write after receive) Failed test 19 at time 640000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(write after receive) Failed test 23 at time 800000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data after receive) Failed test 26 at time 960000.
+  Expected value 0x0, Inspected Value 0x1
+FAIL(write after receive) Failed test 27 at time 960000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(write after receive) Failed test 31 at time 1120000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data before EOF) Failed test 33 at time 1120000.
+  Expected value 0xxx, Inspected Value 0xaa
+FAIL(write before EOF) Failed test 34 at time 1120000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data after EOF) Failed test 36 at time 1160000.
+  Expected value 0xxx, Inspected Value 0xaa
+FAIL(write after EOF) Failed test 37 at time 1160000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data before preamble) Failed test 39 at time 2170000.
+  Expected value 0xxx, Inspected Value 0xaa
+FAIL(cardet middle of preamble of 16 bits) Failed test 41 at time 2330000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(data middle of preamble of 16 bits) Failed test 42 at time 2330000.
+  Expected value 0xxx, Inspected Value 0xaa
+FAIL(data before sfd) Failed test 45 at time 2490000.
+  Expected value 0xxx, Inspected Value 0xaa
+FAIL(data after sfd) Failed test 48 at time 2650000.
+  Expected value 0xxx, Inspected Value 0xaa
+FAIL(data before receive) Failed test 51 at time 2650000.
+  Expected value 0xxx, Inspected Value 0xaa
+FAIL(data after receive) Failed test 55 at time 2810000.
+  Expected value 0xbb, Inspected Value 0xa
+FAIL(write after receive) Failed test 56 at time 2810000.
+  Expected value 0x1, Inspected Value 0x0
+FAIL(write after receive) Failed test 60 at time 2970000.
+  Expected value 0x1, Inspected Value 0x0

@@ -1,0 +1,16 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 81b5a577b81d446c9bec339871111cd1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot bram_rcvr_test_behav xil_defaultlib.bram_rcvr_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/FinalProject/sourcesfromother/mem.v" Line 21. Module mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/FinalProject/sourcesfromother/mem.v" Line 21. Module mem doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.rcvr_bram_controller
+Compiling module xil_defaultlib.bram_rcvr_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot bram_rcvr_test_behav

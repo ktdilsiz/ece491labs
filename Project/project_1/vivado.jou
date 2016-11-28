@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sun Nov 27 15:29:15 2016
+# Process ID: 3548
+# Current directory: C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14844 C:\Users\dilsizk\Desktop\ece 491\ece491labs\Project\project_1\project_1.xpr
+# Log file: C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/project_1/vivado.log
+# Journal file: C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/project_1/project_1.xpr}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/project_1/project_1.srcs/sim_1/new/bram_rcvr_test.sv} w ]
+add_files -fileset sim_1 {{C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/project_1/project_1.srcs/sim_1/new/bram_rcvr_test.sv}}
+launch_simulation
+source rcvrTEST.tcl
+restart
+run 3000 us
