@@ -1,16 +1,38 @@
 Vivado Simulator 2016.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 81b5a577b81d446c9bec339871111cd1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot bram_rcvr_test_behav xil_defaultlib.bram_rcvr_test xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 81b5a577b81d446c9bec339871111cd1 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot toptestproject_behav xil_defaultlib.toptestproject xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 1 for port UART_RXD_OUT [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/FinalProject.srcs/sim_1/new/toptestproject.sv:49]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 10 for port replace [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:87]
+WARNING: [VRFC 10-278] actual bit length 10 differs from formal bit length 8 for port replace [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:136]
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/FinalProject/sourcesfromother/mem.v" Line 21. Module mem doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece 491/ece491labs/Project/FinalProject/sourcesfromother/mem.v" Line 21. Module mem doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/project_1/project_1.srcs/sources_1/new/check_p.sv" Line 37. Module check_p1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/project_1/project_1.srcs/sources_1/new/check_p.sv" Line 37. Module check_p1 doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.mem
-Compiling module xil_defaultlib.rcvr_bram_controller
-Compiling module xil_defaultlib.bram_rcvr_test
+Compiling module xil_defaultlib.clkenb(DIVFREQ=50000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=9600)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=960)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=19200)
+Compiling module xil_defaultlib.transmitter(BAUD=9600)
+Compiling module xil_defaultlib.p_fifo4(numBits=64)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=100000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=800000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=200000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=400000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=3200000)
+Compiling module xil_defaultlib.correlator(LEN=10,PATTERN=10'b01...
+Compiling module xil_defaultlib.correlator(LEN=8,PATTERN=8'b0101...
+Compiling module xil_defaultlib.correlator(LEN=12,PATTERN=12'b11...
+Compiling module xil_defaultlib.correlator(LEN=8,PATTERN=8'b1111...
+Compiling module xil_defaultlib.correlator(LEN=64,PATTERN=64'b11...
+Compiling module xil_defaultlib.correlator(LEN=8,PATTERN=8'b1111...
+Compiling module xil_defaultlib.mx_rcvr2(BAUD=50000)
+Compiling module xil_defaultlib.rcvr_controller
+Compiling module xil_defaultlib.topmodulefinal
+Compiling module xil_defaultlib.toptestproject
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot bram_rcvr_test_behav
+Compiling package xil_defaultlib.check_p1
+Built simulation snapshot toptestproject_behav

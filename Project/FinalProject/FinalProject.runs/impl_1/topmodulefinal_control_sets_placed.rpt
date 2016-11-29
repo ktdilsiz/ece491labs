@@ -1,0 +1,133 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Tue Nov 29 15:49:23 2016
+| Host         : ECE400-F6M7KB2 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file topmodulefinal_control_sets_placed.rpt
+| Design       : topmodulefinal
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    80 |
+| Unused register locations in slices containing registers |    30 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              15 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             124 |           35 |
+| Yes          | No                    | No                     |             520 |          147 |
+| Yes          | No                    | Yes                    |              12 |            5 |
+| Yes          | Yes                   | No                     |             131 |           38 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|     Clock Signal     |                    Enable Signal                   |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++----------------------+----------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/URCVR/CLKENB2/E[0]                 | RCVR_CONTROLLER/URCVR/COR_BIT16/SR[0]         |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/TRANS/CLKENB/E[0]                  | BTNC_IBUF                                     |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/URCVR/CLKENB/E[0]                  | RCVR_CONTROLLER/URCVR/COR_PREAM/SR[0]         |                1 |              5 |
+|  CLK100MHZ_IBUF_BUFG |                                                    | RCVR_CONTROLLER/URCVR/COR_EOF/shreg_reg[0]_0  |                3 |              6 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/wp[5]_i_1_n_0                 | BTNC_IBUF                                     |                2 |              6 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/rp[5]_i_1_n_0                 | BTNC_IBUF                                     |                3 |              6 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[16][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[60][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/CLKENBEIGHT/E[0]                   |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/CLKENBEIGHT/data_counter_reg[0][0] | RCVR_CONTROLLER/URCVR/SR[0]                   |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/URCVR/CLKENB3/shreg_reg[7]         | RCVR_CONTROLLER/URCVR/COR_EOF/shreg_reg[0]_0  |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/URCVR/CLKENB4/shreg_reg[7]         | RCVR_CONTROLLER/URCVR/COR_EOF/shreg_reg[0]_0  |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[34][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/URCVR/COR_EOF/E[0]                 | BTNC_IBUF                                     |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[0][7]_i_1_n_0             |                                               |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[10][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[11][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[12][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[13][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[14][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[15][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[17][7]_i_1_n_0            |                                               |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[18][7]_i_1_n_0            |                                               |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[19][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[1][7]_i_1_n_0             |                                               |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[20][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[21][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[22][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[23][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[24][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[25][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[26][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[27][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[28][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[29][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[2][7]_i_1_n_0             |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[30][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[31][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[32][7]_i_1_n_0            |                                               |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[33][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[51][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[35][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[36][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[37][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[38][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[39][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[3][7]_i_1_n_0             |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[40][7]_i_1_n_0            |                                               |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[41][7]_i_1_n_0            |                                               |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[42][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[43][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[44][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[45][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[46][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[47][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[48][7]_i_1_n_0            |                                               |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[49][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[4][7]_i_1_n_0             |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[50][7]_i_1_n_0            |                                               |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[52][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[53][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[54][7]_i_1_n_0            |                                               |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[55][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[56][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[57][7]_i_1_n_0            |                                               |                4 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[58][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[59][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[5][7]_i_1_n_0             |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[61][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[62][7]_i_1_n_0            |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[63][7]_i_1_n_0            |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[6][7]_i_1_n_0             |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[7][7]_i_1_n_0             |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[8][7]_i_1_n_0             |                                               |                2 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/FIFO/mem[9][7]_i_1_n_0             |                                               |                3 |              8 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/URCVR/CLKENB4/shreg_reg[9]_0       | RCVR_CONTROLLER/URCVR/COR_EOF/shreg_reg[9]_0  |                2 |             10 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/URCVR/CLKENB3/shreg_reg[11]        | RCVR_CONTROLLER/URCVR/COR_EOF/shreg_reg[11]_0 |                3 |             12 |
+|  CLK100MHZ_IBUF_BUFG |                                                    |                                               |                8 |             15 |
+|  CLK100MHZ_IBUF_BUFG | RCVR_CONTROLLER/URCVR/CLKENB64/shreg_reg[63]       | RCVR_CONTROLLER/URCVR/COR_EOF/shreg_reg[0]_0  |               20 |             64 |
+|  CLK100MHZ_IBUF_BUFG |                                                    | BTNC_IBUF                                     |               32 |            118 |
++----------------------+----------------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+

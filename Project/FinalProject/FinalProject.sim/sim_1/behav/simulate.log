@@ -1,0 +1,83 @@
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+FAIL(cardet before preamble) Failed test 1 at time 110.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(data before preamble) Failed test 2 at time 110.
+  Expected value 0xxx, Inspected Value 0xzZ
+FAIL(write before preamble) Failed test 3 at time 110.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(cardet middle of preamble of 16 bits) Failed test 4 at time 160000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data middle of preamble of 16 bits) Failed test 5 at time 160000.
+  Expected value 0xxx, Inspected Value 0xzZ
+FAIL(write middle of preamble of 16 bits) Failed test 6 at time 160000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(cardet before sfd) Failed test 7 at time 320000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data before sfd) Failed test 8 at time 320000.
+  Expected value 0xxx, Inspected Value 0xzZ
+FAIL(write before sfd) Failed test 9 at time 320000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(cardet after sfd) Failed test 10 at time 480000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data after sfd) Failed test 11 at time 480000.
+  Expected value 0xxx, Inspected Value 0xzZ
+FAIL(write after sfd) Failed test 12 at time 480000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(cardet before receive) Failed test 13 at time 480000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data before receive) Failed test 14 at time 480000.
+  Expected value 0xxx, Inspected Value 0xzZ
+FAIL(write before receive) Failed test 15 at time 480000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(write after receive) Failed test 16 at time 560000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(cardet after receive) Failed test 17 at time 640000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data after receive) Failed test 18 at time 640000.
+  Expected value 0xbb, Inspected Value 0xzZ
+FAIL(write after receive) Failed test 19 at time 640000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(write after receive) Failed test 20 at time 720000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(cardet after receive) Failed test 21 at time 800000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data after receive) Failed test 22 at time 800000.
+  Expected value 0xff, Inspected Value 0xzZ
+FAIL(write after receive) Failed test 23 at time 800000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(write after receive) Failed test 24 at time 880000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(cardet after receive) Failed test 25 at time 960000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data after receive) Failed test 26 at time 960000.
+  Expected value 0x0, Inspected Value 0xzZ
+FAIL(write after receive) Failed test 27 at time 960000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(write after receive) Failed test 28 at time 1040000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(write after receive) Failed test 29 at time 1200000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(write after receive) Failed test 30 at time 1360000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(cardet after receive) Failed test 31 at time 1440000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data after receive) Failed test 32 at time 1440000.
+  Expected value 0xaa, Inspected Value 0xzZ
+FAIL(write after receive) Failed test 33 at time 1440000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(cardet before EOF) Failed test 34 at time 1440000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data before EOF) Failed test 35 at time 1440000.
+  Expected value 0xxx, Inspected Value 0xzZ
+FAIL(write before EOF) Failed test 36 at time 1440000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(cardet after EOF) Failed test 37 at time 1480000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(data after EOF) Failed test 38 at time 1480000.
+  Expected value 0xxx, Inspected Value 0xzZ
+FAIL(write after EOF) Failed test 39 at time 1480000.
+  Expected value 0x1, Inspected Value 0xX
+FAIL(cardet before preamble) Failed test 40 at time 2490000.
+  Expected value 0x0, Inspected Value 0xX
+FAIL(data before preamble) Failed test 41 at time 2490

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="C:/Users/dilsizk/Desktop/ece 491/ece491labs/Lab05/project_1/project_1.xpr">
+<Project Version="7" Minor="14" Path="C:/Users/dilsizk/Desktop/ece4911/ece491labs/Lab05/project_1/project_1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="64509da5ccbe4025bf09a7c32099ad77"/>
