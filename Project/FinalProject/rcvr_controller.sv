@@ -200,7 +200,7 @@ always_ff@(posedge clk)
     logic [7:0] data_counter;
     //logic data_coming_in;
 
-    assign data_coming_in = (data_counter > 2);
+    assign data_coming_in = (data_counter > 2 || data_counter < 2);
 
    always_ff @(posedge clk) begin
     if(rst || ~cardet_mr_out) begin

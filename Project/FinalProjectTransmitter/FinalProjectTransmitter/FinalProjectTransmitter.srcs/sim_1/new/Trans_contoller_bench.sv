@@ -26,17 +26,16 @@ module Trans_contoller_bench();
     import check_p1::*;
     // signals connecting to transmitter controller
     
-    logic clk,
-    logic rst,
-    logic[7:0]  xdata,
-  	logic [9:0] SW,
-    logic xwr,
-    logic xsnd,
-    logic cardet,
-    logic xerrcnt,
-    logic txen,
-    logic txd,
-    logic xrdy
+    logic clk;
+    logic rst;
+    logic[7:0]  xdata;
+    logic xwr;
+    logic xsnd;
+    logic cardet;
+    logic xerrcnt;
+    logic txen;
+    logic txd;
+    logic xrdy;
     
     // instantiate device under verification (transmitter controller)
     Trans_controller #(.BAUD(800_000/ 16) TRANS(.clk, .rst, .xdata, .SW, .xwr, .xsnd, .cardet, .xrdy, 						.xerrcnt, .txen, .txd );

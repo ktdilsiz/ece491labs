@@ -39,6 +39,8 @@ module receiver(
     logic BaudRate, rxd_prev;
     logic [2:0] bit_count;
 
+    //logic not_receiving
+
     //clkenb is used for getting a enable signal that follows the desired baudrate
     clkenb #(.DIVFREQ(BAUD)) CLKENB2(.clk(clk), .reset(rst), .enb(BaudRate2));
     clkenb #(.DIVFREQ(SIXTEENBAUD)) CLKENB(.clk(clk), .reset(rst), .enb(BaudRate));

@@ -65,7 +65,7 @@ module Trans_controller(
     .ferr(error_arcvr),
     .rdy(rdy_arcvr),
     .data(data_arcvr)
-                   );
+    );
                    
     parameter numBits = 64;
     logic read_en_fifo_test, full_fifo_out, empty_fifo_out; 

@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2508 
+INFO: Helper process launched with PID 4768 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 316.766 ; gain = 109.281
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 316.824 ; gain = 109.340
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'topmodulefinal' [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/topmodulefinal.sv:23]
 INFO: [Synth 8-638] synthesizing module 'rcvr_controller' [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/rcvr_controller.sv:3]
@@ -192,7 +192,7 @@ WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNL
 WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNR
 WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTND
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 357.039 ; gain = 149.555
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 357.020 ; gain = 149.535
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -266,7 +266,7 @@ WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[2] to constant 0 [C
 WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[1] to constant 0 [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
 WARNING: [Synth 8-3295] tying undriven pin COR_BIT16:replace[0] to constant 0 [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/project_1/project_1.srcs/sources_1/new/mx_rcvr2.sv:147]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 357.039 ; gain = 149.555
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 357.020 ; gain = 149.535
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -274,30 +274,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc]
-WARNING: [Vivado 12-584] No ports matched 'data_mx_out[0]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:126]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:126]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'data_mx_out[1]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:127]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:127]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'data_mx_out[2]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:128]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:128]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'data_mx_out[3]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:129]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:129]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'data_mx_out[4]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:130]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:130]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'data_mx_out[5]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:131]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:131]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'data_mx_out[6]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:132]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:132]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'data_mx_out[7]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:133]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:133]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 WARNING: [Vivado 12-584] No ports matched 'data_m_receiver[0]'. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:138]
 CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProject/nexys4DDR.xdc:138]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
@@ -330,22 +306,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 666.840 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 667.098 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 667.098 ; gain = 459.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 667.098 ; gain = 459.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 667.098 ; gain = 459.613
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
@@ -455,7 +431,7 @@ INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mx_rcvr2'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 667.098 ; gain = 459.613
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -782,7 +758,7 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 666.840 ; gain = 459.355
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 667.098 ; gain = 459.613
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -829,9 +805,9 @@ WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNL
 WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNR
 WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTND
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 667.098 ; gain = 459.613
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 667.098 ; gain = 459.613
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -843,9 +819,9 @@ Start Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (time_count_reg[3]) is unused and will be removed from module mx_rcvr2.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 667.098 ; gain = 459.613
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 667.098 ; gain = 459.613
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -859,10 +835,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 666.840 ; gain = 459.355
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 667.098 ; gain = 459.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 768.355 ; gain = 560.871
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 768.535 ; gain = 561.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -874,16 +850,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 770.520 ; gain = 563.035
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -900,7 +876,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -913,7 +889,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -925,25 +901,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -962,11 +938,11 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |    12|
 |3     |LUT1   |    56|
-|4     |LUT2   |    75|
+|4     |LUT2   |    76|
 |5     |LUT3   |    93|
-|6     |LUT4   |    51|
-|7     |LUT5   |   140|
-|8     |LUT6   |   305|
+|6     |LUT4   |    52|
+|7     |LUT5   |   141|
+|8     |LUT6   |   302|
 |9     |MUXF7  |    33|
 |10    |FDCE   |    12|
 |11    |FDRE   |   787|
@@ -986,7 +962,7 @@ Report Instance Areas:
 |5     |  RCVR_CONTROLLER |rcvr_controller            |  1493|
 |6     |    CLKENBEIGHT   |clkenb                     |    38|
 |7     |    CLKENDOUTPUT  |clkenb__parameterized0     |    50|
-|8     |    FIFO          |p_fifo4                    |   830|
+|8     |    FIFO          |p_fifo4                    |   831|
 |9     |    TRANS         |transmitter                |    62|
 |10    |      CLKENB      |clkenb__parameterized2     |    50|
 |11    |    URCVR         |mx_rcvr2                   |   459|
@@ -1002,11 +978,11 @@ Report Instance Areas:
 |21    |      COR_SFD     |correlator__parameterized0 |    12|
 +------+------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 770.031 ; gain = 562.547
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 770.520 ; gain = 563.035
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 770.031 ; gain = 222.566
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 770.031 ; gain = 562.547
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 770.520 ; gain = 222.770
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 770.520 ; gain = 563.035
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1016,8 +992,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-192 Infos, 116 Warnings, 16 Critical Warnings and 0 Errors encountered.
+192 Infos, 108 Warnings, 8 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 770.031 ; gain = 535.934
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 770.031 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 29 15:48:54 2016...
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 770.520 ; gain = 536.484
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 770.520 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 06 14:23:45 2016...

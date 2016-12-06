@@ -1,0 +1,38 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 627d14ec3a3a48048835e83db00dd158 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot trans_control_test_behav xil_defaultlib.trans_control_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port switch [C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/trans_controller_2.sv:58]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=100000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=153600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=6250) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=100000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=153600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=50000) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=9600) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=6250) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/dilsizk/Desktop/ece4911/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv" Line 20. Module clkenb(DIVFREQ=9600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.clkenb(DIVFREQ=50000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=100000)
+Compiling module xil_defaultlib.m_transmitter(BAUD=50000)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=9600)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=153600)
+Compiling module xil_defaultlib.receiver(BAUD=9600)
+Compiling module xil_defaultlib.p_fifo4(numBits=64)
+Compiling module xil_defaultlib.clkenb(DIVFREQ=6250)
+Compiling module xil_defaultlib.trans_controller_2
+Compiling module xil_defaultlib.trans_control_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot trans_control_test_behav
