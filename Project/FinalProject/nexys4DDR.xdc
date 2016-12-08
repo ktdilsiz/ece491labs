@@ -93,7 +93,7 @@ set_property -dict {PACKAGE_PIN P18 IOSTANDARD LVCMOS33} [get_ports BTND]
 
 ##Pmod Header JA
 
-set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports UART_RXD_OUT]
+#set_property -dict {PACKAGE_PIN C17 IOSTANDARD LVCMOS33} [get_ports UART_RXD_OUT]
 #IO_L20N_T3_A19_15 Sch=ja[1]
 set_property -dict { PACKAGE_PIN D18   IOSTANDARD LVCMOS33 } [get_ports { txd_mtrans_out }]; #IO_L21N_T3_DQS_A18_15 Sch=ja[2]
 #set_property -dict { PACKAGE_PIN E18   IOSTANDARD LVCMOS33 } [get_ports { JA[3] }]; #IO_L21P_T3_DQS_15 Sch=ja[3]
@@ -135,14 +135,14 @@ set_property -dict {PACKAGE_PIN H14 IOSTANDARD LVCMOS33} [get_ports {outJA4}]
 
 ##Pmod Header JD
 
-set_property -dict { PACKAGE_PIN H4    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[0] }]; #IO_L21N_T3_DQS_35 Sch=jd[1]
-set_property -dict { PACKAGE_PIN H1    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[1] }]; #IO_L17P_T2_35 Sch=jd[2]
-set_property -dict { PACKAGE_PIN G1    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[2] }]; #IO_L17N_T2_35 Sch=jd[3]
-set_property -dict { PACKAGE_PIN G3    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[3] }]; #IO_L20N_T3_35 Sch=jd[4]
-set_property -dict { PACKAGE_PIN H2    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[4] }]; #IO_L15P_T2_DQS_35 Sch=jd[7]
-set_property -dict { PACKAGE_PIN G4    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[5] }]; #IO_L20P_T3_35 Sch=jd[8]
-set_property -dict { PACKAGE_PIN G2    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[6] }]; #IO_L15N_T2_DQS_35 Sch=jd[9]
-set_property -dict { PACKAGE_PIN F3    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[7] }]; #IO_L13N_T2_MRCC_35 Sch=jd[10]
+#set_property -dict { PACKAGE_PIN H4    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[0] }]; #IO_L21N_T3_DQS_35 Sch=jd[1]
+#set_property -dict { PACKAGE_PIN H1    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[1] }]; #IO_L17P_T2_35 Sch=jd[2]
+#set_property -dict { PACKAGE_PIN G1    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[2] }]; #IO_L17N_T2_35 Sch=jd[3]
+#set_property -dict { PACKAGE_PIN G3    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[3] }]; #IO_L20N_T3_35 Sch=jd[4]
+#set_property -dict { PACKAGE_PIN H2    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[4] }]; #IO_L15P_T2_DQS_35 Sch=jd[7]
+#set_property -dict { PACKAGE_PIN G4    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[5] }]; #IO_L20P_T3_35 Sch=jd[8]
+#set_property -dict { PACKAGE_PIN G2    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[6] }]; #IO_L15N_T2_DQS_35 Sch=jd[9]
+#set_property -dict { PACKAGE_PIN F3    IOSTANDARD LVCMOS33 } [get_ports { data_m_receiver[7] }]; #IO_L13N_T2_MRCC_35 Sch=jd[10]
 
 
 ##Pmod Header JXADC
@@ -222,8 +222,8 @@ set_property -dict { PACKAGE_PIN F3    IOSTANDARD LVCMOS33 } [get_ports { data_m
 
 ##USB-RS232 Interface
 
-#set_property -dict { PACKAGE_PIN C4    IOSTANDARD LVCMOS33 } [get_ports { UART_TXD_IN }]; #IO_L7P_T1_AD6P_35 Sch=uart_txd_in
-set_property -dict {PACKAGE_PIN D4 IOSTANDARD LVCMOS33} [get_ports UART_RXD_OUT]
+set_property -dict { PACKAGE_PIN C4    IOSTANDARD LVCMOS33 } [get_ports { UART_TXD_IN }]; #IO_L7P_T1_AD6P_35 Sch=uart_txd_in
+#set_property -dict {PACKAGE_PIN D4 IOSTANDARD LVCMOS33} [get_ports UART_RXD_OUT]
 #set_property -dict { PACKAGE_PIN D3    IOSTANDARD LVCMOS33 } [get_ports { UART_CTS }]; #IO_L12N_T1_MRCC_35 Sch=uart_cts
 #set_property -dict { PACKAGE_PIN E5    IOSTANDARD LVCMOS33 } [get_ports { UART_RTS }]; #IO_L5N_T0_AD13N_35 Sch=uart_rts
 

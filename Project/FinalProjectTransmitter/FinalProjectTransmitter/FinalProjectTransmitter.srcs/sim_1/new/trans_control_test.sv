@@ -93,7 +93,7 @@ module trans_control_test( );
 
 ///////////////////////////////////////////
 //transmit data
-    repeat(10) begin
+    repeat(2) begin
     @(posedge BaudRate) rxd = 0; 
 
 	@(posedge BaudRate) rxd = 0; 
@@ -109,6 +109,54 @@ module trans_control_test( );
     @(posedge BaudRate) rxd = 1;  
 	end
 
+	repeat(2) begin
+    @(posedge BaudRate) rxd = 0; 
+
+	@(posedge BaudRate) rxd = 0; 
+	@(posedge BaudRate) rxd = 0; 
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 0; 
+
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 0; 
+	@(posedge BaudRate) rxd = 1; 
+
+    @(posedge BaudRate) rxd = 1;  
+	end
+
+	repeat(2) begin
+    @(posedge BaudRate) rxd = 0; 
+
+	@(posedge BaudRate) rxd = 0; 
+	@(posedge BaudRate) rxd = 0; 
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 0; 
+
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 0; 
+
+    @(posedge BaudRate) rxd = 1;  
+	end
+
+    repeat(2) begin
+    @(posedge BaudRate) rxd = 0; 
+
+	@(posedge BaudRate) rxd = 0; 
+	@(posedge BaudRate) rxd = 0; 
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 0; 
+
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 1; 
+	@(posedge BaudRate) rxd = 1; 
+
+    @(posedge BaudRate) rxd = 1;  
+	end	
+
   endtask
 
   initial begin
@@ -120,6 +168,10 @@ module trans_control_test( );
   	rst = 0;
 
   	repeat(10) @(posedge BaudRate) rxd = 1;
+
+  	check_input;
+
+  	repeat(100) @(posedge BaudRate) rxd = 1;
 
   	check_input;
 

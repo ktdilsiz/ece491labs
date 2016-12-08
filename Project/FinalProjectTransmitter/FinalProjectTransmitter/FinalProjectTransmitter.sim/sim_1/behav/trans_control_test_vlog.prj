@@ -1,5 +1,6 @@
 # compile verilog/system verilog design source files
 sv xil_defaultlib  "../../../clkenb.sv"
+sv xil_defaultlib  "../../../extras/single_pulser.sv"
 sv xil_defaultlib  "../../../FinalProjectTransmitter.srcs/sources_1/new/p_fifo4.sv"
 sv xil_defaultlib  "../../../FinalProjectTransmitter.srcs/sources_1/new/aync_rcvr.sv"
 sv xil_defaultlib  "../../../FinalProjectTransmitter.srcs/sources_1/new/m_transmitter.sv"

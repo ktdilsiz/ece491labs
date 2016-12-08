@@ -1,0 +1,716 @@
+
+*** Running vivado
+    with args -log topmodulefinal.vds -m64 -mode batch -messageDb vivado.pb -notrace -source topmodulefinal.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source topmodulefinal.tcl -notrace
+Command: synth_design -top topmodulefinal -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10300 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 316.965 ; gain = 108.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topmodulefinal' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/topmodulefinal.sv:23]
+INFO: [Synth 8-638] synthesizing module 'trans_controller_2' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/trans_controller_2.sv:23]
+	Parameter BAUD bound to: 50000 - type: integer 
+	Parameter OUTPUTBAUD bound to: 9600 - type: integer 
+	Parameter NUMBITS bound to: 64 - type: integer 
+	Parameter PREDATA bound to: 8'b01010101 
+	Parameter SFDDATA bound to: 8'b11010000 
+INFO: [Synth 8-638] synthesizing module 'm_transmitter' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/m_transmitter.sv:17]
+	Parameter BAUD bound to: 50000 - type: integer 
+	Parameter TWICEBAUD bound to: 100000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clkenb' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+	Parameter DIVFREQ bound to: 50000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 2000 - type: integer 
+	Parameter DIVBITS bound to: 11 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb' (1#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized0' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+	Parameter DIVFREQ bound to: 100000 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 1000 - type: integer 
+	Parameter DIVBITS bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized0' (1#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'm_transmitter' (2#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/m_transmitter.sv:17]
+INFO: [Synth 8-638] synthesizing module 'receiver' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/aync_rcvr.sv:29]
+	Parameter BAUD bound to: 9600 - type: integer 
+	Parameter SIXTEENBAUD bound to: 153600 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized1' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+	Parameter DIVFREQ bound to: 9600 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 10416 - type: integer 
+	Parameter DIVBITS bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized1' (2#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized2' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+	Parameter DIVFREQ bound to: 153600 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 651 - type: integer 
+	Parameter DIVBITS bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized2' (2#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+INFO: [Synth 8-256] done synthesizing module 'receiver' (3#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/aync_rcvr.sv:29]
+INFO: [Synth 8-638] synthesizing module 'p_fifo4' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/p_fifo4.sv:57]
+	Parameter numBits bound to: 64 - type: integer 
+	Parameter DIVBITS bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'p_fifo4' (4#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/p_fifo4.sv:57]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized3' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+	Parameter DIVFREQ bound to: 9600 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 10416 - type: integer 
+	Parameter DIVBITS bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized3' (4#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+INFO: [Synth 8-638] synthesizing module 'clkenb__parameterized4' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+	Parameter DIVFREQ bound to: 6250 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 16000 - type: integer 
+	Parameter DIVBITS bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkenb__parameterized4' (4#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/clkenb.sv:20]
+INFO: [Synth 8-638] synthesizing module 'single_pulser' [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/extras/single_pulser.sv:19]
+INFO: [Synth 8-256] done synthesizing module 'single_pulser' (5#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/extras/single_pulser.sv:19]
+INFO: [Synth 8-256] done synthesizing module 'trans_controller_2' (6#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProjectTransmitter/FinalProjectTransmitter/FinalProjectTransmitter.srcs/sources_1/new/trans_controller_2.sv:23]
+WARNING: [Synth 8-3848] Net SEGS in module/entity topmodulefinal does not have driver. [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/topmodulefinal.sv:32]
+WARNING: [Synth 8-3848] Net AN in module/entity topmodulefinal does not have driver. [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/topmodulefinal.sv:33]
+WARNING: [Synth 8-3848] Net DP in module/entity topmodulefinal does not have driver. [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/topmodulefinal.sv:34]
+WARNING: [Synth 8-3848] Net JAwrite in module/entity topmodulefinal does not have driver. [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/topmodulefinal.sv:47]
+WARNING: [Synth 8-3848] Net JAerror in module/entity topmodulefinal does not have driver. [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/topmodulefinal.sv:48]
+INFO: [Synth 8-256] done synthesizing module 'topmodulefinal' (7#1) [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/topmodulefinal.sv:23]
+WARNING: [Synth 8-3917] design topmodulefinal has port outJA3 driven by constant 1
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[6]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[5]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[4]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[3]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[2]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[1]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[0]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[7]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[6]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[5]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[4]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[3]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[2]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[1]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[0]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port DP
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port JAwrite
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port JAerror
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[15]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[14]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[13]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[12]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[11]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[10]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[9]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[8]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[7]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[6]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[5]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[4]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[3]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[2]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[1]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[0]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNU
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNL
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNR
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTND
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 353.316 ; gain = 145.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 353.316 ; gain = 145.047
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/nexys4DDR.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dilsizk/Desktop/ece491final/ece491labs/Project/FinalProject/nexys4DDR.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topmodulefinal_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topmodulefinal_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 661.574 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 661.574 ; gain = 453.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 661.574 ; gain = 453.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 661.574 ; gain = 453.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'm_transmitter'
+INFO: [Synth 8-5544] ROM "txen" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rdy" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'receiver'
+INFO: [Synth 8-5544] ROM "trigger" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "increase" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rdy" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[32]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[33]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[34]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[35]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[36]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[37]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[38]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[39]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[40]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[41]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[42]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[43]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[44]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[45]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[46]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[47]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[48]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[49]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[50]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[51]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[52]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[53]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[54]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[55]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[56]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[57]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[58]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[59]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[60]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[61]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[62]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[63]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'trans_controller_2'
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+                     TR0 |                             0001 |                             0001
+                     TR1 |                             0010 |                             0010
+                     TR2 |                             0011 |                             0011
+                     TR3 |                             0100 |                             0100
+                     TR4 |                             0101 |                             0101
+                     TR5 |                             0110 |                             0110
+                     TR6 |                             0111 |                             0111
+                     TR7 |                             1000 |                             1000
+                    WAIT |                             1001 |                             1111
+                    EOF1 |                             1010 |                             1101
+                    EOF2 |                             1011 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'm_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                             0000
+                   START |                            00010 |                             1010
+                 RECEIVE |                            00100 |                             0001
+                    STOP |                            01000 |                             1001
+                   IDLE2 |                            10000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'receiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+                    DEST |                             0001 |                             0011
+                  SOURCE |                             0010 |                             0100
+                    TYPE |                             0011 |                             0101
+                DATARCVR |                             0100 |                             0110
+                  BUFFER |                             0101 |                             1100
+               PREAMBLE1 |                             0110 |                             1010
+               PREAMBLE2 |                             0111 |                             0001
+                     SFD |                             1000 |                             0010
+               DATATRANS |                             1001 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'trans_controller_2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 661.574 ; gain = 453.305
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 3     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 64    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  16 Input      5 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	  21 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 83    
+	  12 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 8     
+	  10 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module topmodulefinal 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module clkenb 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module m_transmitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  12 Input      1 Bit        Muxes := 3     
+Module clkenb__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  16 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 8     
+Module p_fifo4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 64    
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 68    
+Module clkenb__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clkenb__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
++---Registers : 
+	               14 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module single_pulser 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module trans_controller_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  10 Input      8 Bit        Muxes := 1     
+	  21 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 661.574 ; gain = 453.305
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "trigger" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENB2/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKENBEIGHT/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TRANS_CONTROLLER/TRAN/CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TRANS_CONTROLLER/TRAN/CLKENB2/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TRANS_CONTROLLER/RCVR/CLKENB/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TRANS_CONTROLLER/CLKENB2/enb" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "TRANS_CONTROLLER/CLKENBEIGHT/enb" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design topmodulefinal has port outJA3 driven by constant 1
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[6]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[5]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[4]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[3]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[2]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[1]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SEGS[0]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[7]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[6]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[5]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[4]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[3]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[2]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[1]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port AN[0]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port DP
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port JAwrite
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port JAerror
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[15]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[14]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[13]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[12]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[11]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[10]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[9]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[8]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[7]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[6]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[5]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[4]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[3]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[2]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[1]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port SW[0]
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNU
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNL
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTNR
+WARNING: [Synth 8-3331] design topmodulefinal has unconnected port BTND
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 661.574 ; gain = 453.305
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 661.574 ; gain = 453.305
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 661.574 ; gain = 453.305
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 661.574 ; gain = 453.305
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 661.574 ; gain = 453.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 682.590 ; gain = 474.320
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    34|
+|4     |LUT2   |    46|
+|5     |LUT3   |   132|
+|6     |LUT4   |    31|
+|7     |LUT5   |    70|
+|8     |LUT6   |   207|
+|9     |MUXF7  |    19|
+|10    |MUXF8  |     5|
+|11    |FDCE   |    12|
+|12    |FDRE   |   609|
+|13    |FDSE   |     1|
+|14    |IBUF   |     4|
+|15    |OBUF   |     7|
+|16    |OBUFT  |    18|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+-----------------------+------+
+|      |Instance           |Module                 |Cells |
++------+-------------------+-----------------------+------+
+|1     |top                |                       |  1204|
+|2     |  TRANS_CONTROLLER |trans_controller_2     |  1174|
+|3     |    CLKENB2        |clkenb__parameterized3 |    50|
+|4     |    CLKENBEIGHT    |clkenb__parameterized4 |    51|
+|5     |    FIFO           |p_fifo4                |   887|
+|6     |    RCVR           |receiver               |    93|
+|7     |      CLKENB       |clkenb__parameterized2 |    28|
+|8     |    SINGPULS       |single_pulser          |     5|
+|9     |    TRAN           |m_transmitter          |    77|
+|10    |      CLKENB       |clkenb                 |    33|
+|11    |      CLKENB2      |clkenb__parameterized0 |    28|
++------+-------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 682.590 ; gain = 474.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 682.590 ; gain = 137.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 682.590 ; gain = 474.320
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+142 Infos, 83 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 682.590 ; gain = 448.098
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 682.590 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 08 08:33:34 2016...
